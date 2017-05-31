@@ -1,0 +1,173 @@
+---
+title: Collapsables
+subheading: Displays collapsible content panels for presenting information in a limited amount of space.
+---
+
+<!-- jQueryUI Accordion -->
+
+<script type="text/javascript" src="../../assets/widgets/accordion-ui/accordion.js"></script>
+<script type="text/javascript">
+    /* jQuery UI Accordion */
+
+    $(function() { "use strict";
+        $(".accordion").accordion({
+            heightStyle: "content"
+        });
+    });
+
+    $(function() { "use strict";
+        $("#accordion-hover")
+                .accordion({
+                    event: 'mouseover',
+                    heightStyle: 'auto'
+                });
+    });
+</script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Basic
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        Collapsible Group Item #1
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        Collapsible Group Item #2
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        Collapsible Group Item #3
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Simple collapsable
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-info mrg20B" data-toggle="collapse" data-target="#demo-2">
+                                Slide collapsible
+                            </button>
+
+                            <div id="demo-2" class="collapse in">
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Panel title</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        Panel content
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    jQueryUI Accordions
+                </h3>
+                <div class="example-box-wrapper">
+
+                    <div class="accordion">
+                        <h3>Header 1</h3>
+                        <div>
+                            Accordion content 1
+                        </div>
+                        <h3>Header 2</h3>
+                        <div>
+                            Accordion content 2
+                        </div>
+                        <h3>Header 3</h3>
+                        <div>
+                            Accordion content 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Open on mouseover
+                </h3>
+                <div class="example-box-wrapper">
+
+                    <div id="accordion-hover">
+                        <h3>Header 1</h3>
+                        <div>
+                            Accordion content 1
+                        </div>
+                        <h3>Header 2</h3>
+                        <div>
+                            Accordion content 2
+                        </div>
+                        <h3>Header 3</h3>
+                        <div>
+                            Accordion content 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

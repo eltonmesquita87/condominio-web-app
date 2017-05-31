@@ -1,0 +1,74 @@
+[
+	{
+		"id":"submenu_menu01",
+		"menuInfo" : {
+			"idMenuRaiz": "menu01"			
+		},
+		"items":[
+			{
+				"id":"01submenu01",
+				"titulo":"Agendamento de áreas de Lazer",
+				"pagina":"#/moradores/agendamento"
+			},
+			{
+				"id":"01submenu02",
+				"titulo":"Receba notificações no celular (Circulares)",				
+				"pagina":"#/moradores/notificacoes"
+			},
+			{
+				"id":"01submenu03",
+				"titulo":"Registre ocorrências",				
+				"pagina":"#/moradores/registre"			
+			}
+		]
+	},
+	{
+		"id":"submenu_menu02",
+		"menuInfo" : {
+			"idMenuRaiz": "menu02"			
+		},
+		"items":[
+			{
+				"id":"02submenu01",
+				"titulo":"Faça as compras sem sair de casa e sem usar o telefone",
+				"pagina":"#/sindico/compras"
+			},
+			{
+				"id":"02submenu02",
+				"titulo":"O sistema de condomínios organiza os pagamentos e impostos com precisão",
+				"pagina":"#/sindico/organize" 
+			},
+			{
+				"id":"02submenu03",
+				"titulo":"Cadastro de moradores, proprietários, veículos, empregados e animais",
+				"pagina":"#/sindico/cadastro" 
+			}
+		]
+	},
+	{
+		"id":"submenu_menu03",
+		"menuInfo" : {
+			"idMenuRaiz": "menu03"			
+		},
+		"items":[
+					
+			{
+				"id":"03submenu01",
+				"titulo":"Controle de entrada e saída de visitantes",
+				"pagina":"#/portaria/controle"
+			},
+			{
+				"id":"03submenu02",
+				"titulo":"Registros e gerenciamento de encomendas",				
+				"pagina":"#/portaria/registros"
+			},
+			{
+				"id":"03submenu03",
+				"titulo":"Gerencie e delegue tarefas para o zelador à distância",				
+				"pagina":"#/portaria/gerencie"			
+			}			
+			
+		]
+	}
+	
+]

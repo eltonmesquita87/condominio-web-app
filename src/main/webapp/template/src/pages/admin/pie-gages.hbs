@@ -1,0 +1,218 @@
+---
+title: Pie Gages
+subheading: Pie gages render simple pie charts for single values.
+---
+<!-- PieGage charts -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/piegage/piegage.css">-->
+<script type="text/javascript" src="../../assets/widgets/charts/piegage/piegage.js"></script>
+<script type="text/javascript" src="../../assets/widgets/charts/piegage/piegage-demo.js"></script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="mrg20T text-center pad10A content-box">
+    <a href="#" class="btn center-div btn-primary updateEasyPieChart">
+        <i class="glyph-icon icon-refresh"></i>
+        Refresh all charts
+    </a>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Easy Pie Charts
+        </h3>
+        <div class="example-box-wrapper">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="#" title="Example tile shortcut" class="tile-box tile-box-alt btn-primary">
+                        <div class="tile-header">
+                            Dashboard
+                        </div>
+                        <div class="tile-content-wrapper">
+                            <div class="chart-alt-10" data-percent="21"><span>21</span>%</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" title="Example tile shortcut" class="tile-box tile-box-alt btn-black">
+                        <div class="tile-header">
+                            Orders
+                        </div>
+                        <div class="tile-content-wrapper">
+                            <div class="chart-alt-10" data-percent="67"><span>67</span>%</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" title="Example tile shortcut" class="tile-box tile-box-alt btn-danger">
+                        <div class="tile-header">
+                            Monthly Earnings
+                        </div>
+                        <div class="tile-content-wrapper">
+                            <div class="chart-alt-10" data-percent="55"><span>55</span>%</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" title="Example tile shortcut" class="tile-box tile-box-alt btn-success">
+                        <div class="tile-header">
+                            Photo Gallery
+                        </div>
+                        <div class="tile-content-wrapper">
+                            <div class="chart-alt-10" data-percent="43"><span>43</span>%</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" title="Example tile shortcut" class="tile-box tile-box-alt btn-info">
+                        <div class="tile-header">
+                            Subscriptions
+                        </div>
+                        <div class="tile-content-wrapper">
+                            <div class="chart-alt-10" data-percent="76"><span>76</span>%</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" title="Example tile shortcut" class="tile-box tile-box-alt btn-warning">
+                        <div class="tile-header">
+                            New Visitors
+                        </div>
+                        <div class="tile-content-wrapper">
+                            <div class="chart-alt-10" data-percent="11"><span>11</span>%</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Basic
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="row demo-margin">
+                        <div class="col-md-3">
+                            <div class="chart" data-percent="55">
+                                <span>55</span>%
+                            </div>
+                            <div class="text-center pad10T font-size-14 font-primary text-transform-upr">New visits</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart" data-percent="46">
+                                <span>46</span>%
+                            </div>
+                            <div class="text-center pad10T font-size-14 font-primary text-transform-upr">Bounce rate</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart" data-percent="92">
+                                <span>92</span>%
+                            </div>
+                            <div class="text-center pad10T font-size-14 font-primary text-transform-upr">Server load</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart" data-percent="84" data-bar-color="#2980b9">
+                                <span>752</span>MB
+                            </div>
+                            <div class="text-center pad10T font-size-14 font-primary text-transform-upr">Used RAM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Basic
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="row demo-margin">
+                        <div class="col-md-3">
+                            <div class="chart-alt-1" data-percent="55"><span>55</span>%</div>
+                            <div class="text-center font-bold mrg10A label bg-gray no-border center-div display-block font-blue">New visits</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-alt-1" data-percent="46"><span>46</span>%</div>
+                            <div class="text-center font-bold mrg10A label bg-gray no-border center-div display-block font-red">Bounce rate</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-alt-1" data-percent="92"><span>92</span>%</div>
+                            <div class="text-center font-bold mrg10A label bg-gray no-border center-div display-block font-green">Server load</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-alt-1" data-percent="84" data-bar-color="#2980b9"><span>752</span>MB</div>
+                            <div class="text-center font-bold mrg10A label bg-gray no-border center-div display-block font-orange">Used RAM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Smaller
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="row demo-margin">
+                        <div class="col-md-3">
+                            <div class="text-center font-gray-dark pad5B text-transform-upr font-size-11">New visits</div>
+                            <div class="chart-alt-2" data-percent="55"><span>55</span>%</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center font-gray-dark pad5B text-transform-upr font-size-11">Bounce rate</div>
+                            <div class="chart-alt-2" data-percent="46"><span>46</span>%</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center font-gray-dark pad5B text-transform-upr font-size-11">Server load</div>
+                            <div class="chart-alt-2" data-percent="92"><span>92</span>%</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center font-gray-dark pad5B text-transform-upr font-size-11">Used RAM</div>
+                            <div class="chart-alt-2" data-percent="84" data-bar-color="#2980b9"><span>752</span>MB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Dark background
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="bg-black pad20A row demo-margin">
+                        <div class="col-md-3">
+                            <div class="chart-alt" data-percent="55"><span>55</span>%</div>
+                            <div class="text-center pad10T">New visits</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-alt" data-percent="46"><span>46</span>%</div>
+                            <div class="text-center pad10T">Bounce rate</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-alt" data-percent="92"><span>92</span>%</div>
+                            <div class="text-center pad10T">Server load</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-alt" data-percent="84" data-bar-color="#2980b9"><span>752</span>MB</div>
+                            <div class="text-center pad10T">Used RAM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

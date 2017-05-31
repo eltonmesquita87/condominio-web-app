@@ -1,0 +1,108 @@
+---
+title: gMaps
+subheading: Create maps using the Google Maps API
+---
+
+<!-- GMaps -->
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&sensor=true"></script>
+<script type="text/javascript" src="../../assets/widgets/maps/gmaps/gmaps.js"></script>
+<script type="text/javascript" src="../../assets/widgets/maps/gmaps/gmaps-demo.js"></script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Basic
+        </h3>
+        <div class="example-box-wrapper">
+            <div id="map-basic" style="height: 300px;"></div>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Markers
+        </h3>
+        <div class="example-box-wrapper">
+            <div class="row">
+                    <div class="content-box pad10A center-margin col-md-12">
+                        <div id="map-marker" style="height: 250px;"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Interactions
+        </h3>
+        <div class="example-box-wrapper">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="content-box pad10A">
+                        <div id="map-interaction" style="height: 200px;"></div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="content-box">
+                        <h3 class="content-box-header bg-blue">
+                            Using indices
+                        </h3>
+                        <div class="content-box-wrapper">
+                            <ul id="markers-with-index" class="reset-ul">
+                                <li class="font-bold font-blue-alt text-center pad5B">Click inside the map to add a marker</li>
+                                <li class="divider"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Polygons
+        </h3>
+        <div class="example-box-wrapper">
+            <div class="row">
+
+                    <div class="content-box pad10A center-margin col-md-12">
+                        <div id="map-polygon" style="height: 250px;"></div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Street view
+        </h3>
+        <div class="example-box-wrapper">
+            <div class="row">
+
+                    <div class="content-box pad10A center-margin col-md-12">
+                        <div id="map-street" style="height: 350px;"></div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>

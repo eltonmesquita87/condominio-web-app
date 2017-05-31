@@ -1,0 +1,98 @@
+---
+title: Forms input masks
+subheading: Create forms input masks.
+---
+
+<!-- Input masks -->
+
+<script type="text/javascript" src="../../assets/widgets/input-mask/inputmask.js"></script>
+
+<script type="text/javascript">
+    /* Input masks */
+
+    $(function() { "use strict";
+        $(".input-mask").inputmask();
+    });
+
+</script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Basic
+        </h3>
+        <div class="example-box-wrapper">
+            <form class="form-horizontal bordered-row">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Phone</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="input-mask form-control" data-inputmask="'mask':'(999) 999-9999'">
+                        <div class="help-block">(999) 999-9999</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Phone + Ext</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="input-mask form-control" data-inputmask="'mask':'(999) 999-9999 x99999'">
+                        <div class="help-block">(999) 999-9999 x99999</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">International Phone</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="input-mask form-control" data-inputmask="'mask':'+33 999 999 999'">
+                        <div class="help-block">+41 999 999 999</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">TaxID</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="input-mask form-control" data-inputmask="'mask':'99-9999999'">
+                        <div class="help-block">99-9999999</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Product Key</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="input-mask form-control" data-inputmask="'mask':'a*-999-a999'">
+                        <div class="help-block">a*-999-a999</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Purchase Order</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="input-mask form-control" data-inputmask="'mask':'PO: aaa-999-***'">
+                        <div class="help-block">PO: aaa-999-***</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Percent</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="input-mask form-control" data-inputmask="'mask':'99%'">
+                        <div class="help-block">99%</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">SSN</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="input-mask form-control" data-inputmask="'mask':'999-99-9999'">
+                        <div class="help-block">999-99-9999</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">SSN</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="input-mask form-control" data-inputmask="'mask':'999-99-9999'">
+                        <div class="help-block">999-99-9999</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+---
+title: Header animations | Monarch
+subheading: Add a nice touch to your pages with the animations included
+---
+<body>
+
+<!-- Layerslider -->
+
+<script type="text/javascript" src="../../assets/js-core/greensock.js"></script>
+<script type="text/javascript" src="../../assets/widgets/layerslider/layerslider.js"></script>
+<script type="text/javascript" src="../../assets/widgets/layerslider/layerslider-transitions.js"></script>
+<script type="text/javascript" src="../../assets/widgets/layerslider/layerslider-demo.js"></script>
+{{> tophook }}
+{{> header }}
+<div class="hero-box hero-box-smaller full-bg-14 font-inverse" data-top-bottom="background-position: 50% 0px;" data-bottom-top="background-position: 50% -600px;">
+    <div class="container">
+        <h1 class="hero-heading wow fadeInDown" data-wow-duration="0.6s">Header animations</h1>
+        <p class="hero-text wow bounceInUp" data-wow-duration="0.9s" data-wow-delay="0.2s">{{ subheading }}</p>
+    </div>
+    <div class="hero-overlay bg-black"></div>
+</div>
+
+<script>
+
+    $(function(){
+
+        $('.btn.set-header-animation').click(function(){
+
+            var newBg = $(this).attr('header-animation');
+
+            $(".main-header").attr('class', 'main-header bg-primary font-inverse animated');
+            $('.main-header').addClass(newBg);
+
+        });
+
+    });
+
+</script>
+
+<div class="container mrg25B">
+
+    <h3 class="p-title">
+        <span>Styles</span>
+    </h3>
+
+    <div class="text-center mrg25B">
+        <a class="btn btn-default btn-md mrg5A set-header-animation" header-animation="flipInX" title="flipInX" href="#">flipInX</a>
+        <a class="btn btn-default btn-md mrg5A set-header-animation" header-animation="zoomIn" title="zoomIn" href="#">zoomIn</a>
+        <a class="btn btn-default btn-md mrg5A set-header-animation" header-animation="bounceIn" title="bounceIn" href="#">bounceIn</a>
+        <a class="btn btn-default btn-md mrg5A set-header-animation" header-animation="bounceInDown" title="bounceInDown" href="#">bounceInDown</a>
+        <a class="btn btn-default btn-md mrg5A set-header-animation" header-animation="fadeIn" title="fadeIn"  href="#">fadeIn</a>
+        <a class="btn btn-default btn-md mrg5A set-header-animation" header-animation="fadeInDown" title="fadeInDown" href="#">fadeInDown</a>
+        <a class="btn btn-primary mrg5A btn-md set-header-animation" header-animation="" title="Remove all animations" class="" href="#">Remove all animations</a>
+    </div>
+
+</div>
+
+{{> homepage-1 }}
+
+{{> footer }}{{> bottomhook }}

@@ -1,0 +1,113 @@
+---
+title: Image crop
+subheading: Add image cropping functionality to your web app.
+---
+
+<!-- jCrop -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/jcrop/jcrop.css">-->
+<script type="text/javascript" src="../../assets/widgets/jcrop/jcrop.js"></script>
+<script type="text/javascript" src="../../assets/widgets/jcrop/jcrop-demo.js"></script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Basic
+        </h3>
+        <div class="example-box-wrapper">
+            <img src="../../assets/image-resources/stock-images/img-5.jpg" class="jcrop-basic" alt="Example image" />
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Event handler
+        </h3>
+        <div class="example-box-wrapper">
+            <img src="../../assets/image-resources/stock-images/img-4.jpg" class="jcrop-handler" alt="Example" />
+
+            <form id="coords" class="coords" onsubmit="return false;" action="http://example.com/post.php">
+
+                <div class="inline-labels">
+                    <div class="float-left mrg10R mrg10T">
+                        <label>X1</label>
+                        <input type="text" size="4" id="x1" name="x1" class="input" />
+                    </div>
+
+                    <div class="float-left mrg10R mrg10T">
+                        <label>Y1</label>
+                        <input type="text" size="4" id="y1" name="y1" class="input" />
+                    </div>
+
+                    <div class="float-left mrg10R mrg10T">
+                        <label>X2</label>
+                        <input type="text" size="4" id="x2" name="x2" class="input" />
+                    </div>
+
+                    <div class="float-left mrg10R mrg10T">
+                        <label>Y2</label>
+                        <input type="text" size="4" id="y2" name="y2" class="input" />
+                    </div>
+
+                    <div class="float-left mrg10R mrg10T">
+                        <label>W </label>
+                        <input type="text" size="4" id="w" name="w" class="input" />
+                    </div>
+
+                    <div class="float-left mrg10R mrg10T">
+                        <label>H </label>
+                        <input type="text" size="4" id="h" name="h" class="input" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Preview pane
+        </h3>
+        <div class="example-box-wrapper">
+            <img src="../../assets/image-resources/stock-images/img-1.jpg" class="jcrop-preview-big" alt="Example" />
+
+            <div id="preview-pane">
+                <div class="preview-container">
+                    <img src="../../assets/image-resources/stock-images/img-1.jpg" class="jcrop-preview" alt="Preview" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Animations and transitions
+        </h3>
+        <div class="example-box-wrapper">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <img src="../../assets/image-resources/stock-images/img-3.jpg" id="target" class="img-responsive" alt="Jcrop Image" />
+
+                </div>
+                <div class="col-md-6" id="interface">
+                    <label class="mrg10T">
+                        Enable fading (bgFade: true)
+                    </label>
+                    <input type="checkbox" id="fadetog" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

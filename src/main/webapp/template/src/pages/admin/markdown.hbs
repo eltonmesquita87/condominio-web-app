@@ -1,0 +1,50 @@
+---
+title: Markdown editor
+subheading: Convert markdown syntax to HTML.
+---
+
+<!-- Markdown -->
+
+<script type="text/javascript" src="../../assets/widgets/markdown/markdown.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $("textarea#wmd-input").pagedownBootstrap();
+    });
+</script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Basic editor
+        </h3>
+        <div class="example-box-wrapper">
+            <div class="wmd-panel">
+                <div id="wmd-button-bar"></div>
+<textarea class="wmd-input form-control textarea-md" id="wmd-input">
+This is the *second* editor.
+------------------------------
+
+It has a plugin hook registered that surrounds all words starting with the
+letter A with asterisks before doing the Markdown conversion. Another one gives bare links
+a nicer link text. User input isn't sanitized here:
+
+<marquee>I'm the ghost from the past!</marquee>
+
+http://google.com
+
+http://stackoverflow.com
+
+It also includes a help button.
+</textarea>
+            </div>
+            <div id="wmd-preview" class="wmd-panel wmd-preview"></div>
+        </div>
+    </div>
+</div>

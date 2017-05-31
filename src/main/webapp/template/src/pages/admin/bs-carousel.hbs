@@ -1,0 +1,541 @@
+---
+title: Bootstrap carousel
+subheading: Use the markups below to create Bootstrap powered carousels.
+---
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<!-- Bootstrap Carousel -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/carousel/carousel.css">-->
+<!--<script type="text/javascript" src="../../assets/widgets/carousel/carousel.js"></script>-->
+
+<!-- Owl carousel -->
+
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/owlcarousel/owlcarousel.css">
+<script type="text/javascript" src="../../assets/widgets/owlcarousel/owlcarousel.js"></script>
+<script type="text/javascript" src="../../assets/widgets/owlcarousel/owlcarousel-demo.js"></script>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Bootstrap Slider
+                </h3>
+                <div class="example-box-wrapper">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="http://placehold.it/900x500/42bdc2/FFFFFF" alt="First slide">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/900x500/42bdc2/FFFFFF" alt="Second slide">
+                            </div>
+                            <div class="item">
+                                <img src="http://placehold.it/900x500/42bdc2/FFFFFF" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyph-icon icon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyph-icon icon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Owl Slider
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="owl-slider-1 slider-wrapper">
+                        <div>
+                            <img src="../../assets/image-resources/slides-bg/slide-1.jpg" class="img-full" alt="Example alternate text">
+                        </div>
+                        <div>
+                            <img src="../../assets/image-resources/slides-bg/slide-2.jpg" class="img-full" alt="Example alternate text">
+                        </div>
+                        <div>
+                            <img src="../../assets/image-resources/slides-bg/slide-3.jpg" class="img-full" alt="Example alternate text">
+                        </div>
+                        <div>
+                            <img src="../../assets/image-resources/slides-bg/slide-4.jpg" class="img-full" alt="Example alternate text">
+                        </div>
+                        <div>
+                            <img src="../../assets/image-resources/slides-bg/slide-5.jpg" class="img-full" alt="Example alternate text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Alternate carousel
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="owl-carousel-4 slider-wrapper inverse arrows-outside carousel-wrapper">
+
+                        <div>
+                            <div class="thumbnail-box-wrapper mrg5A">
+                                <div class="thumbnail-box">
+                                    <a class="thumb-link" href="#" title=""></a>
+                                    <div class="thumb-content">
+                                        <div class="center-vertical">
+                                            <div class="center-content">
+                                                <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-overlay bg-black"></div>
+                                    <img src="../../assets/image-resources/stock-images/img-17.jpg" alt="">
+                                </div>
+                                <div class="thumb-pane">
+                                    <h3 class="thumb-heading animated rollIn">
+                                        <a href="#" title="">
+                                            Working in the morning
+                                        </a>
+                                        <small>12 March 2015</small>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="thumbnail-box-wrapper mrg5A">
+                                <div class="thumbnail-box">
+                                    <a class="thumb-link" href="#" title=""></a>
+                                    <div class="thumb-content">
+                                        <div class="center-vertical">
+                                            <div class="center-content">
+                                                <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-overlay bg-black"></div>
+                                    <img src="../../assets/image-resources/stock-images/img-18.jpg" alt="">
+                                </div>
+                                <div class="thumb-pane">
+                                    <h3 class="thumb-heading animated rollIn">
+                                        <a href="#" title="">
+                                            Working in the morning
+                                        </a>
+                                        <small>12 March 2015</small>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="thumbnail-box-wrapper mrg5A">
+                                <div class="thumbnail-box">
+                                    <a class="thumb-link" href="#" title=""></a>
+                                    <div class="thumb-content">
+                                        <div class="center-vertical">
+                                            <div class="center-content">
+                                                <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-overlay bg-black"></div>
+                                    <img src="../../assets/image-resources/stock-images/img-19.jpg" alt="">
+                                </div>
+                                <div class="thumb-pane">
+                                    <h3 class="thumb-heading animated rollIn">
+                                        <a href="#" title="">
+                                            Working in the morning
+                                        </a>
+                                        <small>12 March 2015</small>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="thumbnail-box-wrapper mrg5A">
+                                <div class="thumbnail-box">
+                                    <a class="thumb-link" href="#" title=""></a>
+                                    <div class="thumb-content">
+                                        <div class="center-vertical">
+                                            <div class="center-content">
+                                                <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-overlay bg-black"></div>
+                                    <img src="../../assets/image-resources/stock-images/img-20.jpg" alt="">
+                                </div>
+                                <div class="thumb-pane">
+                                    <h3 class="thumb-heading animated rollIn">
+                                        <a href="#" title="">
+                                            Working in the morning
+                                        </a>
+                                        <small>12 March 2015</small>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="thumbnail-box-wrapper mrg5A">
+                                <div class="thumbnail-box">
+                                    <a class="thumb-link" href="#" title=""></a>
+                                    <div class="thumb-content">
+                                        <div class="center-vertical">
+                                            <div class="center-content">
+                                                <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-overlay bg-black"></div>
+                                    <img src="../../assets/image-resources/stock-images/img-23.jpg" alt="">
+                                </div>
+                                <div class="thumb-pane">
+                                    <h3 class="thumb-heading animated rollIn">
+                                        <a href="#" title="">
+                                            Working in the morning
+                                        </a>
+                                        <small>12 March 2015</small>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="thumbnail-box-wrapper mrg5A">
+                                <div class="thumbnail-box">
+                                    <a class="thumb-link" href="#" title=""></a>
+                                    <div class="thumb-content">
+                                        <div class="center-vertical">
+                                            <div class="center-content">
+                                                <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-overlay bg-black"></div>
+                                    <img src="../../assets/image-resources/stock-images/img-24.jpg" alt="">
+                                </div>
+                                <div class="thumb-pane">
+                                    <h3 class="thumb-heading animated rollIn">
+                                        <a href="#" title="">
+                                            Working in the morning
+                                        </a>
+                                        <small>12 March 2015</small>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+<div class="panel-body">
+<div>
+<h3 class="title-hero">
+    Owl carousel
+</h3>
+<div class="example-box-wrapper">
+
+    <div class="owl-carousel-1 slider-wrapper carousel-wrapper">
+
+        <div>
+            <div class="thumbnail-box">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <h3 class="thumb-heading animated bounceIn">
+                                Railroad bridge
+                                <small>12 March 2015</small>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-primary"></div>
+                <img src="../../assets/image-resources/stock-images/img-1.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <h3 class="thumb-heading animated rollIn">
+                                Beautiful garden
+                                <small>12 March 2015</small>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-black"></div>
+                <img src="../../assets/image-resources/stock-images/img-2.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <h3 class="thumb-heading animated fadeInDown">
+                                Sunrays flowers
+                                <small>12 March 2015</small>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-primary"></div>
+                <img src="../../assets/image-resources/stock-images/img-3.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <h3 class="thumb-heading animated flipInX">
+                                Seeing a DJs work
+                                <small>12 March 2015</small>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-blue"></div>
+                <img src="../../assets/image-resources/stock-images/img-4.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box">
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <div class="thumb-btn animated bounceInDown">
+                                <a href="#" class="btn btn-md btn-round btn-success" title=""><i class="glyph-icon icon-check"></i></a>
+                                <a href="#" class="btn btn-md btn-round btn-danger" title=""><i class="glyph-icon icon-remove"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-primary"></div>
+                <img src="../../assets/image-resources/stock-images/img-5.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box">
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <div class="thumb-btn animated zoomIn">
+                                <a href="#" class="btn btn-lg btn-round btn-success" title=""><i class="glyph-icon icon-check"></i></a>
+                                <a href="#" class="btn btn-lg btn-round btn-danger" title=""><i class="glyph-icon icon-remove"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-gray"></div>
+                <img src="../../assets/image-resources/stock-images/img-6.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box">
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <div class="thumb-btn animated rotateIn">
+                                <a href="#" class="btn btn-lg btn-round btn-primary" title=""><i class="glyph-icon icon-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-black"></div>
+                <img src="../../assets/image-resources/stock-images/img-7.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box">
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <div class="thumb-btn animated bounceIn">
+                                <a href="#" class="btn btn-xlg btn-round btn-primary" title=""><i class="glyph-icon icon-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-blue-alt"></div>
+                <img src="../../assets/image-resources/stock-images/img-8.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-music"></i>
+                        </div>
+                    </div>
+                    <i class="icon-helper icon-br animated bounceInDown bg-danger glyph-icon icon-plus"></i>
+                </div>
+                <div class="thumb-overlay bg-primary"></div>
+                <img src="../../assets/image-resources/stock-images/img-9.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <i class="icon-helper icon-center animated pulse font-white glyph-icon icon-linecons-search"></i>
+                        </div>
+                    </div>
+                    <i class="icon-helper icon-tr animated rotateIn bg-green glyph-icon icon-plus"></i>
+                </div>
+                <div class="thumb-overlay bg-danger"></div>
+                <img src="../../assets/image-resources/stock-images/img-10.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <i class="icon-helper icon-center animated swing font-white glyph-icon icon-linecons-location"></i>
+                        </div>
+                    </div>
+                    <i class="icon-helper icon-bl animated zoomIn bg-black glyph-icon icon-plus"></i>
+                </div>
+                <div class="thumb-overlay bg-azure"></div>
+                <img src="../../assets/image-resources/stock-images/img-11.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <i class="icon-helper icon-center animated rotateIn font-white glyph-icon icon-linecons-camera"></i>
+                        </div>
+                    </div>
+                    <i class="icon-helper icon-tl animated fadeIn bg-black glyph-icon icon-plus"></i>
+                </div>
+                <div class="thumb-overlay bg-black"></div>
+                <img src="../../assets/image-resources/stock-images/img-12.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box thumbnail-box-inverse">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <h3 class="thumb-heading animated bounceIn">
+                                Cookie monsters
+                                <small>12 March 2015</small>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-black"></div>
+                <img src="../../assets/image-resources/stock-images/img-13.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box thumbnail-box-inverse">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-music"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-primary"></div>
+                <img src="../../assets/image-resources/stock-images/img-14.jpg" alt="" />
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box thumbnail-box-inverse">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <h3 class="thumb-heading animated rollIn">
+                                Tables at work
+                                <small>12 March 2015</small>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-orange"></div>
+                <img src="../../assets/image-resources/stock-images/img-15.jpg" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box thumbnail-box-inverse">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <i class="icon-helper icon-center animated rotateIn font-white glyph-icon icon-linecons-camera"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-blue-alt"></div>
+                <img src="../../assets/image-resources/stock-images/img-16.jpg" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box thumbnail-box-inverse">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <i class="icon-helper icon-center animated rotateIn font-white glyph-icon icon-linecons-camera"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-blue-alt"></div>
+                <img src="../../assets/image-resources/stock-images/img-21.jpg" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="thumbnail-box thumbnail-box-inverse">
+                <a class="thumb-link" href="#" title=""></a>
+                <div class="thumb-content">
+                    <div class="center-vertical">
+                        <div class="center-content">
+                            <i class="icon-helper icon-center animated rotateIn font-white glyph-icon icon-linecons-camera"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-overlay bg-blue-alt"></div>
+                <img src="../../assets/image-resources/stock-images/img-22.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+</div>

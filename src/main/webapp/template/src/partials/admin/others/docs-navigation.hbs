@@ -1,0 +1,46 @@
+<div id="docs-nav">
+{{#each categories}}
+	<div class="content-box mrg25T">
+	    <h3 class="content-box-header bg-default">
+	            {{category}}
+			<div class="header-buttons-separator">
+			    <a href="#" class="icon-separator toggle-button">
+			        <i class="glyph-icon icon-chevron-up"></i>
+			    </a>
+			</div>
+	    </h3>
+	    <div class="content-box-wrapper">
+			<select name="" class="chosen-select">
+				<option>Select...</option>
+				{{#each pages}}
+				<option{{#is ../../page.dest this.dest}} selected{{/is}} value="{{relative ../../page.dest this.dest}}">{{data.title}}</option>
+				{{/each}}
+			</select>
+	    </div>
+	</div>
+{{/each}}
+
+	<a href="../production/index.html" target="_blank" class="mrg25T btn display-block btn-primary btn-md" title="">View dashboard</a>
+
+</div>
+
+<script type="text/javascript">
+
+$(function() { "use strict";
+
+	jQuery(".chosen-select").chosen().change( function(e){
+		window.location = jQuery(this).val();
+	});
+
+});
+
+$(document).ready(function() {
+
+	$('#docs-nav').hcSticky({
+		top: 0,
+		stickTo: document,
+	});
+
+});
+
+</script>

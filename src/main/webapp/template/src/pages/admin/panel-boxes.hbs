@@ -1,0 +1,375 @@
+---
+title: Panel boxes
+subheading: Panel boxes are modular components that use the framework grid system to create components.
+---
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<!-- Sparklines charts -->
+
+<script type="text/javascript" src="../../assets/widgets/charts/sparklines/sparklines.js"></script>
+<script type="text/javascript" src="../../assets/widgets/charts/sparklines/sparklines-demo.js"></script>
+
+<!-- Skycons -->
+
+<script type="text/javascript" src="../../assets/widgets/skycons/skycons.js"></script>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel-layout row">
+            <div class="panel-box col-xs-4 bg-green">
+                <div class="panel-content">
+                    <h4>Overview</h4>
+                    <p class="opacity-60">Example panel box</p>
+                </div>
+            </div>
+            <div class="panel-box col-xs-8">
+
+                <div class="panel-content  bg-black">
+                    <div class="sparkline-big">183,579,180,311,240,180,311,450,302,370,210,610</div>
+                </div>
+                <div class="panel-content bg-white">
+                    <div class="center-vertical">
+
+                        <ul class="center-content nav nav-justified">
+                            <li>
+                                <h4 class="font-green">+$39,45</h4>
+                                <p class="font-gray">Overdue orders</p>
+                            </li>
+                            <li>
+                                <h4>
+                                    <i class="glyph-icon opacity-60 icon-caret-up"></i>
+                                    217
+                                </h4>
+                                <p class="font-gray">Pending orders</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+
+        <div class="panel-layout row">
+            <div class="panel-box col-xs-6">
+
+                <div class="panel-content bg-white">
+                    <canvas id="icon-cloud" width="80" height="80"></canvas>
+                </div>
+                <div class="panel-content bg-black">
+                    <div class="center-vertical">
+
+                        <ul class="center-content nav nav-justified">
+                            <li>
+                                <h4>
+                                    <i class="glyph-icon font-green opacity-80 icon-chevron-down"></i>
+                                    7 &ordm;
+                                </h4>
+                                <p class="opacity-80 text-transform-upr font-size-11 mrg5T">Low</p>
+                            </li>
+                            <li>
+                                <h4>
+                                    <i class="glyph-icon font-red opacity-80 icon-chevron-up"></i>
+                                    21 &ordm;
+                                </h4>
+                                <p class="opacity-80 text-transform-upr font-size-11 mrg5T">High</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="panel-box col-xs-6 bg-blue-alt">
+                <div class="panel-content">
+                    <h3>Bucharest</h3>
+                    <h4 class="opacity-60">Romania</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+
+        <div class="panel-layout">
+            <div class="panel-box">
+
+                <div class="panel-content bg-red">
+
+                    <div class="">
+                        <img src="../../assets/image-resources/gravatar.jpg" alt="" class="img-bordered border-red img-circle mrg10B">
+                        <h5 class="opacity-60">Johnny Anderson</h5>
+                        <span>Frondend Developer</span>
+                    </div>
+
+                </div>
+                <div class="panel-content pad15A bg-white">
+                    <div class="center-vertical">
+
+                        <ul class="center-content list-group list-group-separator row mrg0A">
+                            <li class="col-md-6">
+                                <a href="#" title="">
+                                    <i class="glyph-icon opacity-60 icon-inbox"></i>
+                                    <p class="mrg5T">Inbox</p>
+                                </a>
+                            </li>
+                            <li class="col-md-6">
+                                <a href="#" title="">
+                                    <i class="glyph-icon opacity-60 icon-group"></i>
+                                    <p class="mrg5T">Groups</p>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="panel-layout">
+                    <div class="panel-box">
+
+                        <div class="panel-content bg-facebook">
+
+                            <i class="glyph-icon font-size-35 icon-facebook"></i>
+
+                        </div>
+                        <div class="panel-content pad15A bg-white">
+                            <div class="center-vertical">
+
+                                <ul class="center-content list-group list-group-separator row mrg0A">
+                                    <li class="col-md-6">
+                                        <b>1,456</b>
+                                        <p class="font-gray">Friends</p>
+                                    </li>
+                                    <li class="col-md-6">
+                                        <b>593</b>
+                                        <p class="font-gray">Likes</p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+
+                <div class="panel-layout">
+                    <div class="panel-box">
+
+                        <div class="panel-content bg-twitter">
+
+                            <i class="glyph-icon font-size-35 icon-twitter"></i>
+
+                        </div>
+                        <div class="panel-content pad15A bg-white">
+                            <div class="center-vertical">
+
+                                <ul class="center-content list-group list-group-separator row mrg0A">
+                                    <li class="col-md-6">
+                                        <b>356</b>
+                                        <p class="font-gray">Followers</p>
+                                    </li>
+                                    <li class="col-md-6">
+                                        <b>981</b>
+                                        <p class="font-gray">Tweets</p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="panel-layout">
+            <div class="panel-box">
+
+                <div class="panel-content clearfix bg-azure">
+
+                    <div class="float-left">
+                        <i class="glyph-icon icon-chevron-up"></i>
+                        23 &ordm;
+                        <div class="opacity-80 text-transform-upr font-size-11 mrg5T">High</div>
+                    </div>
+                    <div class="float-right">
+                        <i class="glyph-icon icon-chevron-down"></i>
+                        7 &ordm;
+                        <div class="opacity-80 text-transform-upr font-size-11 mrg5T">Low</div>
+                    </div>
+
+                    <div class="center-vertical">
+
+                        <div class="center-content mrg15T font-size-23">
+                            <canvas id="icon-clear-2" width="64" height="64"></canvas>
+                            <div class="mrg10T opacity-60">18 &ordm;</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Meta Boxes
+        </h3>
+        <div class="example-box-wrapper">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="panel-layout">
+                        <div class="panel-box">
+
+                            <div class="panel-content image-box">
+
+                                <div class="image-content font-white">
+
+                                    <div class="center-vertical">
+                                        <div class="meta-box center-content">
+                                            <h4 class="meta-subheading">Ultimate backend programmer</h4>
+                                            <h3 class="meta-heading">Alex Rosenberg</h3>
+                                            <p class="meta-desc">Lorem ipsum dolor sic amet dixit tu dolor sic amet dixit tu</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <img src="../../assets/image-resources/blurred-bg/blurred-bg-7.jpg" alt="">
+
+                            </div>
+                            <div class="panel-content bg-white">
+                                <ul class="list-group list-group-separator mrg0A row list-group-icons">
+
+                                    <li class="col-md-6">
+                                        <a href="#" class="list-group-item">
+                                            <i class="glyph-icon font-red icon-bullhorn"></i>
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li class="col-md-6">
+                                        <a href="#" class="list-group-item">
+                                            <i class="glyph-icon font-primary icon-camera"></i>
+                                            Messages
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+
+                    <div class="panel-layout">
+                        <div class="panel-box">
+
+                            <div class="panel-content image-box">
+
+                                <div class="image-content font-white">
+
+                                    <div class="meta-box meta-box-bottom">
+                                        <h4 class="meta-subheading">Ultimate backend programmer</h4>
+                                        <h3 class="meta-heading">Alex Rosenberg</h3>
+                                        <p class="meta-desc">Lorem ipsum dolor sic amet dixit tu dolor sic amet dixit tu</p>
+                                    </div>
+
+                                </div>
+                                <img src="../../assets/image-resources/blurred-bg/blurred-bg-6.jpg" alt="">
+
+                            </div>
+                            <div class="panel-content bg-white">
+                                <ul class="list-group list-group-separator mrg0A row list-group-icons">
+
+                                    <li class="col-md-6">
+                                        <a href="#" class="list-group-item">
+                                            <i class="glyph-icon font-red icon-bullhorn"></i>
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li class="col-md-6">
+                                        <a href="#" class="list-group-item">
+                                            <i class="glyph-icon font-primary icon-camera"></i>
+                                            Messages
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+
+                    <div class="panel-layout">
+                        <div class="panel-box">
+
+                            <div class="panel-content image-box">
+
+                                <div class="image-content font-white">
+
+                                    <div class="meta-box">
+                                        <h4 class="meta-subheading">Ultimate backend programmer</h4>
+                                        <h3 class="meta-heading">Alex Rosenberg</h3>
+                                        <p class="meta-desc">Lorem ipsum dolor sic amet dixit tu dolor sic amet dixit tu</p>
+                                    </div>
+
+                                </div>
+                                <img src="../../assets/image-resources/blurred-bg/blurred-bg-5.jpg" alt="">
+
+                            </div>
+                            <div class="panel-content bg-white">
+                                <ul class="list-group list-group-separator mrg0A row list-group-icons">
+
+                                    <li class="col-md-6">
+                                        <a href="#" class="list-group-item">
+                                            <i class="glyph-icon font-red icon-bullhorn"></i>
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li class="col-md-6">
+                                        <a href="#" class="list-group-item">
+                                            <i class="glyph-icon font-primary icon-camera"></i>
+                                            Messages
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

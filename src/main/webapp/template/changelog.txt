@@ -1,0 +1,103 @@
+------------------------------------------------------
+
+	Monarch Admin & Frontend Templates
+
+------------------------------------------------------
+
+Version 1.4.0 - 06.03.2017 ( New Release )
+
+Template overall :
+
+- pin popover fix : color, distance
+- fixed line-height over labels
+- removed text decoration on hover ( .tile-line )
+- replace mrg10A with mrg20A ( increased spacing between headlines ) - labels-badges.html
+- badges ( reconstruction - label itself )
+- status-badge fix ( position, line-height )
+- removed outline on focus from every link ( <a></a> )
+- targeted labels from box-content and changed the padding
+- tile-box "float-right" position
+- adjusted tabs height ( tabs.html )
+- added background color to owl slider pagination also changed his position
+- added a special class to remove pagination depending on the situation ( bs-carousel.html )
+- removed text-decoration from notifications ( header )
+- removed text-decoration from popover-title ( statistic sidebar )
+- added spacing between notification ( notifications.html )
+- changed absolute position to popover arrows ( was misplaced ) - popovers-tooltips.html
+- removed "Drag" from dragging feature ( sortable-elements.html )
+- changed z-index (999) to login icons in order to show up ( login-1.html )
+- same thing for ( login-2.html )
+- adjusted position to the right arrow ( popover - timeline.html )
+
+Updated library to :
+
+- jQuery Upload
+- jQuery Crop
+- jQuery RangeSlider
+- jQuery Raphael
+- jQuery SlimScroll
+- jQuery Upload
+- jQuery NotyMaster
+- jQuery Parsley
+- jQuery PrettyPhoto
+- jQuery Tabs
+- jQuery Tooltip
+- jQuery Popover
+- jQuery Carousel
+- jQuery Notifications
+- jQuery Modal
+- jQuery FullPage
+- jQuery Collapse
+- jQuery Buttons
+
+------------------------------------------------------
+
+Version 1.3.1 - 29.12.2015 ( Bug Fix Release )
+
+	- Various bug fixes as suggested by WrapBootstrap Support
+
+------------------------------------------------------
+
+Version 1.3.0 - 23.12.2015 ( New Release )
+
+	- Various Grid related bug fixes
+	- Added current menu show function.
+	- Latest version (3.3.6) of Bootstrap Version
+	- Bootstrap can now be dropped in for latest version features.
+
+------------------------------------------------------
+
+
+Version 1.2.0 - 3.12.2014 ( New Release )
+
+	- Various small bug fixes
+
+	- Added the following new page examples:
+
+	   1. View profile
+	   2. FAQ section
+	   3. Auto menu
+	   4. Invoice
+	   5. Blog posts list
+	   6. Pricing tables
+	   7. Portfolio gallery
+	   8. Portfolio masonry
+
+	- Added the following new features:
+
+	   1. Slidebars
+	   2. Excanvas chat sidebar
+	   3. Excanvas statistics sidebar
+	   4. Fullscreen button widget
+
+------------------------------------------------------
+
+Version 1.1.0 - 28.11.2014 ( New Release )
+
+	- Added AngularJS admin template example
+
+------------------------------------------------------
+
+Version 1.0.0 - 26.11.2014 ( Initial release )
+
+------------------------------------------------------

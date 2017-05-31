@@ -1,0 +1,222 @@
+---
+title: Modals
+subheading: Modals are streamlined, but flexible, dialog prompts.
+---
+
+<!-- Bootstrap Modal -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/modal/modal.css">-->
+<!--<script type="text/javascript" src="../../assets/widgets/modal/modal.js"></script>-->
+
+<!-- JS Interactions -->
+
+<script type="text/javascript" src="../../assets/widgets/interactions-ui/resizable.js"></script>
+<script type="text/javascript" src="../../assets/widgets/interactions-ui/draggable.js"></script>
+<script type="text/javascript" src="../../assets/widgets/interactions-ui/sortable.js"></script>
+<script type="text/javascript" src="../../assets/widgets/interactions-ui/selectable.js"></script>
+
+<!-- jQueryUI Dialog -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/dialog/dialog.css">-->
+<script type="text/javascript" src="../../assets/widgets/dialog/dialog.js"></script>
+<script type="text/javascript" src="../../assets/widgets/dialog/dialog-demo.js"></script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Bootstrap Modals
+                </h3>
+                <div class="example-box-wrapper">
+
+                    <div class="modal fade display-block" tabindex="1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal content here ...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Triggers
+                </h3>
+                <div class="example-box-wrapper">
+
+                    <button class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal">
+                        Launch demo modal
+                    </button>
+
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal content here ...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Size
+                </h3>
+                <div class="example-box-wrapper">
+
+                    <button class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Large modal content here ...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+                    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Small modal content here ...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    jQueryUI Dialog
+                </h3>
+                <div class="example-box-wrapper">
+                    <a href="#" class="btn btn-primary basic-dialog">
+                        Open dialog
+                    </a>
+                    <div class="hide" id="basic-dialog" title="Basic dialog title">
+                        <div class="pad10A">
+                            Dialog content here
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Overlays
+                </h3>
+                <div class="example-box-wrapper">
+                    <a href="#" class="btn btn-default white-dialog">
+                        White overlay
+                    </a>
+                    <a href="#" class="btn btn-default black-dialog">
+                        Black overlay
+                    </a>
+                    <a href="#" class="btn btn-default green-dialog">
+                        Green overlay
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Dialogs Overlays
+                </h3>
+                <div class="example-box-wrapper">
+                    <a href="#" class="btn btn-default opacity-dialog-30">
+                        30% opacity
+                    </a>
+                    <a href="#" class="btn btn-default opacity-dialog-60">
+                        60% opacity
+                    </a>
+                    <a href="#" class="btn btn-default opacity-dialog-80">
+                        80% opacity
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Generic Overlays
+                </h3>
+                <div class="example-box-wrapper">
+                    <a href="#" class="btn btn-md btn-black overlay-button" data-style="light" data-theme="bg-black" data-opacity="60">
+                        Black background overlay
+                    </a>
+                    <a href="#" class="btn btn-md btn-default overlay-button" data-style="dark" data-theme="bg-default" data-opacity="60">
+                        Default background overlay
+                    </a>
+                    <a href="#" class="btn btn-md btn-default overlay-button" data-style="light" data-theme="bg-black" data-opacity="30">
+                        Opacity 30%
+                    </a>
+                    <a href="#" class="btn btn-md btn-default overlay-button" data-style="light" data-theme="bg-black" data-opacity="60">
+                        Opacity 60%
+                    </a>
+                    <a href="#" class="btn btn-md btn-default overlay-button" data-style="light" data-theme="bg-black" data-opacity="80">
+                        Opacity 80%
+                    </a>
+                    <a href="#" class="btn btn-md btn-default overlay-button" data-style="light" data-theme="bg-black" data-opacity="100">
+                        Opacity 100%
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

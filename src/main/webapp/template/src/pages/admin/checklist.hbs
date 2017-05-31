@@ -1,0 +1,254 @@
+---
+title: Checklist
+subheading: Create checklist components for your web applications.
+---
+
+<!-- JS Interactions -->
+
+<script type="text/javascript" src="../../assets/widgets/interactions-ui/resizable.js"></script>
+<script type="text/javascript" src="../../assets/widgets/interactions-ui/draggable.js"></script>
+<script type="text/javascript" src="../../assets/widgets/interactions-ui/sortable.js"></script>
+<script type="text/javascript" src="../../assets/widgets/interactions-ui/selectable.js"></script>
+
+<script type="text/javascript">
+    /* Todo sortable */
+
+    $(function() { "use strict";
+        $(".todo-sort").sortable({
+            handle: ".sort-handle"
+        });
+    });
+</script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Basic
+        </h3>
+        <div class="example-box-wrapper">
+            <ul class="todo-box">
+                <li class="border-red">
+                    <input type="checkbox" name="todo-1" id="todo-1" />
+                    <label for="todo-1">This is an example task that i need to finish</label>
+                    <span class="bs-label bg-red" title="">Overdue</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-orange">
+                    <input type="checkbox" name="todo-2" id="todo-2" />
+                    <label for="todo-2">Update server to a newer version</label>
+                    <span class="bs-label bg-green" title="">2 Weeks</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-blue">
+                    <input type="checkbox" name="todo-3" id="todo-3" />
+                    <label for="todo-3">Add more awesome template features</label>
+                    <span class="bs-label bg-blue" title="">Tomorrow</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-purple">
+                    <input type="checkbox" name="todo-4" id="todo-4" />
+                    <label for="todo-4">Never forget to buy milk</label>
+                    <span class="bs-label bg-black" title="">Today</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-azure">
+                    <input type="checkbox" name="todo-5" id="todo-5" />
+                    <label for="todo-5">Respond to all helpdesk questions</label>
+                    <span class="bs-label bg-purple" title=""> Label 2</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-green">
+                    <input type="checkbox" name="todo-6" id="todo-6" />
+                    <label for="todo-6">Fix bugs for future releases</label>
+                    <span class="bs-label bg-azure" title=""> Label 2</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-blue-alt">
+                    <input type="checkbox" name="todo-7" id="todo-7" />
+                    <label for="todo-7">Clean up the system directory</label>
+                    <span class="bs-label bg-blue-alt" title=""> Label 2</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content-box mrg25B">
+    <h3 class="content-box-header bg-blue text-left">
+        <i class="glyph-icon icon-comments"></i>
+        Sortable checklist
+    </h3>
+    <div class="content-box-wrapper">
+
+        <div class="scrollable-content scrollable-nice scrollable-medium">
+
+            <ul class="todo-box todo-sort">
+                <li class="border-red">
+                    <div class="glyph-icon sort-handle icon-ellipsis-v"></div>
+                    <input type="checkbox" name="sec-todo-1" id="sec-todo-1" />
+                    <label for="sec-todo-1">This is an example task that i need to finish</label>
+                    <span class="bs-label bg-red" title="">Overdue</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-orange">
+                    <div class="glyph-icon sort-handle icon-ellipsis-v"></div>
+                    <input type="checkbox" name="sec-todo-2" id="sec-todo-2" />
+                    <label for="sec-todo-2">Update server to a newer version</label>
+                    <span class="bs-label bg-green" title="">2 Weeks</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-blue">
+                    <div class="glyph-icon sort-handle icon-ellipsis-v"></div>
+                    <input type="checkbox" name="sec-todo-3" id="sec-todo-3" />
+                    <label for="sec-todo-3">Add more awesome template features</label>
+                    <span class="bs-label bg-blue" title="">Tomorrow</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-purple">
+                    <div class="glyph-icon sort-handle icon-ellipsis-v"></div>
+                    <input type="checkbox" name="sec-todo-4" id="sec-todo-4" />
+                    <label for="sec-todo-4">Never forget to buy milk</label>
+                    <span class="bs-label bg-black" title="">Today</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-red">
+                    <div class="glyph-icon sort-handle icon-ellipsis-v"></div>
+                    <input type="checkbox" name="sec-todo-11" id="sec-todo-11" />
+                    <label for="sec-todo-11">This is an example task that i need to finish</label>
+                    <span class="bs-label bg-red" title="">Overdue</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-orange">
+                    <div class="glyph-icon sort-handle icon-ellipsis-v"></div>
+                    <input type="checkbox" name="sec-todo-22" id="sec-todo-22" />
+                    <label for="sec-todo-22">Update server to a newer version</label>
+                    <span class="bs-label bg-green" title="">2 Weeks</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-blue">
+                    <div class="glyph-icon sort-handle icon-ellipsis-v"></div>
+                    <input type="checkbox" name="sec-todo-33" id="sec-todo-33" />
+                    <label for="sec-todo-33">Add more awesome template features</label>
+                    <span class="bs-label bg-blue" title="">Tomorrow</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-azure">
+                    <div class="glyph-icon sort-handle icon-ellipsis-v"></div>
+                    <input type="checkbox" name="sec-todo-5" id="sec-todo-5" />
+                    <label for="sec-todo-5">Respond to all helpdesk questions</label>
+                    <span class="bs-label bg-purple" title=""> Label 2</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-green">
+                    <div class="glyph-icon sort-handle icon-ellipsis-v"></div>
+                    <input type="checkbox" name="sec-todo-6" id="sec-todo-6" />
+                    <label for="sec-todo-6">Fix bugs for future releases</label>
+                    <span class="bs-label bg-azure" title=""> Label 2</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+                <li class="border-blue-alt">
+                    <div class="glyph-icon sort-handle icon-ellipsis-v"></div>
+                    <input type="checkbox" name="sec-todo-7" id="sec-todo-7" />
+                    <label for="sec-todo-7">Clean up the system directory</label>
+                    <span class="bs-label bg-blue-alt" title=""> Label 2</span>
+                    <a href="#" class="btn btn-xs btn-danger float-right" title="">
+                        <i class="glyph-icon icon-remove"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs btn-success float-right" title="">
+                        <i class="glyph-icon icon-check"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+

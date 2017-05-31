@@ -1,0 +1,61 @@
+---
+title: Page transitions
+subheading: Add animated transitions when switching between pages.
+---
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<!-- Page transitions -->
+
+<script>
+    $(function() { "use strict";
+
+        $('body').addClass('add-transition');
+
+        $('.add-demo-transition').on('click', function(){
+            var transAttr = $(this).attr('data-transition');
+            $('.add-transition').attr('class', 'add-transition');
+            $('.add-transition').addClass(transAttr);
+        });
+    });
+</script>
+
+<div class="panel">
+    <div class="panel-body">
+        <div>
+            <h3 class="title-hero">
+                Basic
+            </h3>
+            <div class="example-box-wrapper">
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-moveFromLeft-init">.pt-page-moveFromLeft-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-moveFromRight-init">.pt-page-moveFromRight-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-moveFromTop-init">.pt-page-moveFromTop-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-moveFromBottom-init">.pt-page-moveFromBottom-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-fade-init">.pt-page-fade-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-moveFromLeftFade-init">.pt-page-moveFromLeftFade-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-moveFromRightFade-init">.pt-page-moveFromRightFade-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-moveFromTopFade-init">.pt-page-moveFromTopFade-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-moveFromBottomFade-init">.pt-page-moveFromBottomFade-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-scaleUp-init">.pt-page-scaleUp-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-scaleUpCenter-init">.pt-page-scaleUpCenter-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-flipInLeft-init">.pt-page-flipInLeft-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-flipInRight-init">.pt-page-flipInRight-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-flipInBottom-init">.pt-page-flipInBottom-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-flipInTop-init">.pt-page-flipInTop-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-rotatePullRight-init">.pt-page-rotatePullRight-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-rotatePullLeft-init">.pt-page-rotatePullLeft-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-rotatePullTop-init">.pt-page-rotatePullTop-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-rotatePullBottom-init">.pt-page-rotatePullBottom-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-rotateUnfoldLeft-init">.pt-page-rotateUnfoldLeft-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-rotateUnfoldRight-init">.pt-page-rotateUnfoldRight-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-rotateUnfoldTop-init">.pt-page-rotateUnfoldTop-init</a>
+                    <a href="#" class="btn  btn-sm mrg5A font-size-14 btn-info add-demo-transition" data-transition="pt-page-rotateUnfoldBottom-init">.pt-page-rotateUnfoldBottom-init</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,148 @@
+---
+title: Mapael
+subheading: Display dynamic vector maps using Raphael.js
+---
+
+<!-- Mapael maps -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/maps/vector-maps/vectormaps.css">-->
+
+<script type="text/javascript" src="../../assets/js-core/raphael.js"></script>
+
+<script type="text/javascript" src="../../assets/widgets/maps/mapael/mapael.js"></script>
+<script type="text/javascript" src="../../assets/widgets/maps/mapael/maps/france_departments.js"></script>
+<script type="text/javascript" src="../../assets/widgets/maps/mapael/maps/usa_states.js"></script>
+<script type="text/javascript" src="../../assets/widgets/maps/mapael/maps/world_countries.js"></script>
+<script type="text/javascript" src="../../assets/widgets/maps/mapael/mapael-demo.js"></script>
+
+<style>
+
+    .mapTooltip {
+        position:fixed;
+        background-color : #fff;
+        moz-opacity:0.70;
+        opacity: 0.70;
+        filter:alpha(opacity=70);
+        border-radius:10px;
+        padding : 10px;
+        z-index: 1000;
+        max-width: 200px;
+        display:none;
+        color:#343434;
+    }
+
+    .cityFrance {
+        background-color:#343434;
+        border-radius:10px;
+        width:400px;
+    }
+
+    .zoomIn, .zoomOut {
+        background-color:#fff;
+        border:1px solid #ccc;
+        color:#000;
+        width:15px;
+        height:15px;
+        line-height: 15px;
+        text-align:center;
+        border-radius:3px;
+        cursor:pointer;
+        position:absolute;
+        top : 10px;
+        font-weight:bold;
+        left : 10px;
+
+        -webkit-user-select: none; // For Webkit
+    -khtml-user-select: none;
+        -moz-user-select: none; // For Mozilla
+    -o-user-select: none;
+        user-select: none; // Default
+    }
+
+    .zoomOut {
+        top:30px;
+    }
+
+    .map {
+        position:relative;
+    }
+
+</style>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Population of the 1000 more populated cities
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="maparea5">
+                        <div class="map">
+                            <span>Alternative content for the map</span>
+                        </div>
+                        <div class="cityFrance">
+                            <span>Alternative content for the legend</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Population of France by department
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="maparea4">
+                        <div class="map">
+                            <span>Alternative content for the map</span>
+                        </div>
+                        <div class="areaLegend">
+                            <span>Alternative content for the legend</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Map with the population by country
+        </h3>
+        <div class="example-box-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="maparea6">
+                        <div class="map">
+                            <span>Alternative content for the map</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="areaLegend">
+                                    <span>Alternative content for the legend</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="plotLegend">
+                                    <span>Alternative content for the legend</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

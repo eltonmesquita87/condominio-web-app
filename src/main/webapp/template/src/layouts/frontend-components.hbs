@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+
+    {{> head  }}
+
+</head>
+<body>
+{{> tophook }}{{> topbar }}
+{{> header }}
+<div class="hero-box hero-box-smaller full-bg-13 font-inverse" data-top-bottom="background-position: 50% 0px;" data-bottom-top="background-position: 50% -600px;">
+    <div class="container">
+        <h1 class="hero-heading wow fadeInDown" data-wow-duration="0.6s">Components framework</h1>
+        <p class="hero-text wow bounceInUp" data-wow-duration="0.9s" data-wow-delay="0.2s">{{ subheading }}</p>
+    </div>
+    <div class="hero-overlay bg-black"></div>
+</div>
+
+<div id="page-content" class="col-md-10 center-margin frontend-components mrg25T">
+    <div class="row">
+        <div class="col-md-2">
+            {{> components-sidebar }}
+        </div>
+        <div class="col-md-10">
+            {{> body }}
+        </div>
+    </div>
+</div>
+
+<br /><br />
+
+{{> footer }}{{> bottomhook }}
+
+{{#if production}}
+    {{> frontend-assets-js  }}
+{{else}}
+    {{> frontend-assets-js-development  }}
+{{/if}}
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+.headerAbas{
+    overflow:hidden;
+    cursor:hand;
+	top:25px;
+	left:9px;
+	position:absolute;
+	height:26px;
+	width:auto;
+	z-index:40;
+}
+
+.headerAbas .abas{
+	display:inline;
+}
+  
+.headerAbas .abas li{
+	float:left;
+}
+  
+.abas{
+    list-style:none;
+ }
+.aba, .selecionada{
+	cursor: pointer;
+	width:auto;
+	height: 18px;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgb(101, 100, 99);
+	min-width: 90px;
+    text-align:center;
+	border-left:solid 1px #fff;
+	padding: 6px 8px;
+}
+
+.borderPainel{
+	border-left:1px solid rgb(184, 183, 183);
+}
+
+.aba{
+	background:rgb(184, 183, 183);
+}
+
+.aba a{
+	position:relative;
+	color:rgb(101, 100, 99);
+	text-decoration: none;
+	margin-right:15px;
+	top:-15px;
+	float:left;
+}
+
+.btnFechar_abas{
+	position:relative;
+	margin-left:10px;
+	float:right;
+}
+
+.selecionada{
+    background: rgba(0, 0, 0, 0.08);
+	color: rgb(101, 100, 99);
+}
+  
+.ativa{
+   background:rgb(184, 183, 183);
+}
+ 
+.ativa span, .selecionada span{
+	font-weight:bold !important;
+	color: rgb(101, 100, 99) !important;
+}
+
+.conteudoAbas{
+    width:100%;
+    background:rgb(224, 222, 222);
+    display:none;
+    height:100%;
+    color: rgb(101, 100, 99);
+	padding:10px;
+	padding-left:18px;
+}

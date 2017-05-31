@@ -1,0 +1,111 @@
+---
+title: Notifications
+subheading: Show messages within the browser, similar to the way that OS X's Growl Framework works.
+---
+
+<!-- jGrowl notifications -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/jgrowl-notifications/jgrowl.css">-->
+<script type="text/javascript" src="../../assets/widgets/jgrowl-notifications/jgrowl.js"></script>
+<script type="text/javascript" src="../../assets/widgets/jgrowl-notifications/jgrowl-demo.js"></script>
+
+<!-- Noty notifications -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/noty-notifications/noty.css">-->
+<script type="text/javascript" src="../../assets/widgets/noty-notifications/noty.js"></script>
+<script type="text/javascript" src="../../assets/widgets/noty-notifications/noty-demo.js"></script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    jGrowl Notifications
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="row demo-margin">
+                        <div class="col-md-3">
+                            <a href="#" class="btn-blue-alt btn btn-md display-block growl-example-1">
+                                Example 1
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="btn-azure btn btn-md display-block growl-example-2">
+                                Example 2
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="btn-warning btn btn-md display-block growl-example-3">
+                                Example 3
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="btn-info btn btn-md display-block growl-example-4">
+                                Example 4
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="btn-success btn btn-md display-block growl-example-5">
+                                Example 5
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="btn-danger btn btn-md display-block growl-example-6">
+                                Example 6
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Noty Notifications
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="row demo-margin">
+                        <div class="col-md-3">
+                            <a href="#" data-layout="top" data-type="success" class="btn-blue-alt btn btn-md display-block noty">
+                                Top success
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" data-layout="bottom" data-type="error" class="btn-danger btn btn-md display-block noty">
+                                Bottom error
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" data-layout="center" data-type="warning" class="btn-warning btn btn-md display-block noty">
+                                Center warning
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" data-layout="top" data-type="information" class="btn-gray btn btn-md display-block noty">
+                                Top information
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" data-layout="bottom" data-type="" class="btn-black btn btn-md display-block noty">
+                                Bottom default
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" data-layout="center" data-type="notification" class="btn-info btn btn-md display-block noty">
+                                Center notification
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

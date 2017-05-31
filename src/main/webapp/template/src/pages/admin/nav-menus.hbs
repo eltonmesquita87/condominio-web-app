@@ -1,0 +1,592 @@
+---
+title: Navigation menus
+subheading: Create all kind of navigation menus using the examples below.
+---
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Basic
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="#">Messages</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Pills
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Messages</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Disabled links
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="nav nav-tabs">
+                        <li class="disabled active"><a href="#">Disabled active link</a></li>
+                        <li><a href="#">Clickable link</a></li>
+                        <li><a href="#">Clickable link</a></li>
+                        <li class="disabled"><a href="#">Disabled link</a></li>
+                    </ul>
+                    <ul class="nav nav-pills">
+                        <li class="disabled active"><a href="#">Disabled active link</a></li>
+                        <li><a href="#">Clickable link</a></li>
+                        <li><a href="#">Clickable link</a></li>
+                        <li class="disabled"><a href="#">Disabled link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Vertical menus
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">
+                            Home<span class="badge bg-green">5</span>
+                        </a>
+                        <a href="#" class="list-group-item">Profile<span class="badge bg-green">12</span></a>
+                        <a href="#" class="list-group-item">Messages<span class="badge bg-blue">2</span> <span class="badge bg-black">55</span></a>
+                        <a href="#" class="list-group-item">Settings<span class="badge bg-yellow">41</span></a>
+                        <a href="#" class="list-group-item disabled">Disabled link<span class="badge bg-red">86</span></a>
+                    </div>
+
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">
+                            <i class="glyph-icon icon-dashboard"></i>
+                            Home
+                            <i class="glyph-icon icon-chevron-right"></i>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="glyph-icon font-red icon-bullhorn"></i>
+                            Profile
+                            <i class="glyph-icon font-green icon-chevron-right"></i>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="glyph-icon font-primary icon-camera"></i>
+                            Messages
+                            <i class="glyph-icon icon-chevron-right"></i>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="glyph-icon font-azure icon-gears"></i>
+                            Settings
+                            <i class="glyph-icon icon-chevron-right"></i>
+                        </a>
+                        <a href="#" class="list-group-item disabled">
+                            <i class="glyph-icon font-blue-alt icon-globe"></i>
+                            Disabled link
+                            <i class="glyph-icon icon-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Inline dropdown menu
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="dropdown-menu display-block">
+                        <li>
+                            <a href="#" title="">
+                                Nav link 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="">
+                                Nav link 2
+                            </a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#" data-toggle="dropdown" title="">
+                                Submenu link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" title="">
+                                        Nav link 1
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" title="">
+                                        Submenu link 2
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#" title="">
+                                                Nav link 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="">
+                                                Nav link 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="">
+                                                Nav link 3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        Nav link 3
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#" title="">
+                                Separated nav link
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Pills with dropdowns
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Dropdown <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Tabs
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="clearfix">
+                                <ul class="nav nav-tabs nav-tabs-left">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Messages</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="nav nav-tabs mrg25B">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Messages</a></li>
+                            </ul>
+                            <br />
+                            <br />
+                            <div class="clearfix mrg25T">
+                                <ul class="nav nav-tabs nav-tabs-bottom">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Messages</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="clearfix">
+                                <ul class="nav nav-tabs nav-tabs-right">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Messages</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Justified menus
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Messages</a></li>
+                    </ul>
+
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Messages</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Horizontal grid menu
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="list-group row">
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item active">
+                                <i class="glyph-icon icon-dashboard"></i>
+                                Home
+                                <i class="glyph-icon icon-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item">
+                                <i class="glyph-icon font-red icon-bullhorn"></i>
+                                Profile
+                                <i class="glyph-icon font-green icon-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item">
+                                <i class="glyph-icon font-primary icon-camera"></i>
+                                Messages
+                                <i class="glyph-icon icon-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item disabled">
+                                <i class="glyph-icon font-blue-alt icon-globe"></i>
+                                Disabled link
+                                <i class="glyph-icon icon-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Centered icons
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="list-group row list-group-icons">
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item active">
+                                <i class="glyph-icon icon-dashboard"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item">
+                                <i class="glyph-icon font-red icon-bullhorn"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item">
+                                <i class="glyph-icon font-primary icon-camera"></i>
+                                Messages
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item disabled">
+                                <i class="glyph-icon font-blue-alt icon-globe"></i>
+                                Disabled link
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Separators
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="list-group list-group-separator row list-group-icons">
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item active">
+                                <i class="glyph-icon icon-dashboard"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item">
+                                <i class="glyph-icon font-red icon-bullhorn"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item">
+                                <i class="glyph-icon font-primary icon-camera"></i>
+                                Messages
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item disabled">
+                                <i class="glyph-icon font-blue-alt icon-globe"></i>
+                                Disabled link
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Centered menu buttons
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="list-group list-group-separator list-group-centered row list-group-icons">
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item active">
+                                <i class="glyph-icon icon-dashboard"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item">
+                                <i class="glyph-icon font-red icon-bullhorn"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="list-group-item">
+                                <i class="glyph-icon font-primary icon-camera"></i>
+                                Messages
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Tabs with dropdowns
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Dropdown <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Dropdown positions
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="dropdown">
+                        <a href="#" class="btn btn-default" title="" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            Left menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 3
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="btn btn-default" title="" data-toggle="dropdown">
+                            Left pushed right menu
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu push-left">
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 3
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="btn btn-default" title="" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            Right menu
+                        </a>
+                        <ul class="dropdown-menu float-right">
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 3
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Dropup menus
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="dropup">
+                        <a href="#" class="btn btn-default" title="" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            Left menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 3
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropup">
+                        <a href="#" class="btn btn-default" title="" data-toggle="dropdown">
+                            Left pushed right menu
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu push-left">
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 3
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropup">
+                        <a href="#" class="btn btn-default" title="" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            Right menu
+                        </a>
+                        <ul class="dropdown-menu float-right">
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    Nav link 3
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

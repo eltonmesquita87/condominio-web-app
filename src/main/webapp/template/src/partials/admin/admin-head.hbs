@@ -1,0 +1,59 @@
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+<title> {{title }} </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Favicons -->
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/icons/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/icons/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/icons/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../assets/images/icons/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../assets/images/icons/favicon.png">
+
+{{#if production}}
+
+    {{> admin-assets-css  }}
+
+    <!-- JS Core -->
+
+    <script type="text/javascript" src="../../assets-minified/js-core.js"></script>
+
+{{else}}
+
+    {{> admin-assets-css-development  }}
+
+    <!-- JS Core -->
+
+    <script type="text/javascript" src="../../assets/js-core/jquery-core.js"></script>
+    <script type="text/javascript" src="../../assets/js-core/jquery-ui-core.js"></script>
+    <script type="text/javascript" src="../../assets/js-core/jquery-ui-widget.js"></script>
+    <script type="text/javascript" src="../../assets/js-core/jquery-ui-mouse.js"></script>
+    <script type="text/javascript" src="../../assets/js-core/jquery-ui-position.js"></script>
+    <!--<script type="text/javascript" src="../../assets/js-core/transition.js"></script>-->
+    <script type="text/javascript" src="../../assets/js-core/modernizr.js"></script>
+    <script type="text/javascript" src="../../assets/js-core/jquery-cookie.js"></script>
+
+{{/if}}
+
+{{#if angular}}
+
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+    <script type="text/javascript" src="../../assets/angular/app.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/angular/page-animations.css">
+
+{{else}}
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            setTimeout(function() {
+                $('#loading').fadeOut( 400, "linear" );
+            }, 300);
+        });
+    </script>
+
+{{/if}}

@@ -1,0 +1,270 @@
+---
+title: Forms wizards
+subheading: Components for creating great user experiences.
+---
+
+<!-- Bootstrap Wizard -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/wizard/wizard.css">-->
+<script type="text/javascript" src="../../assets/widgets/wizard/wizard.js"></script>
+<script type="text/javascript" src="../../assets/widgets/wizard/wizard-demo.js"></script>
+
+<!-- Boostrap Tabs -->
+
+<script type="text/javascript" src="../../assets/widgets/tabs/tabs.js"></script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Basic
+        </h3>
+        <div class="example-box-wrapper">
+            <div id="form-wizard-1">
+                <ul>
+                    <li><a href="#tab1" data-toggle="tab">First</a></li>
+                    <li><a href="#tab2" data-toggle="tab">Second</a></li>
+                    <li><a href="#tab3" data-toggle="tab">Third</a></li>
+                    <li><a href="#tab4" data-toggle="tab">Forth</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane" id="tab1">
+                        <div class="content-box">
+                            <h3 class="content-box-header bg-default">
+                                First
+                            </h3>
+                            <div class="content-box-wrapper">
+                                Lorem ipsum dolor sic amet dixit tu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <div class="content-box">
+                            <h3 class="content-box-header bg-black">
+                                Second
+                            </h3>
+                            <div class="content-box-wrapper">
+                                Lorem ipsum dolor sic amet dixit tu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <div class="content-box">
+                            <h3 class="content-box-header bg-green">
+                                Third
+                            </h3>
+                            <div class="content-box-wrapper">
+                                Lorem ipsum dolor sic amet dixit tu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab4">
+                        <div class="content-box">
+                            <h3 class="content-box-header bg-blue-alt">
+                                Forth
+                            </h3>
+                            <div class="content-box-wrapper">
+                                Lorem ipsum dolor sic amet dixit tu.
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pager wizard">
+                        <li class="previous first" style="display:none;"><a href="#">First</a></li>
+                        <li class="previous"><a href="#">Previous</a></li>
+                        <li class="next last" style="display:none;"><a href="#">Last</a></li>
+                        <li class="next"><a href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Custom navigation
+        </h3>
+        <div class="example-box-wrapper">
+            <div id="form-wizard-2">
+                <ul class="list-group list-group-separator row list-group-icons">
+                    <li class="col-md-3 active">
+                        <a href="#custom-step-1" data-toggle="tab" class="list-group-item">
+                            <i class="glyph-icon icon-dashboard"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="col-md-3">
+                        <a href="#custom-step-2" data-toggle="tab" class="list-group-item">
+                            <i class="glyph-icon font-red icon-bullhorn"></i>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="col-md-3">
+                        <a href="#custom-step-3" data-toggle="tab" class="list-group-item">
+                            <i class="glyph-icon font-primary icon-camera"></i>
+                            Messages
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="custom-step-1">
+                        <div class="content-box">
+                            <h3 class="content-box-header bg-default">
+                                First
+                            </h3>
+                            <div class="content-box-wrapper">
+                                Lorem ipsum dolor sic amet dixit tu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="custom-step-2">
+                        <div class="content-box">
+                            <h3 class="content-box-header bg-black">
+                                Second
+                            </h3>
+                            <div class="content-box-wrapper">
+                                Lorem ipsum dolor sic amet dixit tu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="custom-step-3">
+                        <div class="content-box">
+                            <h3 class="content-box-header bg-green">
+                                Third
+                            </h3>
+                            <div class="content-box-wrapper">
+                                Lorem ipsum dolor sic amet dixit tu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="custom-step-4">
+                        <div class="content-box">
+                            <h3 class="content-box-header bg-blue">
+                                Forth
+                            </h3>
+                            <div class="content-box-wrapper">
+                                Lorem ipsum dolor sic amet dixit tu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pager">
+                        <div class="pull-right">
+                            <button class="btn btn-default button-next">
+                                <i class="glyph-icon icon-arrow-right"></i>
+                            </button>
+                            <button class="btn btn-default button-last">
+                                <i class="glyph-icon icon-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="pull-left">
+                            <button class="btn btn-default button-first">
+                                <i class="glyph-icon icon-chevron-left"></i>
+                            </button>
+                            <button class="btn btn-default button-previous">
+                                <i class="glyph-icon icon-arrow-left"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Alternate style
+        </h3>
+        <div class="example-box-wrapper">
+            <div id="form-wizard-3" class="form-wizard">
+                <ul>
+                    <li>
+                        <a href="#step-1" data-toggle="tab">
+                            <label class="wizard-step">1</label>
+                      <span class="wizard-description">
+                         User details
+                         <small>Gather the user details</small>
+                      </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#step-2" data-toggle="tab">
+                            <label class="wizard-step">2</label>
+                      <span class="wizard-description">
+                         Contact information
+                         <small>Confirm contact details</small>
+                      </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#step-3" data-toggle="tab">
+                            <label class="wizard-step">3</label>
+                      <span class="wizard-description">
+                         Business support
+                         <small>Establish business description</small>
+                      </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#step-4" data-toggle="tab">
+                            <label class="wizard-step">4</label>
+                      <span class="wizard-description">
+                         Final steps
+                         <small>Finish and send the email</small>
+                      </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="step-1">
+                        <div class="content-box">
+                            <h3 class="content-box-header bg-default">
+                                First
+                            </h3>
+                            <div class="content-box-wrapper">
+                                Lorem ipsum dolor sic amet dixit tu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="step-2">
+                        <div class="content-box">
+                            <h3 class="content-box-header bg-black">
+                                Second
+                            </h3>
+                            <div class="content-box-wrapper">
+                                Lorem ipsum dolor sic amet dixit tu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="step-3">
+                        <div class="content-box">
+                            <h3 class="content-box-header bg-green">
+                                Third
+                            </h3>
+                            <div class="content-box-wrapper">
+                                Lorem ipsum dolor sic amet dixit tu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="step-4">
+                        <div class="content-box">
+                            <h3 class="content-box-header bg-blue">
+                                Forth
+                            </h3>
+                            <div class="content-box-wrapper">
+                                Lorem ipsum dolor sic amet dixit tu.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

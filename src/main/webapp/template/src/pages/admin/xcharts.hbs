@@ -1,0 +1,140 @@
+---
+title: xCharts
+subheading: Beautiful and custom data-driven chart visualizations for the web.
+---
+
+<!-- xCharts -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/xcharts/xcharts.css">-->
+<script type="text/javascript" src="../../assets/js-core/d3.js"></script>
+<script type="text/javascript" src="../../assets/widgets/charts/xcharts/xcharts.js"></script>
+
+<script type="text/javascript" src="../../assets/widgets/charts/xcharts/xcharts-demo.js"></script>
+<script type="text/javascript" src="../../assets/widgets/charts/xcharts/xcharts-demo-2.js"></script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Bar chart
+                </h3>
+                <div class="example-box-wrapper">
+                    <div id="example1" style="width: 100%; height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Line chart
+                </h3>
+                <div class="example-box-wrapper">
+                    <div id="example4" style="width: 100%; height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Switch buttons
+        </h3>
+        <div class="example-box-wrapper">
+            <div class="content-box border-top border-blue-alt mrg25B">
+                <h3 class="content-box-header">
+                    Server statistics
+                    <small>(The Ultimate Admin Template)</small>
+                <span class="btn-group btn-group-sm float-right" data-toggle="buttons">
+                    <a href="#" class="btn btn-default">
+                        <input name="radio-toggle-1" type="radio">
+                        Weekly
+                    </a>
+                    <a href="#" class="btn btn-default">
+                        <input name="radio-toggle-2" type="radio">
+                        Monthly
+                    </a>
+                    <a href="#" class="btn btn-default">
+                        <input name="radio-toggle-3" type="radio">
+                        Yearly
+                    </a>
+                </span>
+                </h3>
+                <div class="content-box-wrapper">
+                    <figure style="width: 95%; margin: 0 auto; display: block; height: 300px;" id="chart-example"></figure>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+
+                (function () {
+
+                    var tt = document.createElement('div'),
+                            leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').css('margin-left').replace('px', '')),
+                            topOffset = -32;
+                    tt.className = 'tooltip top fade in';
+                    document.body.appendChild(tt);
+
+                    var data = [{"xScale":"ordinal","comp":[],"main":[{"className":".main.l1","data":[{"y":15,"x":"2012-11-19T00:00:00"},{"y":11,"x":"2012-11-20T00:00:00"},{"y":8,"x":"2012-11-21T00:00:00"},{"y":10,"x":"2012-11-22T00:00:00"},{"y":1,"x":"2012-11-23T00:00:00"},{"y":6,"x":"2012-11-24T00:00:00"},{"y":8,"x":"2012-11-25T00:00:00"}]},{"className":".main.l2","data":[{"y":29,"x":"2012-11-19T00:00:00"},{"y":33,"x":"2012-11-20T00:00:00"},{"y":13,"x":"2012-11-21T00:00:00"},{"y":16,"x":"2012-11-22T00:00:00"},{"y":7,"x":"2012-11-23T00:00:00"},{"y":18,"x":"2012-11-24T00:00:00"},{"y":8,"x":"2012-11-25T00:00:00"}]}],"type":"line-dotted","yScale":"linear"},{"xScale":"ordinal","comp":[],"main":[{"className":".main.l1","data":[{"y":12,"x":"2012-11-19T00:00:00"},{"y":18,"x":"2012-11-20T00:00:00"},{"y":8,"x":"2012-11-21T00:00:00"},{"y":7,"x":"2012-11-22T00:00:00"},{"y":6,"x":"2012-11-23T00:00:00"},{"y":12,"x":"2012-11-24T00:00:00"},{"y":8,"x":"2012-11-25T00:00:00"}]},{"className":".main.l2","data":[{"y":29,"x":"2012-11-19T00:00:00"},{"y":33,"x":"2012-11-20T00:00:00"},{"y":13,"x":"2012-11-21T00:00:00"},{"y":16,"x":"2012-11-22T00:00:00"},{"y":7,"x":"2012-11-23T00:00:00"},{"y":18,"x":"2012-11-24T00:00:00"},{"y":8,"x":"2012-11-25T00:00:00"}]}],"type":"cumulative","yScale":"linear"},{"xScale":"ordinal","comp":[],"main":[{"className":".main.l1","data":[{"y":12,"x":"2012-11-19T00:00:00"},{"y":18,"x":"2012-11-20T00:00:00"},{"y":8,"x":"2012-11-21T00:00:00"},{"y":7,"x":"2012-11-22T00:00:00"},{"y":6,"x":"2012-11-23T00:00:00"},{"y":12,"x":"2012-11-24T00:00:00"},{"y":8,"x":"2012-11-25T00:00:00"}]},{"className":".main.l2","data":[{"y":29,"x":"2012-11-19T00:00:00"},{"y":33,"x":"2012-11-20T00:00:00"},{"y":13,"x":"2012-11-21T00:00:00"},{"y":16,"x":"2012-11-22T00:00:00"},{"y":7,"x":"2012-11-23T00:00:00"},{"y":18,"x":"2012-11-24T00:00:00"},{"y":8,"x":"2012-11-25T00:00:00"}]}],"type":"bar","yScale":"linear"}];
+                    var order = [0, 1, 0, 2],
+                            i = 0,
+                            xFormat = d3.time.format('%A'),
+                            chart = new xChart('line-dotted', data[order[i]], '#chart-example', {
+                                axisPaddingTop: 5,
+                                dataFormatX: function (x) {
+                                    return new Date(x);
+                                },
+                                tickFormatX: function (x) {
+                                    return xFormat(x);
+                                },
+                                mouseover: function (d, i) {
+                                    var pos = $(this).offset();
+                                    $(tt).html('<div class="arrow"></div><div class="tooltip-inner">'+d3.time.format('%A')(d.x) + ': ' + d.y+'</div>')
+                                            .css({top: topOffset + pos.top, left: pos.left + leftOffset})
+                                            .show();
+                                },
+                                mouseout: function (x) {
+                                    $(tt).hide();
+                                },
+                                timing: 1250
+                            }),
+                            rotateTimer,
+                            toggles = d3.selectAll('#upd-chart a'),
+                            t = 3500;
+
+                    function updateChart(i) {
+                        var d = data[i];
+                        chart.setData(d);
+                        toggles.classed('active', function () {
+                            return (d3.select(this).attr('data-type') === d.type);
+                        });
+                        return d;
+                    }
+
+                    toggles.on('click', function (d, i) {
+                        clearTimeout(rotateTimer);
+                        updateChart(i);
+                    });
+
+                    function rotateChart() {
+                        i += 1;
+                        i = (i >= order.length) ? 0 : i;
+                        var d = updateChart(order[i]);
+                        rotateTimer = setTimeout(rotateChart, t);
+                    }
+                    rotateTimer = setTimeout(rotateChart, t);
+                }());
+            </script>
+        </div>
+    </div>
+</div>

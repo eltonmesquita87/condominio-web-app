@@ -1,0 +1,160 @@
+---
+title: Forms Sliders
+subheading: Transform elements into sliders for easier use.
+---
+
+<!-- jQueryUI Slider -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/slider-ui/slider.css">-->
+<script type="text/javascript" src="../../assets/widgets/slider-ui/slider.js"></script>
+<script type="text/javascript" src="../../assets/widgets/slider-ui/slider-demo.js"></script>
+
+<!-- Range Slider -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/range-slider/rangeslider.css">-->
+<script type="text/javascript" src="../../assets/widgets/range-slider/rangeslider-core.js"></script>
+<script type="text/javascript" src="../../assets/widgets/range-slider/rangeslider-demo.js"></script>
+
+<!-- Ion RangeSlider -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/ionrangeslider/ionrangeslider.css">-->
+<script type="text/javascript" src="../../assets/widgets/ionrangeslider/ionrangeslider.js"></script>
+<script type="text/javascript" src="../../assets/widgets/ionrangeslider/ionrangeslider-demo.js"></script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    jQueryUI Slider
+                </h3>
+                <div class="example-box-wrapper">
+                    <form class="form-horizontal bordered-row" role="form">
+                        <div class="form-group">
+                            <label for="" class="col-sm-3 control-label">Basic</label>
+                            <div class="col-sm-7">
+                                <div id="slider-example"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-sm-3 control-label">Horizontal</label>
+                            <div class="col-sm-7">
+                                <div id="horizontal-slider"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-sm-3 control-label">Range slider</label>
+                            <div class="col-sm-7">
+                                <div id="slider-range"></div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">Price range:</span>
+                                    <input type="text" id="amount" class="form-control" placeholder="Price range ...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-sm-3 control-label">Vertical slider</label>
+                            <div class="col-sm-7">
+                                <div id="slider-vertical" class="center-div"></div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">Vertical range:</span>
+                                    <input type="text" id="amount3" class="form-control" placeholder="Price range ...">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="" class="col-sm-3 control-label">Vertical range slider</label>
+                            <div class="col-sm-7">
+                                <div id="slider-range-vertical" class="center-div" style="height: 200px;"></div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">Horizontal range:</span>
+                                    <input type="text" id="amount-vertical-range" class="form-control" placeholder="Price range ...">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Range slider
+                </h3>
+                <div class="example-box-wrapper">
+                    <form class="form-vertical bordered-row" role="form">
+                        <div class="form-group clearfix">
+                            <label for="" class="col-sm-3 control-label">Basic</label>
+                            <div class="col-sm-9">
+                                <div id="range-slider-basic"></div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label for="" class="col-sm-3 control-label">Editable</label>
+                            <div class="col-sm-9">
+                                <div id="range-slider-edit"></div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label for="" class="col-sm-3 control-label">Date slider</label>
+                            <div class="col-sm-9">
+                                <div id="range-slider-date"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Ion RangeSlider
+                </h3>
+                <div class="example-box-wrapper">
+                    <form class="form-vertical bordered-row" role="form">
+                        <div class="form-group clearfix">
+                            <label for="" class="col-sm-3 control-label">Basic</label>
+                            <div class="col-sm-9">
+                                <div id="ion-slider-basic"></div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label for="" class="col-sm-3 control-label">Money range</label>
+                            <div class="col-sm-9">
+                                <div id="ion-slider-money"></div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label for="" class="col-sm-3 control-label">Date range</label>
+                            <div class="col-sm-9">
+                                <div id="ion-slider-date"></div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label for="" class="col-sm-3 control-label">Carat range</label>
+                            <div class="col-sm-9">
+                                <div id="ion-slider-carat"></div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label for="" class="col-sm-3 control-label">Console</label>
+                            <div class="col-sm-9">
+                                <div id="ion-slider-console"></div>
+                                <pre id="result"></pre>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

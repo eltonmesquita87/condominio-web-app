@@ -1,0 +1,78 @@
+---
+title: Input knobs
+subheading: Create input knob dials using attributes fields.
+---
+
+<!-- Knobs -->
+
+<script type="text/javascript" src="../../assets/widgets/knobs/knob.js"></script>
+
+<script type="text/javascript">
+
+    /* Knobs inputs */
+
+    $(function () {
+        $(".input-knob").knob();
+    });
+
+</script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Basic
+        </h3>
+        <div class="example-box-wrapper">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Without label</h3>
+                    <input type="text" class="input-knob" value="127" data-width="100" data-displayInput="false" data-fgColor="#212121" data-height="100" data-thickness=".10">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Rounded corners</h3>
+                    <input type="text" class="input-knob" data-linecap="round" value="93" data-width="100" data-fgColor="#5BCCF6" data-height="100" data-thickness=".10">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Cursor</h3>
+                    <input type="text" class="input-knob" data-cursor=true value="5" data-width="100" data-fgColor="#984DFF" data-height="100" data-thickness=".10">
+                </div>
+            </div>
+            <div class="divider mrg25T mrg25B"></div>
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Angle arc</h3>
+                    <input type="text" class="input-knob" value="21" data-angleOffset="-125" data-angleArc="250" data-width="100" data-fgColor="#FA7753" data-height="100" data-thickness=".10">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Previous values</h3>
+                    <input type="text" class="input-knob" value="23" data-width="100" data-fgColor="#9CD159" data-displayPrevious="true" data-height="100" data-thickness="0.40">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Multiple steps</h3>
+                    <input type="text" class="input-knob" value="2796" data-width="100" data-fgColor="#FFCC00" data-step="1000" data-min="-15000" data-max="8000" data-height="100" data-thickness="0.40">
+                </div>
+            </div>
+            <div class="divider mrg25T mrg25B"></div>
+            <div class="row demo-margin">
+                <div class="col-lg-4 text-center">
+                    <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Thicker</h3>
+                    <input type="text" class="input-knob" data-cursor=true value="5" data-width="100" data-fgColor="#2381E9" data-height="100" data-thickness="0.40">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Multisteps</h3>
+                    <input type="text" class="input-knob" value="1895" data-width="100" data-fgColor="#FF5757" data-step="1000" data-min="-15000" data-max="15000" data-height="100" data-thickness="0.40">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="font-size-15 text-transform-upr font-gray mrg15B">Another example</h3>
+                    <input type="text" class="input-knob" value="23" data-width="100" data-fgColor="#333333" data-displayPrevious="true" data-height="100" data-thickness="0.40">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

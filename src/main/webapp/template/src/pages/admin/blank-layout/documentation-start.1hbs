@@ -1,0 +1,2139 @@
+---
+title: Monarch documentation
+subheading:
+---
+
+<!-- Syntax -->
+
+<script type="text/javascript" src="../../assets/widgets/syntax/scripts/shCore.js"></script>
+<script type="text/javascript" src="../../assets/widgets/syntax/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="../../assets/widgets/syntax/scripts/shBrushPhp.js"></script>
+<link type="text/css" rel="stylesheet" href="../../assets/widgets/syntax/styles/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<style>
+
+    h1 {
+        font-size: 26px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #00a792;
+    }
+
+    h2, h3 {
+        font-size: 26px;
+        line-height: 1.6em;
+        margin-bottom: 20px;
+        color: #000;
+    }
+
+    .content-box-header h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 15px;
+        color: #7b7b7b;
+    }
+
+    .syntaxhighlighter {
+        margin-bottom: 20px !important;
+        margin-top: 20px !important;
+    }
+
+    h3 + p {
+        margin-top: -15px;
+    }
+
+    .doc-box {
+        padding: 25px 0;
+    }
+
+</style>
+
+<div class="row container pad25T">
+    <div class="col-md-12 pad25B mrg25T">
+        <h3 class="text-center text-transform-upr pad25B">Monarch Admin/Frontend framework documentation</h3>
+        <div class="divider mrg25T mrg25B"></div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="display-block" href="#overview">
+                        Overview
+                        <i class="glyph-icon icon-angle-right float-right"></i>
+                    </a>
+                </h4>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="display-block" href="#structure">
+                        Template structure
+                        <i class="glyph-icon icon-angle-right float-right"></i>
+                    </a>
+                </h4>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="display-block" href="#layouts-options">
+                        Layouts options
+                        <i class="glyph-icon icon-angle-right float-right"></i>
+                    </a>
+                </h4>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="display-block" href="#theming-options">
+                        Theming options
+                        <i class="glyph-icon icon-angle-right float-right"></i>
+                    </a>
+                </h4>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="display-block" href="#core-options">
+                        Core files
+                        <i class="glyph-icon icon-angle-right float-right"></i>
+                    </a>
+                </h4>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="display-block" href="#assets-options">
+                        Assets
+                        <i class="glyph-icon icon-angle-right float-right"></i>
+                    </a>
+                </h4>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="display-block" href="#automations-options">
+                        Automations
+                        <i class="glyph-icon icon-angle-right float-right"></i>
+                    </a>
+                </h4>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="display-block" href="#changelog-options">
+                        Changelog
+                        <i class="glyph-icon icon-angle-right float-right"></i>
+                    </a>
+                </h4>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="display-block" href="#credits-options">
+                        Credits
+                        <i class="glyph-icon icon-angle-right float-right"></i>
+                    </a>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="doc-box" id="overview">
+            <h1>Overview</h1>
+            <div class="content-box bg-default">
+                <div class="content-box-wrapper text-center">
+                    <h2 class="mrg20T">Thank you for your purchase. Hopefully this will be the last user interface framework you will ever need.</h2>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="content-box-wrapper">
+                    <h2>What is Monarch?</h2>
+                    <p>Monarch is a HTML/CSS/JS framework that helps you quickly build modern, beautiful and accessible user interfaces for interactive web applications. It is powered by jQuery, Twitter Bootstrap and a bunch of other curated widgets & plugins. Monarch includes a lot of UI interactions, effects, elements, components and themes. These featured make it a very powerful companion when it comes to solving all kinds of use cases.</p>
+
+                    <h2>Who is it for?</h2>
+                    <p>Monarch can be used by designers and developers alike. Designers will find the theming and assets separation very useful and easy to modify. Because, in general, developers do not have an eye for design, the AUI framework helps them by removing the design-related issues and lets them concentrate on the app programming part.</p>
+
+                    <h2>Technologies used</h2>
+                    <p>Bratilius implements modern CSS3 solutions, jQuery, jQueryUI, Bootstrap, RaphaelJS, Handebars, Grunt &amp; NodeJS for automations and templating, templates and other jQuery plugins.</p>
+
+                    <h2>Help & Support</h2>
+                    <p>If you encounter bugs or problems with Monarch feel free to email us at <a href="mailto:support@agileui.com">support@agileui.com</a> or to write in the comments area on the marketplace. Send your suggestions and feature requests at <a href="mailto:office@agileui.com">office@agileui.com</a></p>
+
+                    <h2>Custom services</h2>
+                    <p>You can hire us to create custom application user interfaces based on Monarch or to integrate Monarch in your existing projects. Drop us a line at <a href="mailto:contact@agileui.com">contact@agileui.com</a> describing your requirements and we'll send you a quotation. View our portfolio at <a href="http://agileui.com" target="_blank">http://agileui.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="doc-box" id="structure">
+            <h1>Template Structure</h1>
+            <div class="content-box">
+                <div class="content-box-header bg-default">
+                    <h2>Admin template</h2>
+                </div>
+                <div class="content-box-wrapper">
+                    <p>You can find the admin template demo .html files inside the /production/admin-template/ directory, from the .zip archive you downloaded on ThemeForest.</p>
+                    <p>The admin template consists of three major sections: <code>header</code>, <code>sidebar</code> and <code>main content</code> where each pages holds its unique content. The sidebar and header have almost the same content on all pages and are generally used for navigating between pages and showing important informations or actions.</p>
+
+                    <h3>Head beginning</h3>
+                    <p>This is the page <code>head</code> tag which contains the Javascript, CSS, Fonts and metadata needed for the pages to render correctly.</p>
+                    <pre class="brush: php;">
+
+                        <!DOCTYPE html>
+                        <html lang ="en">
+                        <head>
+                            <style>
+                                /* Loading Spinner */
+                                .spinner{margin:0;width:70px;height:18px;margin:-35px 0 0 -9px;position:absolute;top:50%;left:50%;text-align:center}.spinner > div{width:18px;height:18px;background-color:#333;border-radius:100%;display:inline-block;-webkit-animation:bouncedelay 1.4s infinite ease-in-out;animation:bouncedelay 1.4s infinite ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}.spinner .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}.spinner .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}@-webkit-keyframes bouncedelay{0%,80%,100%{-webkit-transform:scale(0.0)}40%{-webkit-transform:scale(1.0)}}@keyframes bouncedelay{0%,80%,100%{transform:scale(0.0);-webkit-transform:scale(0.0)}40%{transform:scale(1.0);-webkit-transform:scale(1.0)}}
+                            </style>
+                            <meta charset="UTF-8">
+                            <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+                            <title> Monarch UI - Bootstrap Frontend &amp; Admin Template </title>
+                            <meta name="description" content="">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+                            <!-- Favicons -->
+
+                            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/icons/apple-touch-icon-144-precomposed.png">
+                            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/icons/apple-touch-icon-114-precomposed.png">
+                            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/icons/apple-touch-icon-72-precomposed.png">
+                            <link rel="apple-touch-icon-precomposed" href="../../assets/images/icons/apple-touch-icon-57-precomposed.png">
+                            <link rel="shortcut icon" href="../../assets/images/icons/favicon.png">
+
+                    </pre>
+                    <h3>Head includes</h3>
+                    <p>These are the CSS files that are included in the page head section. We've included all of them for demonstation purposes. You should only include the ones that you really use in your web application to help keep the page loading times to minimum.</p>
+                    <pre class="brush: php;">
+
+                            <!-- HELPERS -->
+
+                            <link rel="stylesheet" type="text/css" href="../../assets/helpers/animate.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/helpers/backgrounds.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/helpers/boilerplate.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/helpers/border-radius.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/helpers/grid.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/helpers/page-transitions.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/helpers/spacing.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/helpers/typography.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/helpers/utils.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/helpers/colors.css">
+
+                            <!-- ELEMENTS -->
+
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/badges.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/buttons.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/content-box.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/dashboard-box.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/forms.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/images.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/info-box.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/loading-indicators.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/menus.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/panel-box.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/response-messages.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/responsive-tables.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/ribbon.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/social-box.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/tables.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/tile-box.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/elements/timeline.css">
+
+                            <!-- ICONS -->
+
+                            <link rel="stylesheet" type="text/css" href="../../assets/icons/fontawesome/fontawesome.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/icons/linecons/linecons.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/icons/spinnericon/spinnericon.css">
+
+
+                            <!-- WIDGETS -->
+
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/accordion-ui/accordion.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/calendar/calendar.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/carousel/carousel.css">
+
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/justgage/justgage.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/morris/morris.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/piegage/piegage.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/xcharts/xcharts.css">
+
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/chosen/chosen.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/colorpicker/colorpicker.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/datatable/datatable.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/datepicker/datepicker.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/datepicker-ui/datepicker.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/daterangepicker/daterangepicker.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/dialog/dialog.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/dropdown/dropdown.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/dropzone/dropzone.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/file-input/fileinput.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/input-switch/inputswitch.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/input-switch/inputswitch-alt.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/ionrangeslider/ionrangeslider.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/jcrop/jcrop.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/jgrowl-notifications/jgrowl.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/loading-bar/loadingbar.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/maps/vector-maps/vectormaps.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/markdown/markdown.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/modal/modal.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/multi-select/multiselect.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/multi-upload/fileupload.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/nestable/nestable.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/noty-notifications/noty.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/popover/popover.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/pretty-photo/prettyphoto.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/progressbar/progressbar.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/range-slider/rangeslider.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/slider-ui/slider.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/summernote-wysiwyg/summernote-wysiwyg.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/tabs-ui/tabs.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/theme-switcher/themeswitcher.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/timepicker/timepicker.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/tooltip/tooltip.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/touchspin/touchspin.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/uniform/uniform.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/wizard/wizard.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/widgets/xeditable/xeditable.css">
+
+                            <!-- SNIPPETS -->
+
+                            <link rel="stylesheet" type="text/css" href="../../assets/snippets/chat.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/snippets/files-box.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/snippets/login-box.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/snippets/notification-box.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/snippets/progress-box.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/snippets/todo.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/snippets/user-profile.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/snippets/mobile-navigation.css">
+
+                            <!-- APPLICATIONS -->
+
+                            <link rel="stylesheet" type="text/css" href="../../assets/applications/mailbox.css">
+
+                            <!-- Admin theme -->
+
+                            <link rel="stylesheet" type="text/css" href="../../assets/themes/admin/layout.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/themes/admin/color-schemes/default.css">
+
+                            <!-- Components theme -->
+
+                            <link rel="stylesheet" type="text/css" href="../../assets/themes/components/default.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/themes/components/border-radius.css">
+
+                            <!-- Admin responsive -->
+
+                            <link rel="stylesheet" type="text/css" href="../../assets/helpers/responsive-elements.css">
+                            <link rel="stylesheet" type="text/css" href="../../assets/helpers/admin-responsive.css">
+
+                            <!-- JS Core -->
+
+                            <script type="text/javascript" src="../../assets/js-core/jquery-core.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/jquery-ui-core.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/jquery-ui-widget.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/jquery-ui-mouse.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/jquery-ui-position.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/transition.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/modernizr.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/jquery-cookie.js"></script>
+
+                            <script type="text/javascript">
+                                $(window).load(function(){
+                                    setTimeout(function() {
+                                        $('#loading').fadeOut( 400, "linear" );
+                                    }, 300);
+                                });
+                            </script>
+
+                    </pre>
+
+                    <h3>Page header</h3>
+                    <p>The page header contains the top area buttons, logo, dropdowns and popovers elements.</p>
+                    <pre class="brush: php;">
+
+                            <div id="loading">
+                                <div class="spinner">
+                                    <div class="bounce1"></div>
+                                    <div class="bounce2"></div>
+                                    <div class="bounce3"></div>
+                                </div>
+                            </div>
+                            <div id="page-wrapper">
+        <div id="page-header" class="bg-gradient-9">
+            <div id="mobile-navigation">
+                <button id="nav-toggle" class="collapsed" data-toggle="collapse" data-target="#page-sidebar" aria-expanded="false" aria-controls="navbar"><span></span></button>
+                <a href="index.html" class="logo-content-small" title="MonarchUI"></a>
+            </div>
+            <div id="header-logo" class="logo-bg">
+                <a href="index.html" class="logo-content-big" title="MonarchUI">
+                    Monarch <i>UI</i>
+                    <span>The perfect solution for user interfaces</span>
+                </a>
+                <a href="index.html" class="logo-content-small" title="MonarchUI">
+                    Monarch <i>UI</i>
+                    <span>The perfect solution for user interfaces</span>
+                </a>
+                <a id="close-sidebar" href="#" title="Close sidebar">
+                    <i class="glyph-icon icon-angle-left"></i>
+                </a>
+            </div>
+            <div id="header-nav-left">
+                <div class="user-account-btn dropdown">
+                    <a href="#" title="My Account" class="user-profile clearfix" data-toggle="dropdown">
+                        <img width="28" src="../../assets/image-resources/gravatar.jpg" alt="Profile image">
+                        <span>Thomas Barnes</span>
+                        <i class="glyph-icon icon-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu float-left">
+                        <div class="box-sm">
+                            <div class="login-box clearfix">
+                                <div class="user-img">
+                                    <a href="#" title="" class="change-img">Change photo</a>
+                                    <img src="../../assets/image-resources/gravatar.jpg" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <span>
+                                        Thomas Barnes
+                                        <i>UX/UI developer</i>
+                                    </span>
+                                    <a href="#" title="Edit profile">Edit profile</a>
+                                    <a href="#" title="View notifications">View notifications</a>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <ul class="reset-ul mrg5B">
+                                <li>
+                                    <a href="#">
+                                        View login page example
+                                        <i class="glyph-icon float-right icon-caret-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        View lockscreen example
+                                        <i class="glyph-icon float-right icon-caret-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        View account details
+                                        <i class="glyph-icon float-right icon-caret-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="pad5A button-pane button-pane-alt text-center">
+                                <a href="#" class="btn display-block font-normal btn-danger">
+                                    <i class="glyph-icon icon-power-off"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- #header-nav-left -->
+            <div id="header-nav-right">
+        <a href="#" class="popover-button" title="Search" data-placement="bottom" data-id="#popover-search">
+            <i class="glyph-icon icon-search"></i>
+        </a>
+        <div class="hide" id="popover-search">
+            <div class="pad5A box-md">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search terms here ...">
+                        <span class="input-group-btn">
+                            <a class="btn btn-primary" href="#">Search</a>
+                        </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown" id="notifications-btn">
+            <a data-toggle="dropdown" href="#" title="">
+                <span class="small-badge bg-yellow"></span>
+                <i class="glyph-icon icon-linecons-megaphone"></i>
+            </a>
+            <div class="dropdown-menu box-md float-right">
+
+                <div class="popover-title display-block clearfix pad10A">
+                    Notifications
+                    <a class="text-transform-cap font-primary font-normal btn-link float-right" href="#" title="View more options">
+                        More options...
+                    </a>
+                </div>
+                <div class="scrollable-content scrollable-slim-box">
+                    <ul class="no-border notifications-box">
+                        <li>
+                            <span class="bg-danger icon-notification glyph-icon icon-bullhorn"></span>
+                            <span class="notification-text">This is an error notification</span>
+                            <div class="notification-time">
+                                a few seconds ago
+                                <span class="glyph-icon icon-clock-o"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bg-warning icon-notification glyph-icon icon-users"></span>
+                            <span class="notification-text font-blue">This is a warning notification</span>
+                            <div class="notification-time">
+                                <b>15</b> minutes ago
+                                <span class="glyph-icon icon-clock-o"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bg-green icon-notification glyph-icon icon-sitemap"></span>
+                            <span class="notification-text font-green">A success message example.</span>
+                            <div class="notification-time">
+                                <b>2 hours</b> ago
+                                <span class="glyph-icon icon-clock-o"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bg-azure icon-notification glyph-icon icon-random"></span>
+                            <span class="notification-text">This is an error notification</span>
+                            <div class="notification-time">
+                                a few seconds ago
+                                <span class="glyph-icon icon-clock-o"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bg-warning icon-notification glyph-icon icon-ticket"></span>
+                            <span class="notification-text">This is a warning notification</span>
+                            <div class="notification-time">
+                                <b>15</b> minutes ago
+                                <span class="glyph-icon icon-clock-o"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bg-blue icon-notification glyph-icon icon-user"></span>
+                            <span class="notification-text font-blue">Alternate notification styling.</span>
+                            <div class="notification-time">
+                                <b>2 hours</b> ago
+                                <span class="glyph-icon icon-clock-o"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bg-purple icon-notification glyph-icon icon-user"></span>
+                            <span class="notification-text">This is an error notification</span>
+                            <div class="notification-time">
+                                a few seconds ago
+                                <span class="glyph-icon icon-clock-o"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bg-warning icon-notification glyph-icon icon-user"></span>
+                            <span class="notification-text">This is a warning notification</span>
+                            <div class="notification-time">
+                                <b>15</b> minutes ago
+                                <span class="glyph-icon icon-clock-o"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bg-green icon-notification glyph-icon icon-user"></span>
+                            <span class="notification-text font-green">A success message example.</span>
+                            <div class="notification-time">
+                                <b>2 hours</b> ago
+                                <span class="glyph-icon icon-clock-o"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bg-purple icon-notification glyph-icon icon-user"></span>
+                            <span class="notification-text">This is an error notification</span>
+                            <div class="notification-time">
+                                a few seconds ago
+                                <span class="glyph-icon icon-clock-o"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bg-warning icon-notification glyph-icon icon-user"></span>
+                            <span class="notification-text">This is a warning notification</span>
+                            <div class="notification-time">
+                                <b>15</b> minutes ago
+                                <span class="glyph-icon icon-clock-o"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pad10A button-pane button-pane-alt text-center">
+                    <a href="#" class="btn btn-primary" title="View all notifications">
+                        View all notifications
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown" id="progress-btn">
+            <a data-toggle="dropdown" href="#" title="">
+                <span class="small-badge bg-azure"></span>
+                <i class="glyph-icon icon-linecons-params"></i>
+            </a>
+            <div class="dropdown-menu pad0A box-sm float-right" id="progress-dropdown">
+                <div class="scrollable-content scrollable-slim-box">
+                    <ul class="no-border progress-box progress-box-links">
+                        <li>
+                            <a href="#" title="">
+                                <div class="progress-title">
+                                    Finishing uploading files
+                                    <b>23%</b>
+                                </div>
+                                <div class="progressbar-smaller progressbar" data-value="23">
+                                    <div class="progressbar-value bg-blue-alt">
+                                        <div class="progressbar-overlay"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="">
+                                <div class="progress-title">
+                                    Roadmap progress
+                                    <b>91%</b>
+                                </div>
+                                <div class="progressbar-smaller progressbar" data-value="91">
+                                    <div class="progressbar-value bg-red">
+                                        <div class="progressbar-overlay"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="">
+                                <div class="progress-title">
+                                    Images upload
+                                    <b>58%</b>
+                                </div>
+                                <div class="progressbar-smaller progressbar" data-value="58">
+                                    <div class="progressbar-value bg-green"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="">
+                                <div class="progress-title">
+                                    WordPress migration
+                                    <b>74%</b>
+                                </div>
+                                <div class="progressbar-smaller progressbar" data-value="74">
+                                    <div class="progressbar-value bg-purple"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="">
+                                <div class="progress-title">
+                                    Agile development procedures
+                                    <b>91%</b>
+                                </div>
+                                <div class="progressbar-smaller progressbar" data-value="91">
+                                    <div class="progressbar-value bg-black">
+                                        <div class="progressbar-overlay"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="">
+                                <div class="progress-title">
+                                    Systems integration
+                                    <b>58%</b>
+                                </div>
+                                <div class="progressbar-smaller progressbar" data-value="58">
+                                    <div class="progressbar-value bg-azure"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="">
+                                <div class="progress-title">
+                                    Code optimizations
+                                    <b>97%</b>
+                                </div>
+                                <div class="progressbar-smaller progressbar" data-value="97">
+                                    <div class="progressbar-value bg-yellow"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pad5A button-pane button-pane-alt text-center">
+                    <a href="#" class="btn display-block font-normal hover-green" title="View all notifications">
+                        View all notifications
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown" id="dashnav-btn">
+            <a href="#" data-toggle="dropdown" data-placement="bottom" class="popover-button-header tooltip-button" title="Example menu">
+                <i class="glyph-icon icon-linecons-cog"></i>
+            </a>
+            <div class="dropdown-menu float-right">
+                <div class="box-sm">
+                    <div class="pad5T pad5B pad10L pad10R dashboard-buttons clearfix">
+                        <a href="#" class="btn vertical-button hover-blue-alt" title="">
+                                <span class="glyph-icon icon-separator-vertical pad0A medium">
+                                    <i class="glyph-icon icon-dashboard opacity-80 font-size-20"></i>
+                                </span>
+                            Dashboard
+                        </a>
+                        <a href="#" class="btn vertical-button hover-green" title="">
+                                <span class="glyph-icon icon-separator-vertical pad0A medium">
+                                    <i class="glyph-icon icon-tags opacity-80 font-size-20"></i>
+                                </span>
+                            Widgets
+                        </a>
+                        <a href="#" class="btn vertical-button hover-orange" title="">
+                                <span class="glyph-icon icon-separator-vertical pad0A medium">
+                                    <i class="glyph-icon icon-fire opacity-80 font-size-20"></i>
+                                </span>
+                            Tables
+                        </a>
+                        <a href="#" class="btn vertical-button hover-orange" title="">
+                                <span class="glyph-icon icon-separator-vertical pad0A medium">
+                                    <i class="glyph-icon icon-bar-chart-o opacity-80 font-size-20"></i>
+                                </span>
+                            Charts
+                        </a>
+                        <a href="#" class="btn vertical-button hover-purple" title="">
+                                <span class="glyph-icon icon-separator-vertical pad0A medium">
+                                    <i class="glyph-icon icon-laptop opacity-80 font-size-20"></i>
+                                </span>
+                            Buttons
+                        </a>
+                        <a href="#" class="btn vertical-button hover-azure" title="">
+                                <span class="glyph-icon icon-separator-vertical pad0A medium">
+                                    <i class="glyph-icon icon-code opacity-80 font-size-20"></i>
+                                </span>
+                            Panels
+                        </a>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="pad5T pad5B pad10L pad10R dashboard-buttons clearfix">
+                        <a href="#" class="btn vertical-button remove-border btn-info" title="">
+                                <span class="glyph-icon icon-separator-vertical pad0A medium">
+                                    <i class="glyph-icon icon-dashboard opacity-80 font-size-20"></i>
+                                </span>
+                            Dashboard
+                        </a>
+                        <a href="#" class="btn vertical-button remove-border btn-danger" title="">
+                                <span class="glyph-icon icon-separator-vertical pad0A medium">
+                                    <i class="glyph-icon icon-tags opacity-80 font-size-20"></i>
+                                </span>
+                            Widgets
+                        </a>
+                        <a href="#" class="btn vertical-button remove-border btn-purple" title="">
+                                <span class="glyph-icon icon-separator-vertical pad0A medium">
+                                    <i class="glyph-icon icon-fire opacity-80 font-size-20"></i>
+                                </span>
+                            Tables
+                        </a>
+                        <a href="#" class="btn vertical-button remove-border btn-azure" title="">
+                                <span class="glyph-icon icon-separator-vertical pad0A medium">
+                                    <i class="glyph-icon icon-bar-chart-o opacity-80 font-size-20"></i>
+                                </span>
+                            Charts
+                        </a>
+                        <a href="#" class="btn vertical-button remove-border btn-yellow" title="">
+                                <span class="glyph-icon icon-separator-vertical pad0A medium">
+                                    <i class="glyph-icon icon-laptop opacity-80 font-size-20"></i>
+                                </span>
+                            Buttons
+                        </a>
+                        <a href="#" class="btn vertical-button remove-border btn-warning" title="">
+                                <span class="glyph-icon icon-separator-vertical pad0A medium">
+                                    <i class="glyph-icon icon-code opacity-80 font-size-20"></i>
+                                </span>
+                            Panels
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="header-btn" id="logout-btn" href="lockscreen-3.html" title="Lockscreen page example">
+            <i class="glyph-icon icon-linecons-lock"></i>
+        </a>
+
+        </div><!-- #header-nav-right -->
+    </div>
+
+
+
+                    </pre>
+
+                    <h3>Page sidebar</h3>
+                    <p>The page sidebar contains the main navigation menu.</p>
+                    <pre class="brush: php;">
+
+                        <div id="page-sidebar">
+                            <div class="scroll-sidebar">
+                                <ul id="sidebar-menu">
+                                    <li class="header"><span>Overview</span></li>
+                                    <li>
+                                        <a href="index.html" title="Admin Dashboard">
+                                            <i class="glyph-icon icon-linecons-tv"></i>
+                                            <span>Admin dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="no-menu">
+                                        <a href="../frontend-template/index.html" title="Frontend template">
+                                            <i class="glyph-icon icon-linecons-beaker"></i>
+                                            <span>Frontend template</span>
+                                        <span class="bs-label label-danger">
+                                            NEW
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li class="header"><span>Components</span></li>
+                                    <li>
+                                        <a href="#" title="Elements">
+                                            <i class="glyph-icon icon-linecons-diamond"></i>
+                                            <span>Elements</span>
+                                        </a>
+                                        <div class="sidebar-submenu">
+
+                                            <ul>
+                                                <li><a href="buttons.html" title="Buttons"><span>Buttons</span></a></li>
+                                                <li><a href="labels-badges.html" title="Labels & Badges"><span>Labels &amp; Badges</span></a></li>
+                                                <li><a href="content-boxes.html" title="Content boxes"><span>Content boxes</span></a></li>
+                                                <li><a href="icons.html" title="Icons"><span>Icons</span></a></li>
+                                                <li><a href="nav-menus.html" title="Navigation menus"><span>Navigation menus</span></a></li>
+                                                <li><a href="response-messages.html" title="Response messages"><span>Response messages</span></a></li>
+                                                <li><a href="images.html" title="Images"><span>Images</span></a></li>
+                                            </ul>
+
+                                        </div><!-- .sidebar-submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Dashboard boxes">
+                                            <i class="glyph-icon icon-linecons-lightbulb"></i>
+                                            <span>Dashboard boxes</span>
+                                            <span class="bs-label label-primary">Hot</span>
+                                        </a>
+                                        <div class="sidebar-submenu">
+
+                                            <ul>
+                                                <li><a href="chart-boxes.html" title="Chart boxes"><span>Chart boxes</span></a></li>
+                                                <li><a href="tile-boxes.html" title="Tile boxes"><span>Tile boxes</span></a></li>
+                                                <li><a href="social-boxes.html" title="Social boxes"><span>Social boxes</span></a></li>
+                                                <li><a href="panel-boxes.html" title="Panel boxes"><span>Panel boxes</span></a></li>
+                                            </ul>
+
+                                        </div><!-- .sidebar-submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Widgets">
+                                            <i class="glyph-icon icon-linecons-wallet"></i>
+                                            <span>Widgets</span>
+                                        </a>
+                                        <div class="sidebar-submenu">
+
+                                            <ul>
+                                                <li><a href="tabs.html" title="Responsive tabs"><span>Responsive tabs</span></a></li>
+                                                <li><a href="collapsable.html" title="Collapsables"><span>Collapsable accordions</span></a></li>
+                                                <li><a href="bs-carousel.html" title="Bootstrap Carousel"><span>Bootstrap carousel</span></a></li>
+                                                <li><a href="calendar.html" title="Calendar"><span>Calendar</span></a></li>
+                                                <li><a href="scrollbars.html" title="Custom scrollbars"><span>Custom scrollbars</span></a></li>
+                                                <li><a href="modals.html" title="Modals"><span>Modals</span></a></li>
+                                                <li><a href="notifications.html" title="Notifications"><span>Notifications</span></a></li>
+                                                <li><a href="lazyload.html" title="Lazyload"><span>Lazyload</span></a></li>
+                                                <li><a href="loading-feedback.html" title="Loading feedback"><span>Loading feedback</span></a></li>
+                                                <li><a href="popovers-tooltips.html" title="Popovers & Tooltips"><span>Popovers & Tooltips</span></a></li>
+                                                <li><a href="progress-bars.html" title="Progress bars"><span>Progress bars</span></a></li>
+                                                <li><a href="sortable-elements.html" title="Sortable elements"><span>Sortable elements</span></a></li>
+                                            </ul>
+
+                                        </div><!-- .sidebar-submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Forms UI">
+                                            <i class="glyph-icon icon-linecons-eye"></i>
+                                            <span>Forms UI</span>
+                                        </a>
+                                        <div class="sidebar-submenu">
+
+                                            <ul>
+                                                <li><a href="forms-elements.html" title="Form elements"><span>Form elements</span></a></li>
+                                                <li><a href="forms-validation.html" title="Form validation"><span>Form validation</span></a></li>
+                                                <li><a href="pickers.html" title="Pickers"><span>Pickers</span></a></li>
+                                                <li><a href="sliders.html" title="Sliders"><span>Sliders</span></a></li>
+                                                <li><a href="forms-wizard.html" title="Form wizards"><span>Form wizards</span></a></li>
+                                                <li><a href="forms-masks.html" title="Form input masks"><span>Form input masks</span></a></li>
+                                                <li><a href="image-crop.html" title="Image crop"><span>Image crop</span></a></li>
+                                                <li><a href="dropzone-uploader.html" title="Dropzone uploader"><span>Dropzone uploader</span></a></li>
+                                                <li><a href="multi-uploader.html" title="Multi uploader"><span>Multi uploader</span></a></li>
+                                                <li><a href="input-knobs.html" title="Input knobs"><span>Input knobs</span></a></li>
+                                                <li><a href="ckeditor.html" title="Ckeditor"><span>Ckeditor</span></a></li>
+                                                <li><a href="summernote.html" title="Summernote"><span>Summernote</span></a></li>
+                                                <li><a href="markdown.html" title="Markdown editor"><span>Markdown editor</span></a></li>
+                                                <li><a href="inline-editor.html" title="Inline editor"><span>Inline editor</span></a></li>
+                                            </ul>
+
+                                        </div><!-- .sidebar-submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Advanced tables">
+                                            <i class="glyph-icon icon-linecons-megaphone"></i>
+                                            <span>Advanced tables</span>
+                                        </a>
+                                        <div class="sidebar-submenu">
+
+                                            <ul>
+                                                <li><a href="tables.html" title="Basic tables"><span>Basic tables</span></a></li>
+                                                <li><a href="responsive-tables.html" title="Responsive tables"><span>Responsive tables</span></a></li>
+                                                <li><a href="data-tables.html" title="Data tables"><span>Data tables</span></a></li>
+                                                <li><a href="advanced-datatables.html" title="Advanced data tables"><span>Advanced data tables</span></a></li>
+                                                <li><a href="fixed-datatables.html" title="Fixed data tables"><span>Fixed data tables</span></a></li>
+                                                <li><a href="responsive-datatables.html" title="Responsive data tables"><span>Responsive data tables</span></a></li>
+                                            </ul>
+
+                                        </div><!-- .sidebar-submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Charts">
+                                            <i class="glyph-icon icon-linecons-paper-plane"></i>
+                                            <span>Charts</span>
+                                        </a>
+                                        <div class="sidebar-submenu">
+
+                                            <ul>
+                                                <li><a href="flot-charts.html" title="Flot charts"><span>Flot charts</span></a></li>
+                                                <li><a href="sparklines.html" title="Sparklines"><span>Sparklines</span></a></li>
+                                                <li><a href="pie-gages.html" title="PieGages"><span>PieGages</span></a></li>
+                                                <li><a href="just-gage.html" title="justGage"><span>justGage</span></a></li>
+                                                <li><a href="morris-charts.html" title="Morris charts"><span>Morris charts</span></a></li>
+                                                <li><a href="xcharts.html" title="xCharts"><span>xCharts</span></a></li>
+                                                <li><a href="chart-js.html" title="Chart.js"><span>Chart.js</span></a></li>
+                                            </ul>
+
+                                        </div><!-- .sidebar-submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Maps">
+                                            <i class="glyph-icon icon-linecons-sound"></i>
+                                            <span>Maps</span>
+                                        </a>
+                                        <div class="sidebar-submenu">
+
+                                            <ul>
+                                                <li><a href="gmaps.html" title="gMaps"><span>gMaps</span></a></li>
+                                                <li><a href="vector-maps.html" title="Vector maps"><span>Vector maps</span></a></li>
+                                                <li><a href="mapael.html" title="Mapael"><span>Mapael</span></a></li>
+                                            </ul>
+
+                                        </div><!-- .sidebar-submenu -->
+                                    </li>
+                                    <li class="header"><span>Extra</span></li>
+                                    <li>
+                                        <a href="#" title="Pages">
+                                            <i class="glyph-icon icon-linecons-fire"></i>
+                                            <span>Pages</span>
+                                            <span class="bs-badge badge-yellow">2</span>
+                                        </a>
+                                        <div class="sidebar-submenu">
+
+                                            <ul>
+                                                <li><a href="index-alt.html" title="Dashboard 2"><span>Dashboard 2</span></a></li>
+                                                <li><a href="login-1.html" target="_blank" title="Login page 1"><span>Login page 1</span></a></li>
+                                                <li><a href="login-2.html" target="_blank" title="Login page 2"><span>Login page 2</span></a></li>
+                                                <li><a href="login-3.html" target="_blank" title="Login page 3"><span>Login page 3</span></a></li>
+                                                <li><a href="login-4.html" target="_blank" title="Login page 4"><span>Login page 4</span></a></li>
+                                                <li><a href="login-5.html" target="_blank" title="Login page 5"><span>Login page 5</span></a></li>
+                                                <li><a href="lockscreen-1.html" target="_blank" title="Lockscreen page 1"><span>Lockscreen page 1</span></a></li>
+                                                <li><a href="lockscreen-2.html" target="_blank" title="Lockscreen page 2"><span>Lockscreen page 2</span></a></li>
+                                                <li><a href="lockscreen-3.html" target="_blank" title="Lockscreen page 3"><span>Lockscreen page 3</span></a></li>
+                                                <li><a href="server-1.html" target="_blank" title="Server page 1"><span>Error 404 page</span></a></li>
+                                                <li><a href="server-2.html" target="_blank" title="Server page 2"><span>Error 404 alternate</span></a></li>
+                                                <li><a href="server-3.html" target="_blank" title="Server page 3"><span>Server 500 error</span></a></li>
+                                            </ul>
+
+                                        </div><!-- .sidebar-submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Mailbox">
+                                            <i class="glyph-icon icon-linecons-mail"></i>
+                                            <span>Mailbox</span>
+                                            <span class="bs-badge badge-danger">3</span>
+                                        </a>
+                                        <div class="sidebar-submenu">
+
+                                            <ul>
+                                                <li><a href="mailbox-inbox.html" title="Inbox"><span>Inbox</span></a></li>
+                                                <li><a href="mailbox-compose.html" title="Compose message"><span>Compose message</span></a></li>
+                                                <li><a href="mailbox-single.html" title="Single message"><span>Single message</span></a></li>
+                                            </ul>
+
+                                        </div><!-- .sidebar-submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Snippets">
+                                            <i class="glyph-icon icon-linecons-cd"></i>
+                                            <span>Snippets</span>
+                                        </a>
+                                        <div class="sidebar-submenu">
+
+                                            <ul>
+                                                <li><a href="timeline.html" title="Timeline"><span>Timeline</span></a></li>
+                                                <li><a href="chat.html" title="Chat"><span>Chat</span></a></li>
+                                                <li><a href="checklist.html" title="Checklist"><span>Checklist</span></a></li>
+                                            </ul>
+
+                                        </div><!-- .sidebar-submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Helpers">
+                                            <i class="glyph-icon icon-linecons-doc"></i>
+                                            <span>Helpers</span>
+                                        </a>
+                                        <div class="sidebar-submenu">
+
+                                            <ul>
+                                                <li><a href="helper-classes.html" title="Helper classes"><span>Helper classes</span></a></li>
+                                                <li><a href="page-transitions.html" title="Page transitions"><span>Page transitions</span></a></li>
+                                                <li><a href="animations.html" title="Animations"><span>Animations</span></a></li>
+                                            </ul>
+
+                                        </div><!-- .sidebar-submenu -->
+                                    </li>
+                                </ul><!-- #sidebar-menu -->
+                            </div>
+                        </div>
+
+                    </pre>
+
+                    <h3>Main content area</h3>
+                    <p>This is the section where all the pages' content goes into.</p>
+                    <pre class="brush: php;">
+
+                            <div id="page-content-wrapper">
+                                <div id="page-content">
+                                    Content here...
+                                </div>
+                            </div>
+
+                    </pre>
+
+                    <h3>Required Javascript</h3>
+                    <p>The JS files below are included at the bottom of all pages because of their site-wide usage.</p>
+                    <pre class="brush: php;">
+
+                            <!-- WIDGETS -->
+
+                            <!-- Bootstrap Dropdown -->
+
+                            <script type="text/javascript" src="../../assets/widgets/dropdown/dropdown.js"></script>
+
+                            <!-- Bootstrap Tooltip -->
+
+                            <script type="text/javascript" src="../../assets/widgets/tooltip/tooltip.js"></script>
+
+                            <!-- Bootstrap Popover -->
+
+                            <script type="text/javascript" src="../../assets/widgets/popover/popover.js"></script>
+
+                            <!-- Bootstrap Progress Bar -->
+
+                            <script type="text/javascript" src="../../assets/widgets/progressbar/progressbar.js"></script>
+
+                            <!-- Bootstrap Buttons -->
+
+                            <script type="text/javascript" src="../../assets/widgets/button/button.js"></script>
+
+                            <!-- Bootstrap Collapse -->
+
+                            <script type="text/javascript" src="../../assets/widgets/collapse/collapse.js"></script>
+
+                            <!-- Superclick -->
+
+                            <script type="text/javascript" src="../../assets/widgets/superclick/superclick.js"></script>
+
+                            <!-- Input switch alternate -->
+
+                            <script type="text/javascript" src="../../assets/widgets/input-switch/inputswitch-alt.js"></script>
+
+                            <!-- Slim scroll -->
+
+                            <script type="text/javascript" src="../../assets/widgets/slimscroll/slimscroll.js"></script>
+
+                            <!-- Content box -->
+
+                            <script type="text/javascript" src="../../assets/widgets/content-box/contentbox.js"></script>
+
+                            <!-- Overlay -->
+
+                            <script type="text/javascript" src="../../assets/widgets/overlay/overlay.js"></script>
+
+                            <!-- Widgets init for demo -->
+
+                            <script type="text/javascript" src="../../assets/js-init/widgets-init.js"></script>
+
+                            <!-- Theme layout -->
+
+                            <script type="text/javascript" src="../../assets/themes/admin/layout.js"></script>
+
+                            <!-- Theme switcher -->
+
+                            <script type="text/javascript" src="../../assets/widgets/theme-switcher/themeswitcher.js"></script>
+
+                        </body>
+                        </html>
+
+                    </pre>
+
+                </div>
+            </div>
+
+            <div class="content-box">
+                <div class="content-box-header bg-default">
+                    <h2>Front-end template</h2>
+                </div>
+                <div class="content-box-wrapper">
+                    <p>The front-end files can be found inside the .zip archive you downloaded from ThemeForest use the /production/frontend-template/ directory.</p>
+                    <p>There are four major sections that define the front-end template files: <code>top bar</code>, <code>header</code>, <code>main content</code> and <code>footer</code>.</p>
+                    <h3>Head beginning</h3>
+                    <p>This is the page <code>head</code> tag which contains the Javascript, CSS, Fonts and metadata needed for the pages to render correctly.</p>
+                    <pre class="brush: php;">
+
+                        <!DOCTYPE html>
+                        <html lang ="en">
+                        <head>
+                            <style>
+                                /* Loading Spinner */
+                                .spinner{margin:0;width:70px;height:18px;margin:-35px 0 0 -9px;position:absolute;top:50%;left:50%;text-align:center}.spinner > div{width:18px;height:18px;background-color:#333;border-radius:100%;display:inline-block;-webkit-animation:bouncedelay 1.4s infinite ease-in-out;animation:bouncedelay 1.4s infinite ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}.spinner .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}.spinner .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}@-webkit-keyframes bouncedelay{0%,80%,100%{-webkit-transform:scale(0.0)}40%{-webkit-transform:scale(1.0)}}@keyframes bouncedelay{0%,80%,100%{transform:scale(0.0);-webkit-transform:scale(0.0)}40%{transform:scale(1.0);-webkit-transform:scale(1.0)}}
+                            </style>
+                            <meta charset="UTF-8">
+                            <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+                            <title> Create stunning presentation websites | Monarch </title>
+                            <meta name="description" content="">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+                            <!-- Favicons -->
+
+                            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/icons/apple-touch-icon-144-precomposed.png">
+                            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/icons/apple-touch-icon-114-precomposed.png">
+                            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/icons/apple-touch-icon-72-precomposed.png">
+                            <link rel="apple-touch-icon-precomposed" href="../../assets/images/icons/apple-touch-icon-57-precomposed.png">
+                            <link rel="shortcut icon" href="../../assets/images/icons/favicon.png">
+
+
+                    </pre>
+                    <h3>Head includes</h3>
+                    <p>These are the CSS files that are included in the page head section. We've included all of them for demonstration purposes. You should only include the ones that you really use in your web application to help keep the page loading times to minimum.</p>
+                    <p>The front-end includes, in addition to the components from the admin template, some special .css files that have specific front-end (presentation websites) uses.</p>
+                    <pre class="brush: php;">
+
+                        <!-- HELPERS -->
+
+                        <link rel="stylesheet" type="text/css" href="../../assets/helpers/animate.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/helpers/backgrounds.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/helpers/boilerplate.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/helpers/border-radius.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/helpers/grid.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/helpers/page-transitions.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/helpers/spacing.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/helpers/typography.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/helpers/utils.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/helpers/colors.css">
+
+                        <!-- ELEMENTS -->
+
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/badges.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/buttons.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/content-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/dashboard-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/forms.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/images.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/info-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/loading-indicators.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/menus.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/panel-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/response-messages.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/responsive-tables.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/ribbon.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/social-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/tables.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/tile-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/elements/timeline.css">
+
+                        <!-- FRONTEND ELEMENTS -->
+
+                        <link rel="stylesheet" type="text/css" href="../../assets/frontend-elements/blog.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/frontend-elements/cta-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/frontend-elements/feature-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/frontend-elements/footer.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/frontend-elements/hero-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/frontend-elements/icon-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/frontend-elements/portfolio-navigation.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/frontend-elements/pricing-table.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/frontend-elements/sliders.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/frontend-elements/testimonial-box.css">
+
+                        <!-- ICONS -->
+
+                        <link rel="stylesheet" type="text/css" href="../../assets/icons/fontawesome/fontawesome.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/icons/linecons/linecons.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/icons/spinnericon/spinnericon.css">
+
+                        <!-- WIDGETS -->
+
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/accordion-ui/accordion.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/calendar/calendar.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/carousel/carousel.css">
+
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/justgage/justgage.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/morris/morris.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/piegage/piegage.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/xcharts/xcharts.css">
+
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/chosen/chosen.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/colorpicker/colorpicker.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/datatable/datatable.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/datepicker/datepicker.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/datepicker-ui/datepicker.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/daterangepicker/daterangepicker.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/dialog/dialog.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/dropdown/dropdown.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/dropzone/dropzone.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/file-input/fileinput.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/input-switch/inputswitch.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/input-switch/inputswitch-alt.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/ionrangeslider/ionrangeslider.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/jcrop/jcrop.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/jgrowl-notifications/jgrowl.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/loading-bar/loadingbar.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/maps/vector-maps/vectormaps.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/markdown/markdown.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/modal/modal.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/multi-select/multiselect.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/multi-upload/fileupload.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/nestable/nestable.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/noty-notifications/noty.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/popover/popover.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/pretty-photo/prettyphoto.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/progressbar/progressbar.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/range-slider/rangeslider.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/slider-ui/slider.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/summernote-wysiwyg/summernote-wysiwyg.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/tabs-ui/tabs.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/theme-switcher/themeswitcher.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/timepicker/timepicker.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/tooltip/tooltip.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/touchspin/touchspin.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/uniform/uniform.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/wizard/wizard.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/xeditable/xeditable.css">
+
+                        <!-- FRONTEND WIDGETS -->
+
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/layerslider/layerslider.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/owlcarousel/owlcarousel.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/widgets/fullpage/fullpage.css">
+
+                        <!-- SNIPPETS -->
+
+                        <link rel="stylesheet" type="text/css" href="../../assets/snippets/chat.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/snippets/files-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/snippets/login-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/snippets/notification-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/snippets/progress-box.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/snippets/todo.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/snippets/user-profile.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/snippets/mobile-navigation.css">
+
+                        <!-- Frontend theme -->
+
+                        <link rel="stylesheet" type="text/css" href="../../assets/themes/frontend/layout.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/themes/frontend/color-schemes/default.css">
+
+                        <!-- Components theme -->
+
+                        <link rel="stylesheet" type="text/css" href="../../assets/themes/components/default.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/themes/components/border-radius.css">
+
+                        <!-- Frontend responsive -->
+
+                        <link rel="stylesheet" type="text/css" href="../../assets/helpers/responsive-elements.css">
+                        <link rel="stylesheet" type="text/css" href="../../assets/helpers/frontend-responsive.css">
+
+                            <!-- JS Core -->
+
+                            <script type="text/javascript" src="../../assets/js-core/jquery-core.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/jquery-ui-core.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/jquery-ui-widget.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/jquery-ui-mouse.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/jquery-ui-position.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/transition.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/modernizr.js"></script>
+                            <script type="text/javascript" src="../../assets/js-core/jquery-cookie.js"></script>
+
+
+
+                        <script type="text/javascript">
+                            $(window).load(function(){
+                                setTimeout(function() {
+                                    $('#loading').fadeOut( 400, "linear" );
+                                }, 300);
+                            });
+                        </script>
+
+
+                    </pre>
+
+
+                    <h3>Top bar content</h3>
+                    <p>You can easily remove this section from your pages if you don't need it. It can hold things like social buttons, search bar, login/register/logout buttons.</p>
+                    <pre class="brush: php;">
+
+                        <div class="top-bar bg-topbar">
+                            <div class="container">
+                                <div class="float-left">
+                                    <a href="#" class="btn btn-sm bg-facebook tooltip-button" data-placement="bottom" title="Follow us on Facebook">
+                                        <i class="glyph-icon icon-facebook"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-sm bg-google tooltip-button" data-placement="bottom" title="Follow us on Google+">
+                                        <i class="glyph-icon icon-google-plus"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-sm bg-twitter tooltip-button" data-placement="bottom" title="Follow us on Twitter">
+                                        <i class="glyph-icon icon-twitter"></i>
+                                    </a>
+
+                                    <a href="#" class="btn btn-top btn-sm" title="Give us a call">
+                                        <i class="glyph-icon icon-phone"></i>
+                                        +1-541-754-3010
+                                    </a>
+                                </div>
+                                <div class="float-right user-account-btn dropdown">
+                                    <a href="../admin-template/index.html" title="MonarchUI Admin Template" class="btn btn-sm float-left btn-alt btn-hover mrg10R btn-default">
+                                        <span>Back to admin</span>
+                                        <i class="glyph-icon icon-arrow-right"></i>
+                                    </a>
+                                    <a href="#" title="My Account" class="user-profile clearfix" data-toggle="dropdown" aria-expanded="false">
+                                        <img width="28" src="../../assets/image-resources/gravatar.jpg" alt="Profile image">
+                                        <span>Thomas Barnes</span>
+                                        <i class="glyph-icon icon-angle-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu pad0B float-right">
+                                        <div class="box-sm">
+                                            <div class="login-box clearfix">
+                                                <div class="user-img">
+                                                    <a href="#" title="" class="change-img">Change photo</a>
+                                                    <img src="../../assets/image-resources/gravatar.jpg" alt="">
+                                                </div>
+                                                <div class="user-info">
+                                                <span>
+                                                    Thomas Barnes
+                                                    <i>UX/UI developer</i>
+                                                </span>
+                                                    <a href="#" title="">Edit profile</a>
+                                                    <a href="#" title="">View notifications</a>
+                                                </div>
+                                            </div>
+                                            <div class="divider"></div>
+                                            <ul class="reset-ul mrg5B">
+                                                <li>
+                                                    <a href="#">
+                                                        View login page example
+                                                        <i class="glyph-icon float-right icon-caret-right"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        View lockscreen example
+                                                        <i class="glyph-icon float-right icon-caret-right"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        View account details
+                                                        <i class="glyph-icon float-right icon-caret-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="pad5A button-pane button-pane-alt text-center">
+                                                <a href="#" class="btn display-block font-normal btn-danger">
+                                                    <i class="glyph-icon icon-power-off"></i>
+                                                    Logout
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .container -->
+                        </div><!-- .top-bar -->
+
+                    </pre>
+
+
+                    <h3>Main header section</h3>
+                    <p>Contains the logo and the main navigation menu. Also, it contains a search button that can be easily moved in other sections.</p>
+                    <pre class="brush: php;">
+
+                        <div class="main-header bg-header wow fadeInDown">
+                            <div class="container">
+                                <a href="index.html" class="header-logo" title="Monarch - Create perfect presentation websites"></a><!-- .header-logo -->
+                                <div class="right-header-btn">
+                                    <div id="mobile-navigation">
+                                        <button id="nav-toggle" class="collapsed" data-toggle="collapse" data-target=".header-nav" aria-expanded="false" aria-controls="navbar"><span></span></button>
+                                    </div>
+                                    <div class="search-btn">
+                                        <a href="#" class="popover-button" title="Search" data-placement="bottom" data-id="#popover-search">
+                                            <i class="glyph-icon icon-search"></i>
+                                        </a>
+                                        <div class="hide" id="popover-search">
+                                            <div class="pad5A box-md">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Search terms here ...">
+                                                <span class="input-group-btn">
+                                                    <a class="btn btn-primary" href="#">Search</a>
+                                                </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- .header-logo -->
+                                <ul class="header-nav collapse">
+                                    <li>
+                                        <a href="#" title="Homepages">
+                                            Homepages
+                                            <i class="glyph-icon icon-angle-down"></i>
+                                        </a>
+                                        <ul>
+                                            <li><a href="index.html" title="Homepage example 1"><span>Homepage example 1</span></a></li>
+                                            <li><a href="index-alt.html" title="Homepage example 2"><span>Homepage example 2</span></a></li>
+                                            <li><a href="index-alt-2.html" title="Homepage example 3"><span>Homepage example 3</span></a></li>
+                                            <li><a href="index-alt-4.html" title="Homepage example 5"><span>Homepage example 4</span></a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="../admin-template/index.html" title="Admin dashboard 1"><span>Admin dashboard 1</span></a></li>
+                                            <li><a href="../admin-template/index-alt.html" title="Admin dashboard 2"><span>Admin dashboard 2</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Hero sections">
+                                            Hero sections
+                                            <i class="glyph-icon icon-angle-down"></i>
+                                        </a>
+                                        <ul class="footer-nav">
+                                            <li><a href="hero-static.html" title="Static hero sections"><span>Static sections</span></a></li>
+                                            <li><a href="hero-alignments.html" title="Hero alignments"><span>Hero alignments</span></a></li>
+                                            <li><a href="hero-overlays.html" title="Hero overlays"><span>Hero overlays</span></a></li>
+                                            <li><a href="hero-video.html" title="Hero with video backgrounds"><span>Video sections</span></a></li>
+                                            <li><a href="hero-elements.html" title="Hero sections with elements"><span>Hero elements</span></a></li>
+                                            <li><a href="hero-parallax.html" title="Hero with parallax backgrounds"><span>Parallax sections</span></a></li>
+                                            <li><a href="hero-images.html" title="Hero with image backgrounds"><span>Hero backgrounds</span></a></li>
+                                            <li><a href="hero-patterns.html" title="Hero with pattern backgrounds"><span>Hero patterns</span></a></li>
+                                            <li><a href="hero-gradients.html" title="Hero with gradient backgrounds"><span>Hero gradients</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sf-mega">
+                                        <a href="#" title="Features">
+                                            Features
+                                            <i class="glyph-icon icon-angle-down"></i>
+                                        </a>
+                                        <ul class="sf-mega-menu clearfix">
+                                            <li class="col-lg-2 col-xs-12 col-sm-4 col-md-2">
+                                                <h3 class="header">Portfolios</h3>
+                                                <a href="portfolio-2col.html" title="Portfolio with 2 columns"><span>Portfolio 2 columns</span></a>
+                                                <a href="portfolio-3col.html" title="Portfolio with 3 columns"><span>Portfolio 3 columns</span></a>
+                                                <a href="portfolio-4col.html" title="Portfolio with 4 columns"><span>Portfolio 4 columns</span></a>
+                                                <a href="portfolio-masonry.html" title="Portfolio masonry"><span>Portfolio masonry</span></a>
+                                            </li>
+                                            <li class="col-lg-2 col-xs-12 col-sm-4 col-md-2">
+                                                <h3 class="header">Headers</h3>
+                                                <a href="header-fixed.html" title="Fixed header"><span>Fixed header</span></a>
+                                                <a href="header-no-top-menu.html" title="Remove top menu"><span>Remove top menu</span></a>
+                                                <a href="header-animations.html" title="Header animations"><span>Header animations</span></a>
+                                                <a href="header-transparent.html" title="Transparent header"><span>Transparent header</span></a>
+                                                <a href="header-resizable.html" title="Resizable header"><span>Resizable header</span></a>
+                                            </li>
+                                            <li class="col-lg-2 col-xs-12 col-sm-4 col-md-2">
+                                                <h3 class="header">Pages</h3>
+                                                <a href="features-box.html" title="Features boxes"><span>Features boxes</span></a>
+                                                <a href="contact-us.html" title="Contact us"><span>Contact us</span></a>
+                                                <h3 class="header mrg15T">Framework</h3>
+                                                <a href="tile-boxes.html" title="Tile boxes"><span>Tile boxes</span></a>
+                                            </li>
+                                            <li class="col-lg-6 col-xs-12 col-sm-4 col-md-6">
+                                                <h3 class="header pad0L">Navigation Slideshow</h3>
+                                                <div class="clearfix">
+                                                    <div class="owl-slider-5 slider-wrapper">
+                                                        <div>
+                                                            <a href="blog-single.html" title="">
+                                                                <img src="../../assets/image-resources/slides-bg/slide-1.jpg" class="img-full" alt="Example alternate text">
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <a href="blog-single.html" title="">
+                                                                <img src="../../assets/image-resources/slides-bg/slide-2.jpg" class="img-full" alt="Example alternate text">
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <a href="blog-single.html" title="">
+                                                                <img src="../../assets/image-resources/slides-bg/slide-3.jpg" class="img-full" alt="Example alternate text">
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <a href="blog-single.html" title="">
+                                                                <img src="../../assets/image-resources/slides-bg/slide-4.jpg" class="img-full" alt="Example alternate text">
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <a href="blog-single.html" title="">
+                                                                <img src="../../assets/image-resources/slides-bg/slide-5.jpg" class="img-full" alt="Example alternate text">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="divider mrg20T mrg20B"></div>
+                                                    <h4 class="header pad0L">Gadgets &amp; Illustrations</h4>
+                                                    <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Components">
+                                            Components
+                                            <i class="glyph-icon icon-angle-down"></i>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="content-boxes.html" title="Components framework">
+                                                    <span>Components framework</span>
+                                                </a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li>
+                                                <a href="pricing-table.html" title="Pricing tables">
+                                                    <span>Pricing tables</span>
+                                                </a>
+                                            </li>
+                                            <li><a href="carousels.html" title="Carousels"><span>Carousels</span></a></li>
+                                            <li><a href="slideshows.html" title="Slideshows"><span>Slideshows</span></a></li>
+                                            <li><a href="testimonials.html" title="Testimonials"><span>Testimonials</span></a></li>
+                                            <li><a href="icon-boxes.html" title="Icon boxes"><span>Icon boxes</span></a></li>
+                                            <li><a href="cta-boxes.html" title="Call to action boxes"><span>Call to action boxes</span></a></li>
+                                            <li><a href="features-box.html" title="Features boxes"><span>Features boxes</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Pages">
+                                            Pages
+                                            <i class="glyph-icon icon-angle-down"></i>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <h3 class="header">Blog</h3>
+                                                <a href="blog-sidebar.html" title="Blog with sidebar"><span>Blog sidebar I</span></a>
+                                                <a href="blog-sidebar-alt.html" title="Blog with sidebar alternate"><span>Blog sidebar II</span></a>
+                                                <div class="divider"></div>
+                                                <a href="blog-fullwidth.html" title="Blog without sidebar"><span>Blog full width I</span></a>
+                                                <a href="blog-fullwidth-alt.html" title="Blog without sidebar alternate"><span>Blog full width II</span></a>
+                                                <div class="divider"></div>
+                                                <a href="blog-masonry.html" title="Blog masonry"><span>Blog masonry</span></a>
+                                                <a href="blog-masonry-sidebar.html" title="Blog masonry with sidebar"><span>Blog masonry sidebar</span></a>
+                                                <div class="divider"></div>
+                                                <a href="blog-single.html" title="Blog single post"><span>Blog single post</span></a>
+                                            </li>
+                                            <li>
+                                                <h3 class="header">Others</h3>
+                                                <a href="features-tour.html" title="Features tour"><span>Features tour</span></a>
+                                                <a href="contact-us.html" title="Contact us"><span>Contact us</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul><!-- .header-nav -->
+                            </div><!-- .container -->
+                        </div><!-- .main-header -->
+
+                    </pre>
+
+                    <h3>Footer</h3>
+                    <p>Using the helper classes you can add different styles to the footers sections with only one click.</p>
+                    <pre class="brush: php;">
+
+                        <div class="main-footer bg-gradient-4 clearfix">
+                            <div class="container clearfix">
+                                <div class="col-md-3 pad25R">
+                                    <div class="header">About us</div>
+                                    <p class="about-us">
+                                        sollicitudin eu erat. Pellentesque ornare mi vitae sem consequat ac bibendum neque adipiscing.
+                                    </p>
+                                    <div class="divider"></div>
+                                    <div class="header">Footer background</div>
+                                    <div class="theme-color-wrapper clearfix">
+                                        <h5>Solids</h5>
+                                        <a class="tooltip-button set-footer-style bg-primary" data-header-bg="bg-primary" title="" href="#" data-original-title="Primary">Primary</a>
+                                        <a class="tooltip-button set-footer-style bg-green" data-header-bg="bg-green" title="" href="#" data-original-title="Green">Green</a>
+                                        <a class="tooltip-button set-footer-style bg-red" data-header-bg="bg-red" title="" href="#" data-original-title="Red">Red</a>
+                                        <a class="tooltip-button set-footer-style bg-blue" data-header-bg="bg-blue" title="" href="#" data-original-title="Blue">Blue</a>
+                                        <a class="tooltip-button set-footer-style bg-warning" data-header-bg="bg-warning" title="" href="#" data-original-title="Warning">Warning</a>
+                                        <a class="tooltip-button set-footer-style bg-purple" data-header-bg="bg-purple" title="" href="#" data-original-title="Purple">Purple</a>
+                                        <a class="tooltip-button set-footer-style bg-black" data-header-bg="bg-black" title="" href="#" data-original-title="Black">Black</a>
+
+                                        <div class="clear"></div>
+
+                                        <h5 class="mrg15T">Gradients</h5>
+                                        <a class="tooltip-button set-footer-style bg-gradient-1" data-header-bg="bg-gradient-1" title="" href="#" data-original-title="Gradient 1">Gradient 1</a>
+                                        <a class="tooltip-button set-footer-style bg-gradient-2" data-header-bg="bg-gradient-2" title="" href="#" data-original-title="Gradient 2">Gradient 2</a>
+                                        <a class="tooltip-button set-footer-style bg-gradient-3" data-header-bg="bg-gradient-3" title="" href="#" data-original-title="Gradient 3">Gradient 3</a>
+                                        <a class="tooltip-button set-footer-style bg-gradient-4" data-header-bg="bg-gradient-4" title="" href="#" data-original-title="Gradient 4">Gradient 4</a>
+                                        <a class="tooltip-button set-footer-style bg-gradient-5" data-header-bg="bg-gradient-5" title="" href="#" data-original-title="Gradient 5">Gradient 5</a>
+                                        <a class="tooltip-button set-footer-style bg-gradient-6" data-header-bg="bg-gradient-6" title="" href="#" data-original-title="Gradient 6">Gradient 6</a>
+                                        <a class="tooltip-button set-footer-style bg-gradient-7" data-header-bg="bg-gradient-7" title="" href="#" data-original-title="Gradient 7">Gradient 7</a>
+                                        <a class="tooltip-button set-footer-style bg-gradient-8" data-header-bg="bg-gradient-8" title="" href="#" data-original-title="Gradient 8">Gradient 8</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3 class="header">Recent posts</h3>
+                                    <div class="posts-list">
+                                        <ul>
+                                            <li>
+                                                <div class="post-image">
+                                                    <a href="../../assets/image-resources/stock-images/img-10.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                                                        <img class="img-responsive" src="../../assets/image-resources/stock-images/img-10.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="post-body">
+                                                    <a class="post-title" href="blog-single.html" title="">
+                                                        <h3>When our power of choice is untrammelled prevents</h3>
+                                                    </a>
+                                                    by <a href="#">Hector Tomales</a> on 16.04.2015
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="post-image">
+                                                    <a href="../../assets/image-resources/stock-images/img-11.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                                                        <img class="img-responsive" src="../../assets/image-resources/stock-images/img-11.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="post-body">
+                                                    <a class="post-title" href="blog-single.html" title="">
+                                                        <h3>And when nothing prevents our being able</h3>
+                                                    </a>
+                                                    by <a href="#">Hector Tomales</a> on 16.04.2015
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="post-image">
+                                                    <a href="../../assets/image-resources/stock-images/img-12.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                                                        <img class="img-responsive" src="../../assets/image-resources/stock-images/img-12.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="post-body">
+                                                    <a class="post-title" href="blog-single.html" title="">
+                                                        <h3>When our power of choice is untrammelled</h3>
+                                                    </a>
+                                                    by <a href="#">Hector Tomales</a> on 16.04.2015
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <h3 class="header">Components</h3>
+                                    <ul class="footer-nav">
+                                        <li><a href="hero-static.html" title="Static hero sections"><span>Static sections</span></a></li>
+                                        <li><a href="hero-alignments.html" title="Hero alignments"><span>Hero alignments</span></a></li>
+                                        <li><a href="hero-overlays.html" title="Hero overlays"><span>Hero overlays</span></a></li>
+                                        <li><a href="hero-video.html" title="Hero with video backgrounds"><span>Video sections</span></a></li>
+                                        <li><a href="hero-elements.html" title="Hero sections with elements"><span>Hero elements</span></a></li>
+                                        <li><a href="hero-parallax.html" title="Hero with parallax backgrounds"><span>Parallax sections</span></a></li>
+                                        <li><a href="portfolio-3col.html" title="Portfolio with 3 columns"><span>Portfolio 3 columns</span></a></li>
+                                        <li><a href="contact-us.html" title="Contact us"><span>Contact us</span></a></li>
+                                        <li><a href="features-box.html" title="Features boxes"><span>Features boxes</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="header">Photo Gallery</h3>
+                                    <div class="row no-gutter">
+                                        <div class="col-xs-4">
+                                            <a href="../../assets/image-resources/stock-images/img-20.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                                                <img class="img-responsive" src="../../assets/image-resources/stock-images/img-20.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="../../assets/image-resources/stock-images/img-19.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                                                <img class="img-responsive" src="../../assets/image-resources/stock-images/img-19.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="../../assets/image-resources/stock-images/img-18.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                                                <img class="img-responsive" src="../../assets/image-resources/stock-images/img-18.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="../../assets/image-resources/stock-images/img-17.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                                                <img class="img-responsive" src="../../assets/image-resources/stock-images/img-17.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="../../assets/image-resources/stock-images/img-16.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                                                <img class="img-responsive" src="../../assets/image-resources/stock-images/img-16.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="../../assets/image-resources/stock-images/img-15.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                                                <img class="img-responsive" src="../../assets/image-resources/stock-images/img-15.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3 class="header">Contact us</h3>
+                                    <ul class="footer-contact">
+                                        <li>
+                                            <i class="glyph-icon icon-home"></i>
+                                            5804 Quaking Embers Trail, Tiger, Missouri
+                                        </li>
+                                        <li>
+                                            <i class="glyph-icon icon-phone"></i>
+                                            (636) 517-1243
+                                        </li>
+                                        <li>
+                                            <i class="glyph-icon icon-envelope-o"></i>
+                                            <a href="#" title="">homepage@example.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-pane">
+                                <div class="container clearfix">
+                                    <div class="logo">&copy; 2014 Monarch. All Rights Reserved.</div>
+                                    <div class="footer-nav-bottom">
+                                        <a href="#" title="Portfolio">Widgets</a>
+                                        <a href="#" title="Layout">Layout</a>
+                                        <a href="#" title="Elements">Elements</a>
+                                        <a href="#" title="">Pricing tables</a>
+                                        <a href="#" title="Portfolio">Portfolio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </pre>
+
+                    <h3>Required Javascript</h3>
+                    <p>These are Javascripts used on almost all pages and that is why they are included at the bottom of each page.</p>
+                    <pre class="brush: php;">
+
+                        <!-- FRONTEND ELEMENTS -->
+
+                        <!-- Skrollr -->
+
+                        <script type="text/javascript" src="../../assets/widgets/skrollr/skrollr.js"></script>
+
+                        <!-- Owl carousel -->
+
+                        <script type="text/javascript" src="../../assets/widgets/owlcarousel/owlcarousel.js"></script>
+                        <script type="text/javascript" src="../../assets/widgets/owlcarousel/owlcarousel-demo.js"></script>
+
+                        <!-- HG sticky -->
+
+                        <script type="text/javascript" src="../../assets/widgets/sticky/sticky.js"></script>
+
+                        <!-- WOW -->
+
+                        <script type="text/javascript" src="../../assets/widgets/wow/wow.js"></script>
+
+                        <!-- VideoBG -->
+
+                        <script type="text/javascript" src="../../assets/widgets/videobg/videobg.js"></script>
+                        <script type="text/javascript" src="../../assets/widgets/videobg/videobg-demo.js"></script>
+
+                        <!-- Mixitup -->
+
+                        <script type="text/javascript" src="../../assets/widgets/mixitup/mixitup.js"></script>
+                        <script type="text/javascript" src="../../assets/widgets/mixitup/isotope.js"></script>
+
+                        <!-- WIDGETS -->
+
+                        <!-- Bootstrap Dropdown -->
+
+                        <script type="text/javascript" src="../../assets/widgets/dropdown/dropdown.js"></script>
+
+                        <!-- Bootstrap Tooltip -->
+
+                        <script type="text/javascript" src="../../assets/widgets/tooltip/tooltip.js"></script>
+
+                        <!-- Bootstrap Popover -->
+
+                        <script type="text/javascript" src="../../assets/widgets/popover/popover.js"></script>
+
+                        <!-- Bootstrap Progress Bar -->
+
+                        <script type="text/javascript" src="../../assets/widgets/progressbar/progressbar.js"></script>
+
+                        <!-- Bootstrap Buttons -->
+
+                        <script type="text/javascript" src="../../assets/widgets/button/button.js"></script>
+
+                        <!-- Bootstrap Collapse -->
+
+                        <script type="text/javascript" src="../../assets/widgets/collapse/collapse.js"></script>
+
+                        <!-- Superclick -->
+
+                        <script type="text/javascript" src="../../assets/widgets/superclick/superclick.js"></script>
+
+                        <!-- Input switch alternate -->
+
+                        <script type="text/javascript" src="../../assets/widgets/input-switch/inputswitch-alt.js"></script>
+
+                        <!-- Slim scroll -->
+
+                        <script type="text/javascript" src="../../assets/widgets/slimscroll/slimscroll.js"></script>
+
+                        <!-- Content box -->
+
+                        <script type="text/javascript" src="../../assets/widgets/content-box/contentbox.js"></script>
+
+                        <!-- Overlay -->
+
+                        <script type="text/javascript" src="../../assets/widgets/overlay/overlay.js"></script>
+
+                        <!-- Widgets init for demo -->
+
+                        <script type="text/javascript" src="../../assets/js-init/widgets-init.js"></script>
+                        <script type="text/javascript" src="../../assets/js-init/frontend-init.js"></script>
+
+                        <!-- Theme layout -->
+
+                        <script type="text/javascript" src="../../assets/themes/frontend/layout.js"></script>
+
+                        <!-- Theme switcher -->
+
+                        <script type="text/javascript" src="../../assets/widgets/theme-switcher/themeswitcher.js"></script>
+
+                    </pre>
+
+                </div>
+            </div>
+            <div class="doc-box" id="layouts-options">
+                <h1>Layouts options</h1>
+                <div class="content-box">
+                    <div class="content-box-header bg-default">
+                        <h2>Modifiers</h2>
+                    </div>
+                    <div class="content-box-wrapper">
+                        <p>Modifiers are CSS classes that should be applied to the pages' <code>body</code> element.</p>
+                        <h3>Admin modifiers</h3>
+                        <p>For the admin template the following CSS modifiers can be used:
+                        <ul>
+                            <li><code>boxed-layout</code> - transforms the fluid full width layout into a boxed fixed width with screen resolution breakpoints</li>
+                            <li><code>fixed-header</code> - Sticks the admin template header section to the top of the screen on page scroll</li>
+                            <li><code>fixed-sidebar</code> - Sticks the admin template sidebar menu section to the left of the screen on page scroll</li>
+                            <li><code>closed-sidebar</code> - Closes the sidebar menu allowing for more main content space.</li>
+                        </ul>
+                        </p>
+
+                        <h3>Frontend modifiers</h3>
+                        <p>For the frontend template the following CSS modifiers can be used:
+                        <ul>
+                            <li><code>boxed-layout</code> - transforms the fluid full width layout into a boxed fixed width with screen resolution breakpoints</li>
+                            <li><code>main-header-fixed</code> - Sticks the frontend template header section to the top of the screen on page scroll</li>
+                    </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box-header bg-default">
+                        <h2>Structure</h2>
+                    </div>
+                    <div class="content-box-wrapper">
+                        <p>Inside the .zip package you downloaded from Themeforest you will find the following directories and files:</p>
+                        <ul>
+                            <li><b class="font-primary">assets</b> - contains all the source code CSS, JS, fonts and images uncompressed, development versions.</li>
+                            <li><b class="font-primary">assets-minified</b> - contains all the css, js files, minified, ready for production.</li>
+                            <li><b class="font-primary">src</b> - contains all the handlebars templating files used in the generation of the demonstration &amp; documentation files.</li>
+                            <li><b class="font-primary">production</b> - contains example HTML files with all widgets &amp; elements in action for the admin template</li>
+                            <li><b class="font-primary">production/admin-template</b> - contains example HTML files with all widgets &amp; elements in action</li>
+                            <li><b class="font-primary">production/frontend-template</b> - contains example HTML files with all widgets &amp; elements for the frontend template</li>
+                            <li><b class="font-primary">production/documentation</b> - contains the documentation files</li>
+
+                            <li><b class="font-primary">changelog.txt</b> - changelog between version</li>
+                            <li><b class="font-primary">Gruntfile.js</b> - contains Grunt tasks that can be used to generate the production-ready, minified assets and compile template</li>
+                            <li><b class="font-primary">Readme.md</b> - General informations about the template</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc-box" id="theming-options">
+                <h1>Theming options</h1>
+                <div class="content-box">
+                    <div class="content-box-header bg-default">
+                        <h2>Styling classes</h2>
+                    </div>
+                    <div class="content-box-wrapper">
+                        <p>The styling classes can be applied to all admin &amp; front-end headers sections, front-end top bar section, front-end footer section and admin sidebar section.</p>
+                        <p>Check out our demos' theming options to see the styling classes in action.</p>
+                        <p>To see a complete list of available styling classes you need to open the /assets/helpers/backgrounds.css and /assets/helpers/colors.css</p>
+                        <h3>Basic styling classes</h3>
+                        <div class="btn bg-white float-left mrg5A">
+                            .bg-white
+                        </div>
+                        <div class="btn bg-azure float-left mrg5A">
+                            .bg-azure
+                        </div>
+                        <div class="btn bg-blue-alt float-left mrg5A">
+                            .bg-blue-alt
+                        </div>
+                        <div class="btn bg-purple float-left mrg5A">
+                            .bg-purple
+                        </div>
+                        <div class="btn bg-yellow float-left mrg5A">
+                            .bg-yellow
+                        </div>
+                        <div class="btn bg-gray float-left mrg5A">
+                            .bg-gray
+                        </div>
+                        <div class="btn bg-gray-alt float-left mrg5A">
+                            .bg-gray-alt
+                        </div>
+                        <div class="btn bg-black float-left mrg5A">
+                            .bg-black
+                        </div>
+                        <div class="btn bg-blue float-left mrg5A">
+                            .bg-blue
+                        </div>
+                        <div class="btn bg-green float-left mrg5A">
+                            .bg-green
+                        </div>
+                        <div class="btn bg-red float-left mrg5A">
+                            .bg-red
+                        </div>
+                        <div class="btn bg-orange float-left mrg5A">
+                            .bg-orange
+                        </div>
+
+                        <div class="clear"></div>
+                        <br /><br />
+
+                        <h3>Advanced styling classes</h3>
+                        <p>Advanced styling classes include things like CSS3 gradients, image gradients, generic imaging for faded backgrounds, etc. These an be found exclusevly in /assets/helpers/backgrounds.css</p>
+
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box-header bg-default">
+                        <h2>Style themes</h2>
+                    </div>
+                    <div class="content-box-wrapper">
+                        <p>The /assets/themes/ directory contains the following files &amp; directories:</p>
+                        <ul>
+                            <li>
+                                <h3 class="mrg20T">Admin template:</h3>
+                                <p>/assets/themes/admin/</p>
+                                <ul>
+                                    <li>
+                                        <b class="font-primary">color-schemes</b> - contains default.css which holds all the color styling for the admin template layout.
+                                    </li>
+                                    <li>
+                                        <b class="font-primary">layout.css</b> - contains all the structural CSS code for the admin template layout. For example, if you were to change the sidebar width, this is the file you would be editing.
+                                    </li>
+                                    <li>
+                                        <b class="font-primary">layout.js</b> - contains Javascript snippets that are related to that specific admin template layout.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="mrg20T">Frontend template:</h3>
+                                <p>/assets/themes/frontend/</p>
+                                <ul>
+                                    <li>
+                                        <b class="font-primary">color-schemes</b> - contains default.css which holds all the color styling for the frontend template layout.
+                                    </li>
+                                    <li>
+                                        <b class="font-primary">layout.css</b> - contains all the structural CSS code for the frontend template layout. For example, if you were to change the header navigation menu height, this is the file that you would be editing.
+                                    </li>
+                                    <li>
+                                        <b class="font-primary">layout.js</b> - contains Javascript snippets that are related to that specific frontend template layout.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="mrg20T">Components:</h3>
+                                <p>/assets/themes/components/</p>
+                                <ul>
+                                    <li>
+                                        <b class="font-primary">default.css</b> - common styles that are used by various elements, components and widgets. For better modularity, the structural layout is stored, for example, for widgets, in each widget directory.
+                                    </li>
+                                    <li>
+                                        <b class="font-primary">border-radius.css</b> - common border radiuses for elements, components and widgets.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-box" id="core-options">
+                <h1>Core files</h1>
+                <div class="content-box">
+                    <div class="content-box-header bg-default">
+                        <h2>Javascript &amp; CSS</h2>
+                    </div>
+                    <div class="content-box-wrapper">
+                        <p>The files below should be removed from templates only in special cases that require so. They are used site-wide in both admin and front-end templates.</p>
+                        <b>Javascript core:</b>
+                        <ul>
+                            <li>/assets/js-core/*.js</li>
+                            <li>/assets/themes/**/*.js</li>
+                        </ul>
+                        <b>CSS core:</b>
+                        <ul>
+                            <li>/assets/helpers/*.css</li>
+                            <li>/assets/elements/*.css</li>
+                            <li>/assets/themes/**/*.css</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-box" id="assets-options">
+                <h1>Assets</h1>
+                <div class="content-box">
+                    <div class="content-box-wrapper">
+                        <p>The assets directory (/assets/) contains the development (uncompressed) files that are used in the site. For production ready enviroments we suggest using the files from the /assets-minified/ directory because they take a lot less space.</p>
+                        <b>The assets directory structure:</b>
+                        <ul>
+                            <li><b class="font-primary">applications</b> - contains the CSS files for different applications embedded in Bratilius, for example, the Mailbox page.</li>
+                            <li><b class="font-primary">elements</b> - contains all CSS files used for creating different types of elements, for example, ribbons.css, buttons.css, etc. They are used for both the admin backend template and for the frontend presentation website.</li>
+                            <li><b class="font-primary">snippets</b> - contains all CSS files for different snippets used through out the template, like todo lists, notification boxes, chat, etc.</li>
+                            <li><b class="font-primary">frontend-elements</b> - contains the CSS files specific for the frontend presentation template, for example, pricing-tables.css, portfolio-navigation.css, etc.</li>
+                            <li><b class="font-primary">helpers</b> - contains all CSS files used for resets, or recurring tasks, for example, grid.css, page-transitions.css, typography.css, spacing.css, etc.</li>
+                            <li><b class="font-primary">icons</b> - contains all directories with files specific to an icon category. For example, the FontAwesome icon fonts and CSS file are located in /icons/fontawesome/.</li>
+                            <li><b class="font-primary">image-resources</b> - contains images that are used for demonstation purposes only in our presentation.</li>
+                            <li><b class="font-primary">images</b> - contains all images that are used by other elements, for example, /images/spinner/loader-light.gif - which is used by the loading overlay element.</li>
+                            <li><b class="font-primary">js-core</b> - contains all Javascript core plugins, like jquery-core.js, raphael.js, etc.</li>
+                            <li><b class="font-primary">widgets</b> - contains all widgets used in the Bratilius template. Each widget has its own directory containing the javascript core, css core and javascript demo initialization.</li>
+                            <li><b class="font-primary">themes</b> - contains the files needed for the color and style customisations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-box" id="automations-options">
+                <h1>Automations</h1>
+                <div class="content-box">
+                    <div class="content-box-wrapper">
+                        <p>To generate the demonstration and documentation files we use Grunt - the javascript task runner. To find out more about it read the Grunt.js documentation.</p>
+                        <p>We also use grunt to automate the minification and concatenation of the assets.</p>
+                        <b>Install dependencies:</b>
+                        <ul>
+                            <li>Install NodeJS - brew install nodejs npm</li>
+                            <li>Install GruntJS - sudo npm install -g grunt</li>
+                            <li>Install NPM packages - sudo npm install</li>
+                        </ul>
+                        <b>Grunt tasks aliases:</b>
+                        <p>You can find all the available grunt tasks in Gruntfile.js</p>
+                        <ul>
+                            <li>"all" - builds the complete solution for documentation & production. It also create the /assets-minified/ production-ready directory.</li>
+                            <li>"server" - creates a server on http://localhost:8585 that points to the build files. This way you don't have to install WAMP,XAMPP or MAMP on your local environment.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-box" id="changelog-options">
+                <h1>Changelog</h1>
+                <div class="content-box">
+                    <div class="content-box-header bg-default">
+                        <h2>Current version: <b>1.0</b></h2>
+                    </div>
+                    <div class="content-box-wrapper">
+                        <p>This is the initial release, submitted on ThemeForest on 16.11.2014</p>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box-header bg-default">
+                        <h2>Updates</h2>
+                    </div>
+                    <div class="content-box-wrapper">
+                        <p>To make sure you can easily update your instance with our future releases make sure you don't write custom code in any CSS or JS files and you create new separate files for your modifications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-box" id="credits-options">
+                <h1>Credits</h1>
+                <div class="content-box">
+                    <div class="content-box-header bg-default">
+                        <h2>Widgets &amp; Components</h2>
+                    </div>
+                    <div class="content-box-wrapper clearfix">
+                        <div class="col-md-6">
+                        <ul>
+                            <li><a href="http://jquery.com/">jQuery</a>  </li>
+                            <li><a href="http://jqueryui.com/">jQueryUI</a>  </li>
+                            <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+                            <li><a href="http://d3js.org/">D3.js</a>  </li>
+                            <li><a href="http://greensock.com/">Greensock</a>  </li>
+                            <li><a href="http://modernizr.com/">Modernizr</a>  </li>
+                            <li><a href="http://raphaeljs.com/">RaphaelJS</a>  </li>
+                            <li><a href="http://arshaw.com/fullcalendar/">Calendar</a>  </li>
+                            <li><a href="http://www.justgage.com">justGage</a>  </li>
+                            <li><a href="http://morrisjs.github.io/morris.js/">Morris</a>  </li>
+                            <li><a href="http://github.com/rendro/easy-pie-chart/">Piegage</a>  </li>
+                            <li><a href="http://omnipotent.net/jquery.sparkline/">Sparklines</a>  </li>
+                            <li><a href="http://github.com/tenXer/xcharts">xCharts</a>  </li>
+                            <li><a href="https://github.com/harvesthq/chosen">Chosen</a>  </li>
+                            <li><a href="http://www.abeautifulsite.net">Minicolors</a>  </li>
+                            <li><a href="http://www.datatables.net/">Datatables</a>  </li>
+                            <li><a href="http://www.eyecon.ro/bootstrap-datepicker/">Datepicker</a>  </li>
+                            <li><a href="http://www.improvely.com/">Daterangepicker</a>  </li>
+                            <li><a href="http://www.dropzonejs.com/">Dropzone</a>  </li>
+                            <li><a href="http://github.com/RobinHerbots/jquery.inputmask">InputMasks</a>  </li>
+                            <li><a href="http://www.bootstrap-switch.org">InputSwitch</a>  </li>
+                            <li><a href="http://github.com/tapmodo/Jcrop">jCrop</a>  </li>
+                            <li><a href="http://stanlemon.net/2013/03/16/jgrowl-1-2-11/">jGrowl</a>  </li>
+                            <li><a href="http://anthonyterrien.com/knob/">Knobs</a>  </li>
+                        </ul>
+                        </div>
+                        <div class="col-md-6">
+                        <ul>
+                            <li><a href="http://www.appelsiini.net/projects/lazyload">Lazyload</a>  </li>
+                            <li><a href="https://github.com/peachananr/loading-bar">Loading bar</a>  </li>
+                            <li><a href="http://hpneo.github.com/gmaps/">gMaps</a>  </li>
+                            <li><a href="http://jvectormap.com/">jVectorMap</a>  </li>
+                            <li><a href="https://mixitup.kunkalabs.com/">Mixitup</a>  </li>
+                            <li><a href="http://loudev.com/">Multiselect</a>  </li>
+                            <li><a href="https://github.com/blueimp/jQuery-File-Upload">Multiupload</a>  </li>
+                            <li><a href="http://dbushell.com/">Nestable</a>  </li>
+                            <li><a href="http://www.owlgraphic.com/owlcarousel/">Owlcarousel</a>  </li>
+                            <li><a href="https://github.com/inuyaksa/jquery.nicescroll">Nicescroll</a>  </li>
+                            <li><a href="http://needim.github.com/noty/">Noty</a>  </li>
+                            <li><a href="http://parsleyjs.org/">Parsley</a>  </li>
+                            <li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">PrettyPhoto</a>  </li>
+                            <li><a href="http://prismjs.com/">Prism</a>  </li>
+                            <li><a href="http://ghusse.github.io/jQRangeSlider/">Rangeslider</a>  </li>
+                            <li><a href="https://github.com/Prinzhorn/skrollr">Skrollr</a>  </li>
+                            <li><a href="http://darkskyapp.github.io/skycons/">Skycons</a>  </li>
+                            <li><a href="http://fortawesome.github.io/Font-Awesome/">Fontawesome</a>  </li>
+                            <li><a href="http://plugins.adchsm.me/slidebars/">Slidebars</a>  </li>
+                            <li><a href="https://github.com/somewebmedia/hc-sticky">HGSticky</a>  </li>
+                            <li><a href="http://hackerwins.github.io/summernote/">Summernote</a>  </li>
+                            <li><a href="http://users.tpg.com.au/j_birch/plugins/superfish/">Superfish</a>  </li>
+                            <li><a href="http://uniformjs.com/">Uniform</a>  </li>
+                            <li><a href="https://github.com/sydlawrence/jquery.videoBG">Videobg</a>  </li>
+                            <li><a href="http://mynameismatthieu.com/WOW/">WowJS</a>  </li>
+                            <li><a href="http://github.com/VinceG/twitter-bootstrap-wizard">Wizard</a>  </li>
+                            <li><a href="https://github.com/jdewit/bootstrap-timepicker">Timepicker</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="clearfix">
+    <div class="col-md-12 pad25B mrg25T">
+        <div class="divider mrg25T mrg25B"></div>
+        <h3 class="text-center text-transform-upr">Thanks again for your purchase!</h3>
+    </div>
+</div>

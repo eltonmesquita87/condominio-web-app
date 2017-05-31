@@ -1,0 +1,21 @@
+[
+	{
+		"id":"menu01",
+		"icone":"fa fa-list-alt",
+		"titulo":"Moradores",
+		"ambienteAutorizado":"L,D,H,P"
+	},
+	{
+		"id":"menu02",
+		"icone":"fa fa-calculator",
+		"titulo":"Sindicos",
+		"ambienteAutorizado":"L,D"
+	},
+	{
+		"id":"menu03",
+		"icone":"fa fa-file-text-o",
+		"titulo":"Portaria",
+		"ambienteAutorizado":"L,D"
+	}
+	
+]

@@ -1,0 +1,228 @@
+---
+title: Loading feedback
+subheading: Loading indicators are used to provide visual feedback while waiting for actions to complete.
+---
+
+<!-- Loading bar -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/loading-bar/loadingbar.css">-->
+<script type="text/javascript" src="../../assets/widgets/loading-bar/loadingbar.js"></script>
+<script type="text/javascript" src="../../assets/widgets/loading-bar/loadingbar-demo.js"></script>
+
+<style>
+
+    .loading-spinner {
+        float: left;
+    }
+
+    .example-box-wrapper .loading-spinner, .example-box-wrapper .loading-stick {
+        float: left;
+        margin-top: 5px;
+    }
+
+</style>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Loading bar
+                </h3>
+                <div class="example-box-wrapper">
+
+                    <a href="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&tags=everest&tagmode=any&format=json" data-datatype="json" data-type="GET" data-target="#loading-frame" class="reload loadingbar-demo btn btn-default btn-md">
+                        Left to right example
+                    </a>
+
+                    <a href="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&tags=everest&tagmode=any&format=json" data-datatype="json" data-type="GET" data-target="#loading-frame" class="reload loadingbar-demo-right btn btn-default btn-md">
+                        Right to left example
+                    </a>
+
+                    <a href="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&tags=everest&tagmode=any&format=json" data-datatype="json" data-type="GET" data-target="#loading-frame" class="reload loadingbar-demo-down btn btn-default btn-md">
+                        Vertical down
+                    </a>
+
+                    <a href="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&tags=everest&tagmode=any&format=json" data-datatype="json" data-type="GET" data-target="#loading-rame" class="reload loadingbar-demo-up btn btn-default btn-md">
+                        Vertical up
+                    </a>
+
+                    <div id="loading-frame" class="scrollable-content scrollable-xs scrollable-slim"></div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    CSS3 Animations
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="clearfix">
+
+                        <div class="loading-spinner">
+                            <i class="bg-blue"></i>
+                            <i class="bg-blue"></i>
+                            <i class="bg-blue"></i>
+                            <i class="bg-blue"></i>
+                            <i class="bg-blue"></i>
+                            <i class="bg-blue"></i>
+                        </div>
+                        <div class="loading-spinner">
+                            <i class="bg-primary"></i>
+                            <i class="bg-primary"></i>
+                            <i class="bg-primary"></i>
+                            <i class="bg-primary"></i>
+                            <i class="bg-primary"></i>
+                            <i class="bg-primary"></i>
+                        </div>
+                        <div class="loading-spinner">
+                            <i class="bg-black"></i>
+                            <i class="bg-black"></i>
+                            <i class="bg-black"></i>
+                            <i class="bg-black"></i>
+                            <i class="bg-black"></i>
+                            <i class="bg-black"></i>
+                        </div>
+                        <div class="loading-spinner">
+                            <i class="bg-red"></i>
+                            <i class="bg-red"></i>
+                            <i class="bg-red"></i>
+                            <i class="bg-red"></i>
+                            <i class="bg-red"></i>
+                            <i class="bg-red"></i>
+                        </div>
+                        <div class="loading-spinner">
+                            <i class="bg-green"></i>
+                            <i class="bg-green"></i>
+                            <i class="bg-green"></i>
+                            <i class="bg-green"></i>
+                            <i class="bg-green"></i>
+                            <i class="bg-green"></i>
+                        </div>
+                        <div class="loading-spinner">
+                            <i class="bg-azure"></i>
+                            <i class="bg-azure"></i>
+                            <i class="bg-azure"></i>
+                            <i class="bg-azure"></i>
+                            <i class="bg-azure"></i>
+                            <i class="bg-azure"></i>
+                        </div>
+                        <div class="loading-spinner">
+                            <i class="bg-gray"></i>
+                            <i class="bg-gray"></i>
+                            <i class="bg-gray"></i>
+                            <i class="bg-gray"></i>
+                            <i class="bg-gray"></i>
+                            <i class="bg-gray"></i>
+                        </div>
+                        <div class="loading-spinner">
+                            <i class="bg-yellow"></i>
+                            <i class="bg-yellow"></i>
+                            <i class="bg-yellow"></i>
+                            <i class="bg-yellow"></i>
+                            <i class="bg-yellow"></i>
+                            <i class="bg-yellow"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Spinners
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="clearfix demo-margin">
+
+                        <div class="pad20A radius-all-8 float-left mrg15R bg-black">
+                            <img src="../../assets/images/spinner/loader-light.gif" alt="" />
+                        </div>
+                        <div class="pad20A radius-all-8 float-left bg-gray">
+                            <img src="../../assets/images/spinner/loader-dark.gif" alt="" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Alternate spinners
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="clearfix">
+
+                        <div class="loading-stick">
+                            <div class="stick bg-green"></div>
+                            <div class="stick bg-green"></div>
+                            <div class="stick bg-green"></div>
+                            <div class="stick bg-green"></div>
+                            <div class="stick bg-green"></div>
+                            <div class="stick bg-green"></div>
+                            <h1>Loading...</h1>
+                        </div>
+                        <div class="loading-stick">
+                            <div class="stick bg-primary"></div>
+                            <div class="stick bg-primary"></div>
+                            <div class="stick bg-primary"></div>
+                            <div class="stick bg-primary"></div>
+                            <h1>We're almost done!</h1>
+                        </div>
+                        <div class="loading-stick">
+                            <div class="stick bg-azure"></div>
+                            <div class="stick bg-azure"></div>
+                            <div class="stick bg-azure"></div>
+                            <div class="stick bg-azure"></div>
+                            <div class="stick bg-azure"></div>
+                            <div class="stick bg-azure"></div>
+                            <h1>Loading...</h1>
+                        </div>
+                        <div class="loading-stick">
+                            <div class="stick bg-black"></div>
+                            <div class="stick bg-black"></div>
+                            <div class="stick bg-black"></div>
+                            <h1>Wait...</h1>
+                        </div>
+                        <div class="loading-stick">
+                            <div class="stick bg-blue-alt"></div>
+                            <div class="stick bg-blue-alt"></div>
+                            <div class="stick bg-blue-alt"></div>
+                            <div class="stick bg-blue-alt"></div>
+                            <div class="stick bg-blue-alt"></div>
+                            <div class="stick bg-blue-alt"></div>
+                            <h1>Stand by...</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Spinning icons
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="glyph-icon remove-border demo-icon tooltip-button icon-spin-1 icon-spin" title="icon-spin-1"></div>
+                    <div class="glyph-icon remove-border demo-icon tooltip-button icon-spin-2 icon-spin" title="icon-spin-2"></div>
+                    <div class="glyph-icon remove-border demo-icon tooltip-button icon-spin-3 icon-spin" title="icon-spin-3"></div>
+                    <div class="glyph-icon remove-border demo-icon tooltip-button icon-spin-4 icon-spin" title="icon-spin-4"></div>
+                    <div class="glyph-icon remove-border demo-icon tooltip-button icon-spin-5 icon-spin" title="icon-spin-5"></div>
+                    <div class="glyph-icon remove-border demo-icon tooltip-button icon-spin-6 icon-spin" title="icon-spin-6"></div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

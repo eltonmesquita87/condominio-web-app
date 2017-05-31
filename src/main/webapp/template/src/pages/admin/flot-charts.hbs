@@ -1,0 +1,108 @@
+---
+title: Flot charts
+subheading: Interactive charts plotting library.
+---
+
+<!-- Flot charts -->
+
+<script type="text/javascript" src="../../assets/widgets/charts/flot/flot.js"></script>
+<script type="text/javascript" src="../../assets/widgets/charts/flot/flot-resize.js"></script>
+<script type="text/javascript" src="../../assets/widgets/charts/flot/flot-stack.js"></script>
+<script type="text/javascript" src="../../assets/widgets/charts/flot/flot-pie.js"></script>
+<script type="text/javascript" src="../../assets/widgets/charts/flot/flot-tooltip.js"></script>
+
+<script type="text/javascript" src="../../assets/widgets/charts/flot/flot-demo.js"></script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+{{> page-title-content }}
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                Data points interactivity
+                </h3>
+                <div class="example-box-wrapper">
+                    <div id="data-example-1" class="mrg20B" style="width: 100%; height: 300px;"></div>
+                    <p id="hoverdata" class="text-center">Mouse hovers at (<span id="x">0</span>, <span id="y">0</span>). <span id="clickdata"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                Realtime updating
+                </h3>
+                <div class="example-box-wrapper">
+                    <div id="data-example-3" style="width: 100%; height: 344px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Stacked charts
+        </h3>
+        <div class="example-box-wrapper clearfix">
+            <div id="data-example-2" class="mrg20B" style="width: 100%; height: 300px;"></div>
+
+            <div class="float-left stackControls mrg15R">
+                <button class="btn btn-md btn-default">With stacking</button>
+                <button class="btn btn-md btn-default">Without stacking</button>
+            </div>
+
+            <div class="float-left graphControls">
+                <button class="btn btn-md btn-default">Bars</button>
+                <button class="btn btn-md btn-default">Lines</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Donut hole
+                </h3>
+                <div class="example-box-wrapper clearfix">
+                    <div id="data-donut-1" style="width: 100%; height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Interactive donut
+                </h3>
+                <div class="example-box-wrapper clearfix">
+                    <div id="data-donut-2" style="width: 100%; height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Rectangular pie
+                </h3>
+                <div class="example-box-wrapper clearfix">
+                    <div id="data-donut-3" style="width: 100%; height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

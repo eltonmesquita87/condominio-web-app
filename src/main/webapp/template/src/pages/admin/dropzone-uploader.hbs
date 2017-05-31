@@ -1,0 +1,28 @@
+---
+title: Dropzone uploader
+subheading: Drag &amp; drop file uploads with image previews.
+---
+
+<!-- Dropzone uploader -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/dropzone/dropzone.css">-->
+<script type="text/javascript" src="../../assets/widgets/dropzone/dropzone.js"></script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Basic
+        </h3>
+        <div class="example-box-wrapper">
+            <div class="row" id="dropzone-example">
+                <form action="/file-upload" class="dropzone bg-gray col-md-10 center-margin" id="demo-upload"></form>
+            </div>
+        </div>
+    </div>
+</div>

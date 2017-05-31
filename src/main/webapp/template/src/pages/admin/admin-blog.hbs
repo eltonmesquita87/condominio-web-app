@@ -1,0 +1,354 @@
+---
+title: Blog posts
+subheading: Example page with blog posts list build with MonarchUI
+---
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<link rel="stylesheet" type="text/css" href="../../assets/frontend-elements/blog.css">
+
+<!-- Owlcarousel -->
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/owlcarousel/owlcarousel.css">
+<script type="text/javascript" src="../../assets/widgets/owlcarousel/owlcarousel.js"></script>
+<script type="text/javascript" src="../../assets/widgets/owlcarousel/owlcarousel-demo.js"></script>
+
+<!-- Lazyload -->
+
+<script type="text/javascript" src="../../assets/widgets/lazyload/lazyload.js"></script>
+<script type="text/javascript">
+    /* Lazyload */
+
+    $(function() {
+        $("img.lazy").lazyload({
+            effect: "fadeIn",
+            threshold: 100
+        });
+    });
+</script>
+
+<!-- PrettyPhoto modals -->
+
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/pretty-photo/prettyphoto.css">
+<script type="text/javascript" src="../../assets/widgets/pretty-photo/prettyphoto.js"></script>
+<script type="text/javascript">
+    /* PrettyPhoto */
+
+    $(document).ready(function() {
+        $(".prettyphoto").prettyPhoto();
+    });
+</script>
+
+<div class="row">
+    <div class="col-md-9">
+        <div class="blog-box row">
+            <div class="post-image col-md-4">
+                <a href="../../assets/image-resources/stock-images/img-44.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                    <img class="img-responsive lazy img-rounded" src="" data-original="../../assets/image-resources/stock-images/img-44.jpg" alt="" />
+                </a>
+            </div>
+            <div class="post-content-wrapper col-md-8">
+                <a class="post-title" href="#" title="">
+                    <h3>When our power of choice is untrammelled and when nothing prevents our being able</h3>
+                </a>
+                <div class="post-meta">
+                    <span>
+                        <i class="glyph-icon icon-user"></i>
+                        <a href="#" title="">Thomas Edison</a>
+                    </span>
+                    <span>
+                        <i class="glyph-icon icon-clock-o"></i>
+                        21 December 2014
+                    </span>
+                    <span>
+                        <i class="glyph-icon icon-comments-o"></i>
+                        <a href="#" title="">4 Comments</a>
+                    </span>
+                </div>
+                <div class="post-content">
+                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+                </div>
+                <a href="#" class="btn btn-sm btn-default" title="Read more">Read more</a>
+            </div>
+        </div>
+        <div class="blog-box row">
+            <div class="post-image col-md-4">
+                <a href="../../assets/image-resources/stock-images/img-43.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                    <img class="img-responsive lazy img-rounded" src="" data-original="../../assets/image-resources/stock-images/img-43.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <a class="post-title" href="#" title="">
+                    <h3>When our power of choice is untrammelled and when nothing prevents our being able</h3>
+                </a>
+                <div class="post-meta">
+                    <span>
+                        <i class="glyph-icon icon-user"></i>
+                        <a href="#" title="">Thomas Edison</a>
+                    </span>
+                    <span>
+                        <i class="glyph-icon icon-clock-o"></i>
+                        21 December 2014
+                    </span>
+                    <span>
+                        <i class="glyph-icon icon-comments-o"></i>
+                        <a href="#" title="">4 Comments</a>
+                    </span>
+                </div>
+                <div class="post-content">
+                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+                </div>
+                <a href="#" class="btn btn-sm btn-default" title="Read more">Read more</a>
+            </div>
+        </div>
+        <div class="blog-box row">
+            <div class="post-image col-md-4">
+                <a href="../../assets/image-resources/stock-images/img-42.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                    <img class="img-responsive lazy img-rounded" src="" data-original="../../assets/image-resources/stock-images/img-42.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <a class="post-title" href="#" title="">
+                    <h3>When our power of choice is untrammelled and when nothing prevents our being able</h3>
+                </a>
+                <div class="post-meta">
+                    <span>
+                        <i class="glyph-icon icon-user"></i>
+                        <a href="#" title="">Thomas Edison</a>
+                    </span>
+                    <span>
+                        <i class="glyph-icon icon-clock-o"></i>
+                        21 December 2014
+                    </span>
+                    <span>
+                        <i class="glyph-icon icon-comments-o"></i>
+                        <a href="#" title="">4 Comments</a>
+                    </span>
+                </div>
+                <div class="post-content">
+                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+                </div>
+                <a href="#" class="btn btn-sm btn-default" title="Read more">Read more</a>
+            </div>
+        </div>
+        <div class="blog-box row">
+            <div class="post-image col-md-4">
+                <a href="../../assets/image-resources/stock-images/img-41.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                    <img class="img-responsive lazy img-rounded" src="" data-original="../../assets/image-resources/stock-images/img-41.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <a class="post-title" href="#" title="">
+                    <h3>When our power of choice is untrammelled and when nothing prevents our being able</h3>
+                </a>
+                <div class="post-meta">
+                    <span>
+                        <i class="glyph-icon icon-user"></i>
+                        <a href="#" title="">Thomas Edison</a>
+                    </span>
+                    <span>
+                        <i class="glyph-icon icon-clock-o"></i>
+                        21 December 2014
+                    </span>
+                    <span>
+                        <i class="glyph-icon icon-comments-o"></i>
+                        <a href="#" title="">4 Comments</a>
+                    </span>
+                </div>
+                <div class="post-content">
+                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+                </div>
+                <a href="#" class="btn btn-sm btn-default" title="Read more">Read more</a>
+            </div>
+        </div>
+        <div class="blog-box row">
+            <div class="post-image col-md-4">
+                <a href="../../assets/image-resources/stock-images/img-40.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                    <img class="img-responsive lazy img-rounded" src="" data-original="../../assets/image-resources/stock-images/img-40.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <a class="post-title" href="#" title="">
+                    <h3>When our power of choice is untrammelled and when nothing prevents our being able</h3>
+                </a>
+                <div class="post-meta">
+                    <span>
+                        <i class="glyph-icon icon-user"></i>
+                        <a href="#" title="">Thomas Edison</a>
+                    </span>
+                    <span>
+                        <i class="glyph-icon icon-clock-o"></i>
+                        21 December 2014
+                    </span>
+                    <span>
+                        <i class="glyph-icon icon-comments-o"></i>
+                        <a href="#" title="">4 Comments</a>
+                    </span>
+                </div>
+                <div class="post-content">
+                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+                </div>
+                <a href="#" class="btn btn-sm btn-default" title="Read more">Read more</a>
+            </div>
+        </div>
+        <div class="blog-box row">
+            <div class="post-image col-md-4">
+                <a href="../../assets/image-resources/stock-images/img-39.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                    <img class="img-responsive lazy img-rounded" src="" data-original="../../assets/image-resources/stock-images/img-39.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <a class="post-title" href="#" title="">
+                    <h3>When our power of choice is untrammelled and when nothing prevents our being able</h3>
+                </a>
+                <div class="post-meta">
+                    <span>
+                        <i class="glyph-icon icon-user"></i>
+                        <a href="#" title="">Thomas Edison</a>
+                    </span>
+                    <span>
+                        <i class="glyph-icon icon-clock-o"></i>
+                        21 December 2014
+                    </span>
+                    <span>
+                        <i class="glyph-icon icon-comments-o"></i>
+                        <a href="#" title="">4 Comments</a>
+                    </span>
+                </div>
+                <div class="post-content">
+                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+                </div>
+                <a href="#" class="btn btn-sm btn-default" title="Read more">Read more</a>
+            </div>
+        </div>
+        <div class="text-center">
+            <ul class="pagination pagination-lg">
+                <li><a href="#">«</a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-3">
+
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                Recent posts
+            </h3>
+            <div class="posts-list content-box-wrapper">
+                <ul class="">
+                    <li>
+                        <div class="post-image">
+                            <a href="../../assets/image-resources/stock-images/img-10.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                                <img class="img-responsive" src="../../assets/image-resources/stock-images/img-10.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="post-body">
+                            <a class="post-title" href="#" title="">
+                                <h3>When our power of choice is untrammelled prevents</h3>
+                            </a>
+                            <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post-image">
+                            <a href="../../assets/image-resources/stock-images/img-11.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                                <img class="img-responsive" src="../../assets/image-resources/stock-images/img-11.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="post-body">
+                            <a class="post-title" href="#" title="">
+                                <h3>And when nothing prevents our being able</h3>
+                            </a>
+                            <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post-image">
+                            <a href="../../assets/image-resources/stock-images/img-12.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                                <img class="img-responsive" src="../../assets/image-resources/stock-images/img-12.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="post-body">
+                            <a class="post-title" href="#" title="">
+                                <h3>When our power of choice is untrammelled</h3>
+                            </a>
+                            <p>Occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="list-group mrg20B">
+            <a href="#" class="list-group-item bg-white">
+                <i class="glyph-icon icon-dashboard"></i>
+                Fashion
+                <i class="glyph-icon icon-chevron-right"></i>
+            </a>
+            <a href="#" class="list-group-item bg-white">
+                <i class="glyph-icon font-red icon-bullhorn"></i>
+                Gadgets
+                <i class="glyph-icon font-green icon-chevron-right"></i>
+            </a>
+            <a href="#" class="list-group-item bg-white">
+                <i class="glyph-icon font-primary icon-camera"></i>
+                Web applications
+                <i class="glyph-icon icon-chevron-right"></i>
+            </a>
+            <a href="#" class="list-group-item bg-white">
+                <i class="glyph-icon font-azure icon-gears"></i>
+                Gaming
+                <i class="glyph-icon icon-chevron-right"></i>
+            </a>
+            <a href="#" class="list-group-item bg-white disabled">
+                <i class="glyph-icon font-blue-alt icon-globe"></i>
+                Music
+                <i class="glyph-icon icon-chevron-right"></i>
+            </a>
+        </div>
+        <div class="content-box">
+            <h3 class="content-box-header bg-default">
+                Tags
+            </h3>
+            <div class="content-box-wrapper clearfix tags-list">
+                <a href="#" title="" class="bs-label label-black">Moment</a>
+                <a href="#" title="" class="bs-label label-black">Hand</a>
+                <a href="#" title="" class="bs-label label-success">Gadgets</a>
+                <a href="#" title="" class="bs-label label-warning">Demoralized</a>
+                <a href="#" title="" class="bs-label label-success">Advantage</a>
+                <a href="#" title="" class="bs-label label-black">Example</a>
+                <a href="#" title="" class="bs-label label-black">Explorer</a>
+                <a href="#" title="" class="bs-label label-warning">Demoralized</a>
+                <a href="#" title="" class="bs-label label-success">Advantage</a>
+                <a href="#" title="" class="bs-label label-black">Example</a>
+                <a href="#" title="" class="bs-label label-black">Explorer</a>
+                <a href="#" title="" class="bs-label label-black">Born</a>
+            </div>
+        </div>
+        <div class="owl-slider-1 radius-all-4 slider-wrapper">
+            <div>
+                <img src="../../assets/image-resources/stock-images/img-38.jpg" class="radius-all-4 img-full">
+            </div>
+            <div>
+                <img src="../../assets/image-resources/stock-images/img-37.jpg" class="radius-all-4 img-full">
+            </div>
+            <div>
+                <img src="../../assets/image-resources/stock-images/img-36.jpg" class="radius-all-4 img-full">
+            </div>
+            <div>
+                <img src="../../assets/image-resources/stock-images/img-35.jpg" class="radius-all-4 img-full">
+            </div>
+            <div>
+                <img src="../../assets/image-resources/stock-images/img-34.jpg" class="radius-all-4 img-full">
+            </div>
+        </div>
+
+    </div>
+</div>

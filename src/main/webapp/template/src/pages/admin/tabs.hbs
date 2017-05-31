@@ -1,0 +1,528 @@
+---
+title: Responsive tabs
+subheading: A single content area with multiple panels, each associated with a header in a list.
+---
+
+<!-- jQueryUI Tabs -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/tabs-ui/tabs.css">-->
+<script type="text/javascript" src="../../assets/widgets/tabs-ui/tabs.js"></script>
+<script type="text/javascript">
+    /* jQuery UI Tabs */
+
+    $(function() { "use strict";
+        $(".tabs").tabs();
+    });
+
+    $(function() { "use strict";
+        $(".tabs-hover").tabs({
+            event: "mouseover"
+        });
+    });
+</script>
+
+<!-- Boostrap Tabs -->
+
+<script type="text/javascript" src="../../assets/widgets/tabs/tabs.js"></script>
+
+<!-- Tabdrop Responsive -->
+
+<script type="text/javascript" src="../../assets/widgets/tabs/tabs-responsive.js"></script>
+<script type="text/javascript">
+    /* Responsive tabs */
+    $(function() { "use strict";
+        $('.nav-responsive').tabdrop();
+    });
+</script>
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Responsive tabs
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="nav-responsive nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+                        <li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+                        <li><a href="#tab4" data-toggle="tab">Section 4</a></li>
+                        <li><a href="#tab5" data-toggle="tab">Section 5</a></li>
+                        <li><a href="#tab6" data-toggle="tab">Section 6</a></li>
+                        <li><a href="#tab7" data-toggle="tab">Section 7</a></li>
+                        <li><a href="#tab8" data-toggle="tab">Section 8</a></li>
+                        <li><a href="#tab9" data-toggle="tab">Section 9</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <p>I'm in Section 1.</p>
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            <p>Howdy, I'm in Section 2.</p>
+                        </div>
+                        <div class="tab-pane" id="tab3">
+                            <p>Howdy, I'm in Section 3.</p>
+                        </div>
+                        <div class="tab-pane" id="tab4">
+                            <p>Howdy, I'm in Section 4.</p>
+                        </div>
+                        <div class="tab-pane" id="tab5">
+                            <p>Howdy, I'm in Section 5.</p>
+                        </div>
+                        <div class="tab-pane" id="tab6">
+                            <p>Howdy, I'm in Section 6.</p>
+                        </div>
+                        <div class="tab-pane" id="tab7">
+                            <p>Howdy, I'm in Section 7.</p>
+                        </div>
+                        <div class="tab-pane" id="tab8">
+                            <p>Howdy, I'm in Section 8.</p>
+                        </div>
+                        <div class="tab-pane" id="tab9">
+                            <p>Howdy, I'm in Section 9.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Responsive pills
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="nav-responsive nav nav-pills">
+                        <li class="active"><a href="#ptab1" data-toggle="tab">Section 1</a></li>
+                        <li><a href="#ptab2" data-toggle="tab">Section 2</a></li>
+                        <li><a href="#ptab3" data-toggle="tab">Section 3</a></li>
+                        <li><a href="#ptab4" data-toggle="tab">Section 4</a></li>
+                        <li><a href="#ptab5" data-toggle="tab">Section 5</a></li>
+                        <li><a href="#ptab6" data-toggle="tab">Section 6</a></li>
+                        <li><a href="#ptab7" data-toggle="tab">Section 7</a></li>
+                        <li><a href="#ptab8" data-toggle="tab">Section 8</a></li>
+                        <li><a href="#ptab9" data-toggle="tab">Section 9</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="ptab1">
+                            <p>I'm in Section 1.</p>
+                        </div>
+                        <div class="tab-pane" id="ptab2">
+                            <p>Howdy, I'm in Section 2.</p>
+                        </div>
+                        <div class="tab-pane" id="ptab3">
+                            <p>Howdy, I'm in Section 3.</p>
+                        </div>
+                        <div class="tab-pane" id="ptab4">
+                            <p>Howdy, I'm in Section 4.</p>
+                        </div>
+                        <div class="tab-pane" id="ptab5">
+                            <p>Howdy, I'm in Section 5.</p>
+                        </div>
+                        <div class="tab-pane" id="ptab6">
+                            <p>Howdy, I'm in Section 6.</p>
+                        </div>
+                        <div class="tab-pane" id="ptab7">
+                            <p>Howdy, I'm in Section 7.</p>
+                        </div>
+                        <div class="tab-pane" id="ptab8">
+                            <p>Howdy, I'm in Section 8.</p>
+                        </div>
+                        <div class="tab-pane" id="ptab9">
+                            <p>Howdy, I'm in Section 9.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Basic
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul id="myTab" class="nav clearfix nav-tabs">
+                        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                        <li class=""><a href="#profile" data-toggle="tab">Profile</a></li>
+                        <li class="dropdown">
+                            <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                                <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">Submenu link 1</a></li>
+                                <li class=""><a href="#dropdown2" tabindex="-1" data-toggle="tab">Submenu link 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade active in" id="home">
+                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                        </div>
+                        <div class="tab-pane fade" id="profile">
+                            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                        </div>
+                        <div class="tab-pane fade" id="dropdown1">
+                            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                        </div>
+                        <div class="tab-pane fade" id="dropdown2">
+                            <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Positions
+                </h3>
+                <div class="example-box-wrapper">
+                    <div class="clearfix">
+                        <div id="myTabContent-1" class="tab-content">
+                            <div class="tab-pane fade active in" id="home-1">
+                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                            </div>
+                            <div class="tab-pane fade" id="profile-1">
+                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean  beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                            </div>
+                            <div class="tab-pane fade" id="dropdown1-1">
+                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                            </div>
+                            <div class="tab-pane fade" id="dropdown2-1">
+                                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                            </div>
+                        </div>
+                        <ul id="myTab-1" class="nav clearfix nav-tabs nav-tabs-bottom">
+                            <li class="active"><a href="#home-1" data-toggle="tab">Home</a></li>
+                            <li class=""><a href="#profile-1" data-toggle="tab">Profile</a></li>
+                            <li class="dropdown">
+                                <a href="#" id="myTabDrop1-1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1-1">
+                                    <li><a href="#dropdown1-1" tabindex="-1" data-toggle="tab">Submenu link 1</a></li>
+                                    <li class=""><a href="#dropdown2-1" tabindex="-1" data-toggle="tab">Submenu link 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-body">
+                <h3 class="title-hero">
+                    Horizontal list tabs menu
+                </h3>
+                <div class="example-box-wrapper">
+                    <ul class="list-group list-group-separator row list-group-icons">
+                        <li class="col-md-3">
+                            <a href="#tab-example-4" data-toggle="tab" class="list-group-item">
+                                <i class="glyph-icon font-red icon-bullhorn"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="col-md-3 active">
+                            <a href="#tab-example-1" data-toggle="tab" class="list-group-item">
+                                <i class="glyph-icon icon-dashboard"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#tab-example-2" data-toggle="tab" class="list-group-item">
+                                <i class="glyph-icon font-primary icon-camera"></i>
+                                Messages
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#tab-example-3" data-toggle="tab" class="list-group-item">
+                                <i class="glyph-icon font-blue-alt icon-globe"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="tab-example-1">
+                            <p>Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-example-2">
+                            <p> Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-example-3">
+                            <p>Commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-example-4">
+                            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+    <h3 class="title-hero">
+        jQueryUI Tabs
+    </h3>
+    <div class="example-box-wrapper">
+        <div class="tabs">
+            <ul>
+                <li>
+                    <a href="#normal-tabs-1" title="Tab 1">
+                        Tab 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#normal-tabs-2" title="Tab 2">
+                        Tab 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#normal-tabs-3" title="Tab 3">
+                        Tab 3
+                    </a>
+                </li>
+            </ul>
+            <div id="normal-tabs-1">
+                tab 1 content
+            </div>
+            <div id="normal-tabs-2">
+                tab 2 content
+            </div>
+            <div id="normal-tabs-3">
+                tab 3 content
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Alternate style
+    </h3>
+    <div class="example-box-wrapper">
+        <div class="tabs tabs-navigation">
+            <ul>
+                <li>
+                    <a href="#normal-tabs-1" title="Tab 1">
+                        Tab 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#normal-tabs-2" title="Tab 2">
+                        Tab 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#normal-tabs-3" title="Tab 3">
+                        Tab 3
+                    </a>
+                </li>
+            </ul>
+            <div id="normal-tabs-1">
+                tab 1 content
+            </div>
+            <div id="normal-tabs-2">
+                tab 2 content
+            </div>
+            <div id="normal-tabs-3">
+                tab 3 content
+            </div>
+        </div>
+    </div>
+
+    <h3 class="title-hero">
+        Tabs boxes
+    </h3>
+    <div class="example-box-wrapper">
+        <div class="content-box tabs">
+            <h3 class="content-box-header bg-primary">
+                <span>Content box title</span>
+                <ul>
+                    <li>
+                        <a href="#tabs-example-1" title="Tab 1">
+                            Tab 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-example-2" title="Tab 2">
+                            Tab 2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-example-3" title="Tab 3">
+                            Tab 3
+                        </a>
+                    </li>
+                </ul>
+            </h3>
+            <div id="tabs-example-1">
+                Tab 1 content goes here ...
+            </div>
+            <div id="tabs-example-2">
+                Tab 2 content goes here ...
+            </div>
+            <div id="tabs-example-3">
+                Tab 3 content goes here ...
+            </div>
+        </div>
+        <div class="content-box tabs">
+            <h3 class="content-box-header bg-default">
+                <span>Content box title</span>
+                <ul>
+                    <li>
+                        <a href="#tabs-example-1" title="Tab 1">
+                            Tab 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-example-2" title="Tab 2">
+                            Tab 2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-example-3" title="Tab 3">
+                            Tab 3
+                        </a>
+                    </li>
+                </ul>
+            </h3>
+
+            <div id="tabs-example-1">
+                Tab 1 content goes here ...
+            </div>
+            <div id="tabs-example-2">
+                Tab 2 content goes here ...
+            </div>
+            <div id="tabs-example-3">
+                Tab 3 content goes here ...
+            </div>
+        </div>
+        <div class="content-box tabs">
+            <h3 class="content-box-header bg-white">
+                <span>Content box title</span>
+                <ul>
+                    <li>
+                        <a href="#tabs-example-1" title="Tab 1">
+                            Tab 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-example-2" title="Tab 2">
+                            Tab 2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-example-3" title="Tab 3">
+                            Tab 3
+                        </a>
+                    </li>
+                </ul>
+            </h3>
+            <div id="tabs-example-1">
+                Tab 1 content goes here ...
+            </div>
+            <div id="tabs-example-2">
+                Tab 2 content goes here ...
+            </div>
+            <div id="tabs-example-3">
+                Tab 3 content goes here ...
+            </div>
+        </div>
+        <div class="content-box tabs">
+            <h3 class="content-box-header bg-red">
+                <span>Content box title</span>
+                <ul>
+                    <li>
+                        <a href="#tabs-example-1" title="Tab 1">
+                            Tab 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-example-2" title="Tab 2">
+                            Tab 2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-example-3" title="Tab 3">
+                            Tab 3
+                        </a>
+                    </li>
+                </ul>
+            </h3>
+            <div id="tabs-example-1">
+                Tab 1 content goes here ...
+            </div>
+            <div id="tabs-example-2">
+                Tab 2 content goes here ...
+            </div>
+            <div id="tabs-example-3">
+                Tab 3 content goes here ...
+            </div>
+        </div>
+        <div class="content-box tabs">
+            <h3 class="content-box-header bg-blue-alt">
+                <span>Content box title</span>
+                <ul>
+                    <li>
+                        <a href="#tabs-example-1" title="Tab 1">
+                            Tab 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-example-2" title="Tab 2">
+                            Tab 2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-example-3" title="Tab 3">
+                            Tab 3
+                        </a>
+                    </li>
+                </ul>
+            </h3>
+            <div id="tabs-example-1">
+                Tab 1 content goes here ...
+            </div>
+            <div id="tabs-example-2">
+                Tab 2 content goes here ...
+            </div>
+            <div id="tabs-example-3">
+                Tab 3 content goes here ...
+            </div>
+        </div>
+        <div class="content-box tabs">
+            <h3 class="content-box-header bg-green">
+                <span>Content box title</span>
+                <ul>
+                    <li>
+                        <a href="#tabs-example-1" title="Tab 1">
+                            Tab 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-example-2" title="Tab 2">
+                            Tab 2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-example-3" title="Tab 3">
+                            Tab 3
+                        </a>
+                    </li>
+                </ul>
+            </h3>
+            <div id="tabs-example-1">
+                Tab 1 content goes here ...
+            </div>
+            <div id="tabs-example-2">
+                Tab 2 content goes here ...
+            </div>
+            <div id="tabs-example-3">
+                Tab 3 content goes here ...
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

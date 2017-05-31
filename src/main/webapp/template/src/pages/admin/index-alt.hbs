@@ -1,0 +1,409 @@
+---
+title: Monarch UI - Bootstrap Frontend & Admin Template
+subheading: The most complete user interface framework that can be used to create stunning admin dashboards and presentation websites.
+---
+
+<!-- xCharts -->
+
+<script type="text/javascript" src="../../assets/js-core/d3.js"></script>
+<script type="text/javascript" src="../../assets/widgets/charts/xcharts/xcharts.js"></script>
+<script type="text/javascript" src="../../assets/widgets/charts/xcharts/xcharts-demo-1.js"></script>
+
+<!-- Sparklines charts -->
+
+<script type="text/javascript" src="../../assets/widgets/charts/sparklines/sparklines.js"></script>
+<script type="text/javascript" src="../../assets/widgets/charts/sparklines/sparklines-demo.js"></script>
+
+<!-- Skycons -->
+
+<script type="text/javascript" src="../../assets/widgets/skycons/skycons.js"></script>
+
+<!-- Calendar -->
+
+<script type="text/javascript" src="../../assets/widgets/daterangepicker/moment.js"></script>
+<script type="text/javascript" src="../../assets/widgets/calendar/calendar.js"></script>
+<script type="text/javascript" src="../../assets/widgets/calendar/calendar-demo.js"></script>
+
+<div id="page-title">
+    <h2>Dashboard</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="content-box">
+            <h3 class="content-box-header content-box-header-alt bg-white">
+                <span class="icon-separator">
+                    <i class="glyph-icon icon-linecons-megaphone"></i>
+                </span>
+                <span class="header-wrapper">
+                    Recent transactions volume
+                    <small>Example header title description</small>
+                </span>
+                <span class="header-buttons">
+                    <a href="#" class="btn btn-sm btn-primary" title="">Export data</a>
+                </span>
+            </h3>
+            <div class="content-box-wrapper">
+                <div id="example4" style="width: 100%; height: 300px;"></div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h3 class="content-box-header bg-blue text-left">
+                <i class="glyph-icon icon-comments"></i>
+                Scrollable chat box
+            </h3>
+            <div class="content-box-wrapper">
+                <div class="scrollable-content scrollable-slim scrollable-medium">
+
+                    <ul class="chat-box">
+                        <li>
+                            <div class="chat-author">
+                                <img width="36" src="../../assets/image-resources/gravatar.jpg" alt="" />
+                            </div>
+                            <div class="popover left no-shadow">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                    <div class="chat-time">
+                                        <i class="glyph-icon icon-clock-o"></i>
+                                        a few seconds ago
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="float-left">
+                            <div class="chat-author">
+                                <img width="36" src="../../assets/image-resources/gravatar.jpg" alt="" />
+                            </div>
+                            <div class="popover right no-shadow">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    <h3>
+                                        <a href="#" title="Agile UI">Agile UI</a>
+                                        <div class="float-right">
+                                            <a href="#" class="btn glyph-icon icon-inbox font-gray tooltip-button" data-placement="bottom" title="This chat line was received in the mail."></a>
+                                        </div>
+                                    </h3>
+                                    This comment line has a title (author name) and a right button panel.
+                                    <div class="chat-time">
+                                        <i class="glyph-icon icon-clock-o"></i>
+                                        a few seconds ago
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chat-author">
+                                <img width="36" src="../../assets/image-resources/gravatar.jpg" alt="" />
+                            </div>
+                            <div class="popover left no-shadow">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    This comment line has a bottom button panel, box shadow and title.
+                                    <div class="chat-time">
+                                        <i class="glyph-icon icon-clock-o"></i>
+                                        a few seconds ago
+                                    </div>
+                                    <div class="divider"></div>
+                                    <a href="#" class="btn btn-sm btn-default font-bold text-transform-upr" title=""><span class="button-content">Reply</span></a>
+                                    <a href="#" class="btn btn-sm btn-danger float-right tooltip-button" data-placement="left" title="Remove comment"><i class="glyph-icon icon-remove"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chat-author">
+                                <img width="36" src="../../assets/image-resources/gravatar.jpg" alt="" />
+                            </div>
+                            <div class="popover left no-shadow">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                    <div class="chat-time">
+                                        <i class="glyph-icon icon-clock-o"></i>
+                                        a few seconds ago
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="float-left">
+                            <div class="chat-author">
+                                <img width="36" src="../../assets/image-resources/gravatar.jpg" alt="" />
+                            </div>
+                            <div class="popover right no-shadow">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                    <div class="chat-time">
+                                        <i class="glyph-icon icon-clock-o"></i>
+                                        a few seconds ago
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="button-pane pad10A">
+                <div class="input-group">
+                    <input type="text" placeholder="Say something here..." class="form-control">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default" tabindex="-1"><i class="glyph-icon icon-mail-reply"></i></button>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu pull-right" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-layout row">
+            <div class="panel-box col-xs-4 bg-green">
+                <div class="panel-content">
+                    <h4>Overview</h4>
+                    <p class="opacity-60">Example panel box</p>
+                </div>
+            </div>
+            <div class="panel-box col-xs-8">
+
+                <div class="panel-content  bg-black">
+                    <div class="sparkline-big">183,579,180,311,240,180,311,450,302,370,210,610</div>
+                </div>
+                <div class="panel-content bg-white">
+                    <div class="center-vertical">
+
+                        <ul class="center-content nav nav-justified">
+                            <li>
+                                <h4 class="font-green">+$39,45</h4>
+                                <p class="font-gray">Overdue orders</p>
+                            </li>
+                            <li>
+                                <h4>
+                                    <i class="glyph-icon opacity-60 icon-caret-up"></i>
+                                    217
+                                </h4>
+                                <p class="font-gray">Pending orders</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="panel-layout">
+                    <div class="panel-box">
+
+                        <div class="panel-content bg-facebook">
+
+                            <i class="glyph-icon font-size-35 icon-facebook"></i>
+
+                        </div>
+                        <div class="panel-content pad15A bg-white">
+                            <div class="center-vertical">
+
+                                <ul class="center-content list-group list-group-separator row mrg0A">
+                                    <li class="col-md-6">
+                                        <b>1,456</b>
+                                        <p class="font-gray">Friends</p>
+                                    </li>
+                                    <li class="col-md-6">
+                                        <b>593</b>
+                                        <p class="font-gray">Likes</p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+
+                <div class="panel-layout">
+                    <div class="panel-box">
+
+                        <div class="panel-content bg-twitter">
+
+                            <i class="glyph-icon font-size-35 icon-twitter"></i>
+
+                        </div>
+                        <div class="panel-content pad15A bg-white">
+                            <div class="center-vertical">
+
+                                <ul class="center-content list-group list-group-separator row mrg0A">
+                                    <li class="col-md-6">
+                                        <b>356</b>
+                                        <p class="font-gray">Followers</p>
+                                    </li>
+                                    <li class="col-md-6">
+                                        <b>981</b>
+                                        <p class="font-gray">Tweets</p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="tile-box tile-box-alt mrg20B bg-green">
+                    <div class="tile-header">
+                        New Visitors
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-dashboard"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            378
+                        </div>
+                        <small>
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +7,6% new users in the first quarter
+                        </small>
+                    </div>
+                    <a href="#" class="tile-footer tooltip-button" data-placement="bottom" title="This is a link example!">
+                        view details
+                        <i class="glyph-icon icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tile-box tile-box-alt mrg20B bg-red">
+                    <div class="tile-header">
+                        Revenue
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-camera"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            5,937
+                        </div>
+                        <small>
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +7,6% new users in the first quarter
+                        </small>
+                    </div>
+                    <a href="#" class="tile-footer tooltip-button" data-placement="bottom" title="This is a link example!">
+                        view details
+                        <i class="glyph-icon icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tile-box tile-box-alt mrg20B bg-orange">
+                    <div class="tile-header">
+                        Subscriptions
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-tag"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            126,34
+                        </div>
+                        <small>
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +7,6% new users in the first quarter
+                        </small>
+                    </div>
+                    <a href="#" class="tile-footer tooltip-button" data-placement="bottom" title="This is a link example!">
+                        view details
+                        <i class="glyph-icon icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tile-box tile-box-alt mrg20B bg-blue-alt">
+                    <div class="tile-header">
+                        Monthly earnings
+                    </div>
+                    <div class="tile-content-wrapper">
+                        <i class="glyph-icon icon-camera"></i>
+                        <div class="tile-content">
+                            <span>$</span>
+                            1,212
+                        </div>
+                        <small>
+                            <i class="glyph-icon icon-caret-up"></i>
+                            +2,6% new users in the first quarter
+                        </small>
+                    </div>
+                    <a href="#" class="tile-footer tooltip-button" data-placement="bottom" title="This is a link example!">
+                        view details
+                        <i class="glyph-icon icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-body">
+                <div id="calendar-example-1"></div>
+            </div>
+        </div>
+
+        <div class="panel-layout row">
+            <div class="panel-box col-xs-6">
+
+                <div class="panel-content bg-white">
+                    <canvas id="icon-cloud" width="80" height="80"></canvas>
+                </div>
+                <div class="panel-content bg-black">
+                    <div class="center-vertical">
+
+                        <ul class="center-content nav nav-justified">
+                            <li>
+                                <h4>
+                                    <i class="glyph-icon font-green opacity-80 icon-chevron-down"></i>
+                                    7 &ordm;
+                                </h4>
+                                <p class="opacity-80 text-transform-upr font-size-11 mrg5T">Low</p>
+                            </li>
+                            <li>
+                                <h4>
+                                    <i class="glyph-icon font-red opacity-80 icon-chevron-up"></i>
+                                    21 &ordm;
+                                </h4>
+                                <p class="opacity-80 text-transform-upr font-size-11 mrg5T">High</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="panel-box col-xs-6 bg-blue-alt">
+                <div class="panel-content">
+                    <h3>Bucharest</h3>
+                    <h4 class="opacity-60">Romania</h4>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

@@ -1,0 +1,521 @@
+---
+title: Single post | Monarch
+subheading: Monarch comes with example pages for single blog posts.
+---
+<body>
+{{> tophook }}{{> topbar }}
+{{> header }}
+<div class="hero-box hero-box-smaller full-bg-13 font-inverse" data-top-bottom="background-position: 50% 0px;" data-bottom-top="background-position: 50% -600px;">
+    <div class="container">
+        <h1 class="hero-heading wow fadeInDown" data-wow-duration="0.6s">Single post</h1>
+        <p class="hero-text wow bounceInUp" data-wow-duration="0.9s" data-wow-delay="0.2s">{{ subheading }}</p>
+    </div>
+    <div class="hero-overlay bg-black"></div>
+</div>
+
+<!-- Lazyload -->
+
+<script type="text/javascript" src="../../assets/widgets/lazyload/lazyload.js"></script>
+<script type="text/javascript">
+    /* Lazyload */
+
+    $(function() {
+        $("img.lazy").lazyload({
+            effect: "fadeIn",
+            threshold: 100
+        });
+    });
+</script>
+
+<!-- PrettyPhoto modals -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/pretty-photo/prettyphoto.css">-->
+<script type="text/javascript" src="../../assets/widgets/pretty-photo/prettyphoto.js"></script>
+<script type="text/javascript">
+    /* PrettyPhoto */
+
+    $(document).ready(function() {
+        $(".prettyphoto").prettyPhoto();
+    });
+</script>
+
+<div id="page-content" class="container mrg25T">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="blog-box blog-box-single blog-box-alt row">
+                <a class="post-title" href="blog-single.html" title="">
+                    <h3>When our power of choice is untrammelled and when nothing prevents our being able</h3>
+                </a>
+                <div class="post-image">
+                    <a href="../../assets/image-resources/stock-images/img-42.jpg" class="prettyphoto" rel="prettyPhoto[pp_gal]" title="Blog post title">
+                        <img class="img-responsive lazy img-rounded" src="" data-original="../../assets/image-resources/slides-bg/slide-3.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="post-content-wrapper">
+                    <div class="post-meta clearfix">
+                        <span class="float-left">
+                            <i class="glyph-icon icon-user"></i>
+                            <a href="#" title="">Thomas Edison</a>
+                        </span>
+                        <span class="float-left">
+                            <i class="glyph-icon icon-clock-o"></i>
+                            21 December 2014
+                        </span>
+                        <span class="float-right">
+                            <i class="glyph-icon icon-comments-o"></i>
+                            <a href="#comments" title="">4 Comments</a>
+                        </span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="post-content">
+                        <p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
+
+                        <p>The languages only differ in their grammar, their pronunciation and their most common words.</p>
+
+                        <p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</p>
+
+                        <p>To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.</p>
+
+                        <p>If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages.</p>
+
+                        <p>The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.</p>
+
+                        <p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth.</p>
+
+                        <p>For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.</p>
+
+                        <p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.</p>
+
+                        <p>If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages.</p>
+
+                        <p>It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family.</p>
+
+                        <p>Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.</p>
+
+                        <p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text-center post-share-box">
+                <a href="#" class="btn btn-xs bg-facebook">
+                    <span class="glyph-icon icon-separator">
+                        <i class="glyph-icon icon-facebook"></i>
+                    </span>
+                    <span class="button-content">
+                        Share on Facebook
+                    </span>
+                </a>
+                <a href="#" class="btn btn-xs bg-google">
+                    <span class="glyph-icon icon-separator">
+                        <i class="glyph-icon icon-google-plus"></i>
+                    </span>
+                    <span class="button-content">
+                        Share on Google
+                    </span>
+                </a>
+                <a href="#" class="btn btn-xs bg-twitter">
+                    <span class="glyph-icon icon-separator">
+                        <i class="glyph-icon icon-twitter"></i>
+                    </span>
+                    <span class="button-content">
+                        Share on Twitter
+                    </span>
+                </a>
+            </div>
+
+            <div class="blog-comments" id="comments">
+                <h3 class="p-title title-alt">
+                    <span>Comments</span>
+                </h3>
+                <ul class="comments-list">
+                    <li class="panel">
+                        <div class="panel-body">
+                            <div class="comment-image">
+                                <img class="img-rounded lazy img-responsive" src="" data-original="../../assets/image-resources/people/testimonial1.jpg" alt="" />
+                            </div>
+                            <div class="comment-wrapper">
+                                <div class="comment-header clearfix">
+                                    <div class="float-left">
+                                        <div class="comment-author">
+                                            <b>Thomas Edison</b> says:
+                                        </div>
+                                        <div class="comment-date">
+                                            <i class="glyph-icon icon-clock-o"></i>
+                                            21 December 2014
+                                        </div>
+                                    </div>
+                                    <a href="#" title="Reply" class="btn btn-xs btn-primary">
+                                        Reply
+                                    </a>
+                                </div>
+                                <div class="comment-body">
+                                    <p>The languages only differ in their grammar, their pronunciation and their most common words. Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="panel">
+                        <div class="panel-body">
+                            <div class="comment-image">
+                                <img class="img-rounded lazy img-responsive" src="" data-original="../../assets/image-resources/people/testimonial1.jpg" alt="" />
+                            </div>
+                            <div class="comment-wrapper">
+                                <div class="comment-header clearfix">
+                                    <div class="float-left">
+                                        <div class="comment-author">
+                                            <b>Thomas Edison</b> says:
+                                        </div>
+                                        <div class="comment-date">
+                                            <i class="glyph-icon icon-clock-o"></i>
+                                            21 December 2014
+                                        </div>
+                                    </div>
+                                    <a href="#" title="Reply" class="btn btn-xs btn-primary">
+                                        Reply
+                                    </a>
+                                </div>
+                                <div class="comment-body">
+                                    <p>The languages only differ in their grammar, their pronunciation and their most common words. Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="panel">
+                        <div class="panel-body">
+                            <div class="comment-image">
+                                <img class="img-rounded lazy img-responsive" src="" data-original="../../assets/image-resources/people/testimonial1.jpg" alt="" />
+                            </div>
+                            <div class="comment-wrapper">
+                                <div class="comment-header clearfix">
+                                    <div class="float-left">
+                                        <div class="comment-author">
+                                            <b>Thomas Edison</b> says:
+                                        </div>
+                                        <div class="comment-date">
+                                            <i class="glyph-icon icon-clock-o"></i>
+                                            21 December 2014
+                                        </div>
+                                    </div>
+                                    <a href="#" title="Reply" class="btn btn-xs btn-primary">
+                                        Reply
+                                    </a>
+                                </div>
+                                <div class="comment-body">
+                                    <p>The languages only differ in their grammar, their pronunciation and their most common words. Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="panel">
+                                <div class="panel-body">
+                                    <div class="comment-image">
+                                        <img class="img-rounded lazy img-responsive" src="" data-original="../../assets/image-resources/people/testimonial1.jpg" alt="" />
+                                    </div>
+                                    <div class="comment-wrapper">
+                                        <div class="comment-header clearfix">
+                                            <div class="float-left">
+                                                <div class="comment-author">
+                                                    <b>Thomas Edison</b> says:
+                                                </div>
+                                                <div class="comment-date">
+                                                    <i class="glyph-icon icon-clock-o"></i>
+                                                    21 December 2014
+                                                </div>
+                                            </div>
+                                            <a href="#" title="Reply" class="btn btn-xs btn-primary">
+                                                Reply
+                                            </a>
+                                        </div>
+                                        <div class="comment-body">
+                                            <p>The languages only differ in their grammar, their pronunciation and their most common words. Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li class="panel">
+                                        <div class="panel-body">
+                                            <div class="comment-image">
+                                                <img class="img-rounded lazy img-responsive" src="" data-original="../../assets/image-resources/people/testimonial1.jpg" alt="" />
+                                            </div>
+                                            <div class="comment-wrapper">
+                                                <div class="comment-header clearfix">
+                                                    <div class="float-left">
+                                                        <div class="comment-author">
+                                                            <b>Thomas Edison</b> says:
+                                                        </div>
+                                                        <div class="comment-date">
+                                                            <i class="glyph-icon icon-clock-o"></i>
+                                                            21 December 2014
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" title="Reply" class="btn btn-xs btn-primary">
+                                                        Reply
+                                                    </a>
+                                                </div>
+                                                <div class="comment-body">
+                                                    <p>The languages only differ in their grammar, their pronunciation and their most common words. Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="panel">
+                        <div class="panel-body">
+                            <div class="comment-image">
+                                <img class="img-rounded lazy img-responsive" src="" data-original="../../assets/image-resources/people/testimonial1.jpg" alt="" />
+                            </div>
+                            <div class="comment-wrapper">
+                                <div class="comment-header clearfix">
+                                    <div class="float-left">
+                                        <div class="comment-author">
+                                            <b>Thomas Edison</b> says:
+                                        </div>
+                                        <div class="comment-date">
+                                            <i class="glyph-icon icon-clock-o"></i>
+                                            21 December 2014
+                                        </div>
+                                    </div>
+                                    <a href="#" title="Reply" class="btn btn-xs btn-primary">
+                                        Reply
+                                    </a>
+                                </div>
+                                <div class="comment-body">
+                                    <p>The languages only differ in their grammar, their pronunciation and their most common words. Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="panel">
+                        <div class="panel-body">
+                            <div class="comment-image">
+                                <img class="img-rounded lazy img-responsive" src="" data-original="../../assets/image-resources/people/testimonial1.jpg" alt="" />
+                            </div>
+                            <div class="comment-wrapper">
+                                <div class="comment-header clearfix">
+                                    <div class="float-left">
+                                        <div class="comment-author">
+                                            <b>Thomas Edison</b> says:
+                                        </div>
+                                        <div class="comment-date">
+                                            <i class="glyph-icon icon-clock-o"></i>
+                                            21 December 2014
+                                        </div>
+                                    </div>
+                                    <a href="#" title="Reply" class="btn btn-xs btn-primary">
+                                        Reply
+                                    </a>
+                                </div>
+                                <div class="comment-body">
+                                    <p>The languages only differ in their grammar, their pronunciation and their most common words. Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="add-comment">
+                <h3 class="p-title title-alt">
+                    <span>Leave a reply</span>
+                </h3>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-3 control-label">Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label">Email:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="email" placeholder="email@address.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="website" class="col-sm-3 control-label">Website:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="website" placeholder="http://">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment" class="col-sm-3 control-label">Comment:</label>
+                        <div class="col-sm-9">
+                            <textarea name="comment" id="" cols="30" rows="5" class="form-control textarea-no-resize"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <div class="float-right">
+                                <button class="btn btn-md btn-primary">Add Comment</button>
+                                <button class="btn btn-md btn-link">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h3 class="p-title title-alt">
+                <span>Related posts</span>
+            </h3>
+            <div class="owl-carousel-5 slider-wrapper carousel-wrapper">
+
+                <div>
+                    <div class="thumbnail-box-wrapper mrg5A">
+                        <div class="thumbnail-box">
+                            <a class="thumb-link" href="#" title=""></a>
+                            <div class="thumb-content">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumb-overlay bg-black"></div>
+                            <img class="lazy" src="" data-original="../../assets/image-resources/stock-images/img-17.jpg" alt="">
+                        </div>
+                        <div class="thumb-pane">
+                            <h3 class="thumb-heading animated rollIn">
+                                <a href="#" title="">
+                                    Working in the morning
+                                </a>
+                                <small>12 March 2015</small>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnail-box-wrapper mrg5A">
+                        <div class="thumbnail-box">
+                            <a class="thumb-link" href="#" title=""></a>
+                            <div class="thumb-content">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumb-overlay bg-black"></div>
+                            <img class="lazy" src="" data-original="../../assets/image-resources/stock-images/img-18.jpg" alt="">
+                        </div>
+                        <div class="thumb-pane">
+                            <h3 class="thumb-heading animated rollIn">
+                                <a href="#" title="">
+                                    Working in the morning
+                                </a>
+                                <small>12 March 2015</small>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnail-box-wrapper mrg5A">
+                        <div class="thumbnail-box">
+                            <a class="thumb-link" href="#" title=""></a>
+                            <div class="thumb-content">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumb-overlay bg-black"></div>
+                            <img class="lazy" src="" data-original="../../assets/image-resources/stock-images/img-19.jpg" alt="">
+                        </div>
+                        <div class="thumb-pane">
+                            <h3 class="thumb-heading animated rollIn">
+                                <a href="#" title="">
+                                    Working in the morning
+                                </a>
+                                <small>12 March 2015</small>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnail-box-wrapper mrg5A">
+                        <div class="thumbnail-box">
+                            <a class="thumb-link" href="#" title=""></a>
+                            <div class="thumb-content">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumb-overlay bg-black"></div>
+                            <img class="lazy" src="" data-original="../../assets/image-resources/stock-images/img-20.jpg" alt="">
+                        </div>
+                        <div class="thumb-pane">
+                            <h3 class="thumb-heading animated rollIn">
+                                <a href="#" title="">
+                                    Working in the morning
+                                </a>
+                                <small>12 March 2015</small>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnail-box-wrapper mrg5A">
+                        <div class="thumbnail-box">
+                            <a class="thumb-link" href="#" title=""></a>
+                            <div class="thumb-content">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumb-overlay bg-black"></div>
+                            <img class="lazy" src="" data-original="../../assets/image-resources/stock-images/img-23.jpg" alt="">
+                        </div>
+                        <div class="thumb-pane">
+                            <h3 class="thumb-heading animated rollIn">
+                                <a href="#" title="">
+                                    Working in the morning
+                                </a>
+                                <small>12 March 2015</small>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thumbnail-box-wrapper mrg5A">
+                        <div class="thumbnail-box">
+                            <a class="thumb-link" href="#" title=""></a>
+                            <div class="thumb-content">
+                                <div class="center-vertical">
+                                    <div class="center-content">
+                                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumb-overlay bg-black"></div>
+                            <img class="lazy" src="" data-original="../../assets/image-resources/stock-images/img-24.jpg" alt="">
+                        </div>
+                        <div class="thumb-pane">
+                            <h3 class="thumb-heading animated rollIn">
+                                <a href="#" title="">
+                                    Working in the morning
+                                </a>
+                                <small>12 March 2015</small>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            {{> blog-sidebar }}
+        </div>
+    </div>
+</div>
+
+<br /><br />
+
+{{> footer }}{{> bottomhook }}

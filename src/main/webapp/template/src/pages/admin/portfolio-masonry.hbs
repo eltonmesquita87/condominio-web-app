@@ -1,0 +1,442 @@
+---
+title: Portfolio gallery
+subheading: Example MonarchUI portfolio gallery page
+---
+
+<div id="page-title">
+    <h2>{{ title }}</h2>
+    <p>{{ subheading }}</p>
+    {{> page-title-content }}
+</div>
+
+<!-- Mixitup -->
+
+<script type="text/javascript" src="../../assets/widgets/mixitup/mixitup.js"></script>
+<script type="text/javascript" src="../../assets/widgets/mixitup/images-loaded.js"></script>
+<script type="text/javascript" src="../../assets/widgets/mixitup/isotope.js"></script>
+<script type="text/javascript" src="../../assets/widgets/mixitup/portfolio-demo.js"></script>
+
+<div class="pad10L pad10R clearfix">
+<ul id="filters" class="list-group mrg20T mrg20B list-group-separator list-group-centered row list-group-icons">
+    <li class="col-md-2">
+        <a href="#" class="filter list-group-item active" data-filter-value="*">
+            <i class="glyph-icon icon-anchor"></i>
+            Web Applications
+        </a>
+    </li>
+    <li class="col-md-2">
+        <a href="#" class="filter list-group-item" data-filter-value=".masonry-2">
+            <i class="glyph-icon font-red icon-bullhorn"></i>
+            Food &amp; Drink
+        </a>
+    </li>
+    <li class="col-md-2">
+        <a href="#" id="sort-masonry" class="filter list-group-item" data-filter-value=".masonry-2, .masonry-3">
+            <i class="glyph-icon font-green icon-download"></i>
+            Gadgets &amp; Shows
+        </a>
+    </li>
+    <li class="col-md-2">
+        <a href="#" class="filter list-group-item" data-filter-value=".masonry-1, .masonry-2">
+            <i class="glyph-icon font-blue icon-camera"></i>
+            Illustrations
+        </a>
+    </li>
+</ul>
+
+<div class="isotope pad20T row">
+
+<div class="item col-lg-2 masonry-1" data-filter-value="masonry-1">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-user"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-black"></div>
+            <img src="../../assets/image-resources/stock-images/img-1.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-4 masonry-2" data-filter-value="masonry-2">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-wallet"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-blue"></div>
+            <img src="../../assets/image-resources/stock-images/img-2.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-2 masonry-2" data-filter-value="masonry-2">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-videocam"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-orange"></div>
+            <img src="../../assets/image-resources/stock-images/img-3.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-4 masonry-3" data-filter-value="masonry-3">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-shop"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-green"></div>
+            <img src="../../assets/image-resources/stock-images/img-4.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-4 masonry-2" data-filter-value="masonry-2">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-tag"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-black"></div>
+            <img src="../../assets/image-resources/stock-images/img-5.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-2 masonry-1" data-filter-value="masonry-1">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-sound"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-primary"></div>
+            <img src="../../assets/image-resources/stock-images/img-6.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-2 masonry-3" data-filter-value="masonry-3">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-azure"></div>
+            <img src="../../assets/image-resources/stock-images/img-7.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-2 masonry-2" data-filter-value="masonry-2">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-database"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-red"></div>
+            <img src="../../assets/image-resources/stock-images/img-8.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-2 masonry-1" data-filter-value="masonry-1">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-cup"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-black"></div>
+            <img src="../../assets/image-resources/stock-images/img-9.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-4 masonry-2" data-filter-value="masonry-2">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-comment"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-black"></div>
+            <img src="../../assets/image-resources/stock-images/img-10.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-2 masonry-1" data-filter-value="masonry-1">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-cog"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-primary"></div>
+            <img src="../../assets/image-resources/stock-images/img-11.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-2 masonry-3" data-filter-value="masonry-3">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-cloud"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-green"></div>
+            <img src="../../assets/image-resources/stock-images/img-12.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-2 masonry-2" data-filter-value="masonry-2">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-calendar"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-red"></div>
+            <img src="../../assets/image-resources/stock-images/img-13.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="item col-lg-4 masonry-1" data-filter-value="masonry-1">
+
+    <div class="thumbnail-box-wrapper">
+        <div class="thumbnail-box">
+            <a class="thumb-link" href="#" title=""></a>
+            <div class="thumb-content">
+                <div class="center-vertical">
+                    <div class="center-content">
+                        <i class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-beaker"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-overlay bg-orange"></div>
+            <img src="../../assets/image-resources/stock-images/img-14.jpg" alt="">
+        </div>
+        <div class="thumb-pane">
+            <h3 class="thumb-heading animated rollIn">
+                <a href="#" title="">
+                    Working in the morning
+                </a>
+                <small>12 March 2015</small>
+            </h3>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="text-center">
+    <ul class="pagination pagination-lg">
+        <li><a href="#">«</a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+    </ul>
+</div>
